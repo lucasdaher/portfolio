@@ -13,6 +13,7 @@ interface SkillsProps {
 }
 
 const Skills = ({ isDark }: SkillsProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [skills, setSkills] = useState([
     {
       id: 1,
