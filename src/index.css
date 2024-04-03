@@ -10,3 +10,15 @@
   box-sizing: border-box;
   font-family: "Sora", sans-serif;
 }
+
+body {
+  transition: all 0.4s ease-in-out;
+  background-color: white;
+  color: #121212;
+}
+
+body.dark {
+  transition: all 0.4s ease-in-out;
+  background-color: #121212;
+  color: white;
+}
