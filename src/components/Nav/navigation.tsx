@@ -10,6 +10,9 @@ const Navigation = () => {
       <li className="text-white font-medium text-xs hover:text-normal-hover transition-all duration-200">
         <a href="#projects">Projetos</a>
       </li>
+      <li className="text-white font-medium text-xs hover:text-normal-hover transition-all duration-200">
+        <a href="#contact">Contato</a>
+      </li>
     </ul>
   );
 };

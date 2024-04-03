@@ -1,14 +1,12 @@
-import { useState } from "react";
 import { IoMdSunny } from "react-icons/io";
 import { IoMdMoon } from "react-icons/io";
 
-const ThemeButton = () => {
-  const [isDark, setIsDark] = useState<boolean>(false);
+interface ThemeButtonProps {
+  handleIsDark: () => void;
+  isDark: boolean;
+}
 
-  const handleIsDark = () => {
-    setIsDark(!isDark);
-  };
-
+const ThemeButton = ({ handleIsDark, isDark }: ThemeButtonProps) => {
   return (
     <button
       className="bg-normal p-1 rounded-md group hover:bg-normal-hover transition-all duration-200"
