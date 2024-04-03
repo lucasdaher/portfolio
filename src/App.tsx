@@ -4,13 +4,17 @@ import Header from "./components/header";
 import Skills from "./components/Categories/skills";
 
 function App() {
-  const [isDark, setIsDark] = useState<boolean>(false);
+  const [isDark, setIsDark] = useState<boolean>(() => {
+    const isDarkLocalStorage = localStorage.getItem("darkMode");
+    return isDarkLocalStorage ? !!JSON.parse(isDarkLocalStorage) : false;
+  });
 
   const handleIsDark = () => {
     setIsDark(!isDark);
   };
 
   useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(isDark));
     if (isDark) {
       document.body.classList.add("dark");
     } else {
