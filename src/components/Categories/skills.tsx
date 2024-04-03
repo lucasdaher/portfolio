@@ -80,14 +80,14 @@ const Skills = ({ isDark }: SkillsProps) => {
     },
   ]);
   return (
-    <section className="mt-36">
+    <section className="mt-24 lg:mt-36">
       <div
-        className="max-w-[1440px] mx-auto grid justify-center items-center gap-x-4 gap-y-9 
-      grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
+        className="max-w-[1140px] mx-auto grid place-items-center gap-x-4 gap-y-7 lg:gap-x-4 lg:gap-y-9 
+      grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 px-4 lg:px-8"
       >
         <div
           className={`card flex flex-col justify-start items-start gap-4 bg-normal text-white 
-          rounded-md w-full max-w-[352px] h-full min-h-[308px] px-8 py-12 transition-all duration-300`}
+          rounded-md w-full lg:max-w-[352px] h-full min-h-[308px] px-8 py-12 transition-all duration-300`}
         >
           <h1 className="text-2xl font-bold">Minhas Habilidades</h1>
           <p className="text-md font-medium text-left">
@@ -101,7 +101,7 @@ const Skills = ({ isDark }: SkillsProps) => {
             Repositórios
             <FaLink />
           </button>
-          <p className="text-white text-xs">
+          <p className="text-white text-sm lg:text-xs">
             Ao clicar no botão acima você será redicionado para o meu{" "}
             <a
               href="https://github.com/lucasdaher"
@@ -122,7 +122,7 @@ const Skills = ({ isDark }: SkillsProps) => {
                 isDark
                   ? "bg-card-bg hover:bg-card-bg-hover text-white"
                   : "bg-card-bg hover:bg-card-bg-hover text-white"
-              } rounded-md w-full max-w-[352px] h-full min-h-[308px] px-2 py-12 
+              } rounded-md w-full lg:max-w-[352px] h-full min-h-[308px] px-2 py-12 
             transition-all duration-300 hover:transform hover:translate-y-[-6%]`}
             >
               {skill.icon}

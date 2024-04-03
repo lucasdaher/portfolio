@@ -1,6 +1,6 @@
 const Navigation = () => {
   return (
-    <ul className="flex justify-center items-center gap-4">
+    <ul className="md:flex justify-center items-center gap-4 hidden">
       <li className="text-white font-medium text-xs hover:text-normal-hover transition-all duration-200">
         <a href="#start">Início</a>
       </li>

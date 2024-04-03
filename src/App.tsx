@@ -26,12 +26,8 @@ function App() {
     <div className="app">
       <Header isDark={isDark} handleIsDark={handleIsDark} />
 
-      <main className="mt-24">
-        <Presentation
-          isDark={isDark}
-          title="Me chamo Lucas Daher"
-          desc="Com quase um ano de experiência como desenvolvedor front-end, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais."
-        />
+      <main className="mt-12 md:mt-24">
+        <Presentation isDark={isDark} title="Me chamo Lucas Daher" />
         <Skills isDark={isDark} />
       </main>
     </div>

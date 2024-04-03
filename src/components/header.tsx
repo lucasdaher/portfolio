@@ -10,7 +10,7 @@ interface HeaderProps {
 
 const Header = ({ handleIsDark, isDark }: HeaderProps) => {
   return (
-    <header className="bg-black w-full py-3 px-8" id="header">
+    <header className="bg-black w-full py-6 px-4 lg:py-4 lg:px-8" id="header">
       <nav className="flex justify-between items-center gap-10 max-w-[1440px] mx-auto">
         <div className="flex justify-center items-center gap-10">
           <div>
