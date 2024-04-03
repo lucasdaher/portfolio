@@ -1,21 +1,37 @@
 import { FaCode } from "react-icons/fa";
 import Navigation from "./Nav/navigation";
 import ThemeButton from "./Nav/themeButton";
+import SocialButton from "./Nav/socialButton";
 
-const Header = () => {
+interface HeaderProps {
+  handleIsDark: () => void;
+  isDark: boolean;
+}
+
+const Header = ({ handleIsDark, isDark }: HeaderProps) => {
   return (
-    <header className="bg-black w-full py-3 px-8">
-      <nav className="flex justify-start items-center gap-10 max-w-[1440px] mx-auto">
-        <div>
-          <a href="#" className="flex justify-center items-center gap-1">
-            <FaCode className="text-normal text-2xl" />
-            <h1 className="text-normal font-bold text-md">Lucas Daher</h1>
-          </a>
+    <header className="bg-black w-full py-3 px-8" id="header">
+      <nav className="flex justify-between items-center gap-10 max-w-[1440px] mx-auto">
+        <div className="flex justify-center items-center gap-10">
+          <div>
+            <a
+              href="#header"
+              className="flex justify-center items-center gap-1 hover:scale-105 transition-all duration-200 group hover:text-light-active"
+            >
+              <FaCode className="text-normal text-2xl group-hover:text-light-active transition-all duration-200" />
+              <h1 className="text-normal leading-none font-bold text-md group-hover:text-light-active transition-all duration-200">
+                Lucas Daher
+              </h1>
+            </a>
+          </div>
+          <Navigation />
         </div>
 
-        <Navigation />
-
-        <ThemeButton />
+        <div className="flex justify-center items-center gap-2">
+          <SocialButton icon="github" />
+          <SocialButton icon="linkedin" />
+          <ThemeButton handleIsDark={handleIsDark} isDark={isDark} />
+        </div>
       </nav>
     </header>
   );
