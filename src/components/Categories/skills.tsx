@@ -94,13 +94,21 @@ const Skills = ({ isDark }: SkillsProps) => {
             Aqui você irá conhecer um pouco mais sobre minhas habilidades e
             ferramentas que utilizo durante o desenvolvimento.
           </p>
-          <button
-            className="flex justify-center items-center gap-1 bg-white hover:bg-light-hover hover:text-light-normal hover:transform hover:translate-y-[-6%] 
-            transition-all duration-200 px-8 py-2 text-normal font-semibold rounded-md mt-4"
+          <a
+            href="https://github.com/lucasdaher"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline leading-none"
           >
-            Repositórios
-            <FaLink />
-          </button>
+            <button
+              className="flex justify-center items-center gap-1 bg-white hover:bg-light-hover hover:text-light-normal hover:transform hover:translate-y-[-6%] 
+            transition-all duration-200 px-8 py-2 text-normal font-semibold rounded-md mt-4"
+            >
+              Repositórios
+              <FaLink />
+            </button>
+          </a>
+
           <p className="text-white text-sm lg:text-xs">
             Ao clicar no botão acima você será redicionado para o meu{" "}
             <a
