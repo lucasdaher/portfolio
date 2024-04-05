@@ -13,7 +13,7 @@ const SocialButton = ({ icon }: SocialButtonProps) => {
       className="border-none outline-none no-underline leading-none"
     >
       <button
-        className="bg-social-btn-bg p-1 rounded-md group hover:bg-gray transition-all duration-200"
+        className="bg-social-btn-bg p-2 rounded-md group hover:bg-gray transition-all duration-200"
         type="button"
       >
         {(icon === "github" && <FaGithub className="text-white" />) ||

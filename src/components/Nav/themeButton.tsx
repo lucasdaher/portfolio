@@ -9,7 +9,7 @@ interface ThemeButtonProps {
 const ThemeButton = ({ handleIsDark, isDark }: ThemeButtonProps) => {
   return (
     <button
-      className="bg-normal p-1 rounded-md group hover:bg-normal-hover transition-all duration-200"
+      className="bg-normal p-2 rounded-md group hover:bg-normal-hover transition-all duration-200"
       type="button"
       onClick={handleIsDark}
     >
