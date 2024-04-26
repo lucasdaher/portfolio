@@ -1,5 +1,9 @@
 import { SquareArrowOutUpRight } from "lucide-react";
 
+import uniassist from "../../assets/projects/uniassist.png";
+import crowbank from "../../assets/projects/crowbank.png";
+import assistify from "../../assets/projects/assistify.png";
+
 export interface Props {}
 
 export default function Projects() {
@@ -9,30 +13,46 @@ export default function Projects() {
       name: "UniAssist",
       desc: "Projeto desenvolvido para um trabalho da faculdade. O projeto é uma plataforma com ferramentas para universitários.",
       tec: "React.JS, Typescript, Nodejs, TailwindCSS, React Router, Shadcn e Vercel.",
+      img: uniassist,
     },
     {
       id: 2,
       name: "CrowBank",
       desc: "Projeto desenvolvido para treinar e simular páginas destinadas a instituições de pagamentos.",
       tec: "React.JS, Javascript, Nodejs, TailwindCSS, React Router e Netlify.",
+      img: crowbank,
     },
     {
       id: 3,
       name: "Central de Ajuda",
       desc: "Este foi um projeto desenvolvido para o Assistify. O projeto é uma central de ajuda para o usuário tirar as suas dúvidas.",
       tec: "React.JS, Javacript, Nodejs, TailwindCSS, React Router e React Hook Form.",
+      img: assistify,
     },
   ];
   return (
     <>
-      <section className="mt-56">
-        <div className="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 px-4 lg:px-8 gap-x-4 gap-y-8 place-items-center">
+      <section className="mt-24 lg:mt-56">
+        <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
+          <h1 className="text-5xl font-bold text-normal leading-10">
+            Projetos
+          </h1>
+          <p className="text-base font-medium text-white/70 mt-4">
+            Aqui você encontrará todos os meus projetos em que trabalhei no meu
+            tempo de experiência como desenvolvedor front-end.
+          </p>
+        </div>
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 px-4 lg:px-8 gap-x-4 gap-y-8 place-items-center mt-12">
           {data.map((card) => (
             <div
               className="bg-card-bg rounded-md h-auto min-h-96 flex justify-center items-start flex-col p-8"
               key={card.id}
             >
-              <img src="" alt="Project Image Background" className="w-96" />
+              <img
+                src={card.img}
+                alt="Project Image Background"
+                className="w-[100%] rounded-md"
+              />
 
               <h1 className="text-normal font-bold text-3xl leading-10 mt-6">
                 {card.name}
