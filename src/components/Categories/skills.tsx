@@ -65,7 +65,7 @@ const Skills = ({ isDark }: SkillsProps) => {
     {
       id: 7,
       title: "Figma",
-      desc: "Possuo conhecimento avançado da criação de interfaces e na utilização do Figma",
+      desc: "Possuo conhecimento avançado na prototipação de interfaces e na utilização do Figma",
       icon: (
         <LuFigma className="text-white text-7xl font-bold bg-normal rounded-md p-2" />
       ),

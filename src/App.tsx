@@ -6,6 +6,7 @@ import Footer from "./components/footer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Projects from "./components/Projects/projects";
 AOS.init();
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
           data-aos-delay="200"
         />
         <Skills isDark={isDark} />
+
+        <Projects />
       </main>
 
       <Footer isDark={isDark} />
