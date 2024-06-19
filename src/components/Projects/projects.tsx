@@ -13,6 +13,7 @@ export default function Projects() {
       name: "UniAssist",
       desc: "Projeto desenvolvido para um trabalho da faculdade. O projeto é uma plataforma com ferramentas para universitários.",
       tec: "React.JS, Typescript, Nodejs, TailwindCSS, React Router, Shadcn e Vercel.",
+      viewLink: "null",
       img: uniassist,
     },
     {
@@ -20,6 +21,7 @@ export default function Projects() {
       name: "CrowBank",
       desc: "Projeto desenvolvido para treinar e simular páginas destinadas a instituições de pagamentos.",
       tec: "React.JS, Javascript, Nodejs, TailwindCSS, React Router e Netlify.",
+      viewLink: "null",
       img: crowbank,
     },
     {
@@ -27,12 +29,21 @@ export default function Projects() {
       name: "Central de Ajuda",
       desc: "Este foi um projeto desenvolvido para o Assistify. O projeto é uma central de ajuda para o usuário tirar as suas dúvidas.",
       tec: "React.JS, Javacript, Nodejs, TailwindCSS, React Router e React Hook Form.",
+      viewLink: "null",
+      img: assistify,
+    },
+    {
+      id: 3,
+      name: "Banco Malvader",
+      desc: "Este foi um trabalho desenvolvido na faculdade juntamente com 2 colegas de turma. O projeto consiste em um sistema de banco para clientes e funcionários.",
+      tec: "C, Git e Excel.",
+      viewLink: "null",
       img: assistify,
     },
   ];
   return (
     <>
-      <section className="mt-24 lg:mt-56">
+      <section className="mt-24 lg:mt-56 px-4">
         <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
           <h1 className="text-5xl font-bold text-normal leading-10">
             Projetos
@@ -72,21 +83,37 @@ export default function Projects() {
               </div>
 
               <div className="flex justify-start items-center gap-2 mt-10">
-                <button
-                  className="bg-normal rounded-md px-8 py-2 flex justify-center items-center gap-2 leading-none hover:bg-normal-hover transition-all duration-300 hover:translate-y-[-4%]"
-                  title="Visualizar repositório"
-                  type="button"
+                <a
+                  href="https://github.com/lucasdaher/banco-malvader"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="no-underline"
                 >
-                  <SquareArrowOutUpRight width={20} />
-                  <span className="leading-none">Repositório</span>
-                </button>
-                <button
-                  className="bg-normal rounded-md px-8 py-2 hover:bg-normal-hover transition-all duration-300 hover:translate-y-[-4%]"
-                  title="Visualizar página"
-                  type="button"
-                >
-                  Visualizar
-                </button>
+                  <button
+                    className="bg-normal text-white rounded-md px-8 py-2 flex justify-center items-center gap-2 leading-none hover:bg-normal-hover transition-all duration-300 hover:translate-y-[-4%]"
+                    title="Visualizar repositório"
+                    type="button"
+                  >
+                    <SquareArrowOutUpRight width={20} />
+                    <span className="leading-none">Repositório</span>
+                  </button>
+                </a>
+                {card.name !== "Banco Malvader" && (
+                  <a
+                    href={card.viewLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="no-underline"
+                  >
+                    <button
+                      className="bg-normal text-white rounded-md px-8 py-2 hover:bg-normal-hover transition-all duration-300 hover:translate-y-[-4%]"
+                      title="Visualizar página"
+                      type="button"
+                    >
+                      Visualizar
+                    </button>
+                  </a>
+                )}
               </div>
             </div>
           ))}
