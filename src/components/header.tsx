@@ -1,5 +1,5 @@
 import { FaCode } from "react-icons/fa";
-import Navigation from "./Nav/navigation";
+// import Navigation from "./Nav/navigation";
 import ThemeButton from "./Nav/themeButton";
 import SocialButton from "./Nav/socialButton";
 
@@ -24,12 +24,16 @@ const Header = ({ handleIsDark, isDark }: HeaderProps) => {
               </h1>
             </a>
           </div>
-          <Navigation />
+          {/* <Navigation /> */}
         </div>
 
         <div className="flex justify-center items-center gap-2">
-          <SocialButton icon="github" />
-          <SocialButton icon="linkedin" />
+          <SocialButton icon="github" href="https://github.com/lucasdaher" />
+          <SocialButton
+            icon="linkedin"
+            href="https://www.linkedin.com/in/lucasdaherdev/"
+          />
+          <SocialButton icon="behance" href="https://be.net/lucasdaherr" />
           <ThemeButton handleIsDark={handleIsDark} isDark={isDark} />
         </div>
       </nav>
