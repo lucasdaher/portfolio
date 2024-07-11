@@ -6,7 +6,7 @@ import Header from "./components/header";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SocialButton from "./components/Nav/socialButton";
+// import SocialButton from "./components/Nav/socialButton";
 import { FaBehance, FaGithub, FaLinkedin } from "react-icons/fa";
 // import Projects from "./components/Projects/projects";
 AOS.init();
