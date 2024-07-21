@@ -19,6 +19,8 @@ export default {
         "card-bg": "#202020",
         "card-bg-hover": "#262626",
         "social-btn-bg": "#363636",
+        "header-bg": "rgba(25, 25, 25, 0.60)",
+        "header-border-bottom": "rgba(155, 155, 155, 0.10)",
       },
     },
   },

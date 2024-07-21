@@ -1,12 +1,13 @@
 import { useEffect, useState } from "react";
 import Presentation from "./components/Presentation/presentation";
-import Header from "./components/header";
+// import Header from "./components/header";
 import Skills from "./components/Categories/skills";
 import Footer from "./components/footer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Projects from "./components/Projects/projects";
+import Header from "./components/Header/Header";
 AOS.init();
 
 function App() {
@@ -30,7 +31,8 @@ function App() {
 
   return (
     <div className="app">
-      <Header isDark={isDark} handleIsDark={handleIsDark} />
+      {/* <Header isDark={isDark} handleIsDark={handleIsDark} /> */}
+      <Header />
 
       <main className="mt-12 md:mt-24">
         <Presentation
