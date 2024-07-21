@@ -3,10 +3,11 @@ Neste repositório você encontrará o código fonte do meu portfólio, desenvol
 
 ## Instalação
 > [!TIP]
-> Para iniciar este projeto você precisa instalar algumas dependências e bibliotecas. Siga os passos:
-> - Instale as dependências utilizando `pnpm install`
-> - Instale o TailwindCSS utilizando `pnpm install -D tailwindcss postcss autoprefixer`
-> - Instale a biblioteca de ícones utilizando `pnpm install react-icons`
+> Para iniciar este projeto você precisa ter instalado em seu computador o `PNPM`. 
+> Você pode instalar o pnpm utilizando o comando `iwr https://get.pnpm.io/install.ps1 -useb | iex` no terminal do seu computador.
+> 
+> Após instalar o pnpm em seu computador, você deverá instalar as dependências:
+> - Instale as dependências do projeto utilizando `pnpm install`
 
 ## Link
 > [!NOTE]
