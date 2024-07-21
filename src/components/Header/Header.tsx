@@ -1,9 +1,5 @@
 import { FaBehanceSquare, FaLinkedin } from "react-icons/fa";
-import {
-  FaEarthAmericas,
-  FaSquareGithub,
-  FaSquareInstagram,
-} from "react-icons/fa6";
+import { FaSquareGithub, FaSquareInstagram } from "react-icons/fa6";
 
 import codeIcon from "../../assets/icons/codeIcon.svg";
 
@@ -30,41 +26,58 @@ const Header = () => {
             <div className="flex justify-center items-center gap-3">
               <button className="rounded-full px-4 bg-normal hover:bg-normal-active transition-all duration-200">
                 <span className="text-xs">
-                  Novo projeto adicionado ao meu perfil, confira agora mesmo!
+                  Novidade! Um novo projeto acadêmico foi publicado na área de
+                  projetos.
                 </span>
               </button>
             </div>
           </div>
           <nav className="flex justify-center items-center gap-8">
             <ul className="flex justify-center items-center gap-4 border-r border-gray border-opacity-50 px-8">
-              <li className="text-sm font-normal text-white hover:text-light-active transition-all duration-300">
+              <li className="text-sm font-normal text-white hover:text-normal-hover transition-all duration-300">
                 <a href="">Sobre</a>
               </li>
-              <li className="text-sm font-normal text-white hover:text-light-active transition-all duration-300">
+              <li className="text-sm font-normal text-white hover:text-normal-hover transition-all duration-300">
                 <a href="">Contato</a>
               </li>
-              <li className="text-sm font-normal text-white hover:text-light-active transition-all duration-300">
+              <li className="text-sm font-normal text-white hover:text-normal-hover transition-all duration-300">
                 <a href="">Currículo</a>
               </li>
             </ul>
             <div className="flex justify-center items-center gap-2">
               <button className="">
-                <a href="" target="_blank" rel="noopener norefferer">
+                <a
+                  href="https://github.com/lucasdaher"
+                  target="_blank"
+                  rel="noopener norefferer"
+                >
                   <FaSquareGithub className="w-6 h-6" />
                 </a>
               </button>
               <button>
-                <a href="" target="_blank" rel="noopener norefferer">
+                <a
+                  href="https://be.net/lucasdaher"
+                  target="_blank"
+                  rel="noopener norefferer"
+                >
                   <FaBehanceSquare className="w-6 h-6" />
                 </a>
               </button>
               <button>
-                <a href="" target="_blank" rel="noopener norefferer">
+                <a
+                  href="linkedin.com/in/lucasdaherdev"
+                  target="_blank"
+                  rel="noopener norefferer"
+                >
                   <FaLinkedin className="w-6 h-6" />
                 </a>
               </button>
               <button>
-                <a href="" target="_blank" rel="noopener norefferer">
+                <a
+                  href="https://instagram.com/daher.code"
+                  target="_blank"
+                  rel="noopener norefferer"
+                >
                   <FaSquareInstagram className="w-6 h-6" />
                 </a>
               </button>
