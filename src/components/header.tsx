@@ -1,6 +1,6 @@
 import { FaCode } from "react-icons/fa";
 // import Navigation from "./Nav/navigation";
-import ThemeButton from "./Nav/themeButton";
+import ThemeButton from "./Header/ThemeButton";
 import SocialButton from "./Nav/socialButton";
 
 interface HeaderProps {

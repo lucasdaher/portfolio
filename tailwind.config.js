@@ -3,6 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      transitionDuration: {
+        400: "0.4s",
+      },
       colors: {
         light: "#e9f1ff",
         "light-hover": "#deeaff",
@@ -14,7 +17,7 @@ export default {
         "dark-hover": "#144799",
         "dark-active": "#0f3573",
         darker: "#0c2959",
-        "black-gray": "#303030",
+        "black-gray": "#191919",
         gray: "#565656",
         "card-bg": "#202020",
         "card-bg-hover": "#262626",

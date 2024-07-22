@@ -1,16 +1,21 @@
+import React from "react";
+
 import { useEffect, useState } from "react";
-import Presentation from "./components/Presentation/presentation";
-// import Header from "./components/header";
-import Skills from "./components/Categories/skills";
-import Footer from "./components/footer";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import Projects from "./components/Projects/projects";
-import Header from "./components/Header/Header";
+
+import Header from "@/components/Header/Header";
+import Presentation from "@/components/Presentation/presentation";
+import Skills from "@/components/Categories/skills";
+import Projects from "@/components/Projects/projects";
+import Footer from "@/components/footer";
+
 AOS.init();
 
-function App() {
+interface HomeProps {}
+
+export default function Home({}: HomeProps) {
   const [isDark, setIsDark] = useState<boolean>(() => {
     const isDarkLocalStorage = localStorage.getItem("darkMode");
     return isDarkLocalStorage ? !!JSON.parse(isDarkLocalStorage) : false;
@@ -30,9 +35,8 @@ function App() {
   }, [isDark]);
 
   return (
-    <div className="app">
-      {/* <Header isDark={isDark} handleIsDark={handleIsDark} /> */}
-      <Header />
+    <React.Fragment>
+      <Header isDark={isDark} handleDark={handleIsDark} />
 
       <main className="mt-12 md:mt-24">
         <Presentation
@@ -47,8 +51,6 @@ function App() {
       </main>
 
       <Footer isDark={isDark} />
-    </div>
+    </React.Fragment>
   );
 }
-
-export default App;
