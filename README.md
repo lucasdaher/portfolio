@@ -9,20 +9,20 @@ Neste repositório você encontrará o código fonte do meu portfólio, desenvol
 > - Instale as dependências do projeto utilizando `pnpm install`
 
 ## Link
-> [!NOTE] Aviso
+> [!NOTE]
 > O portfólio ainda está em processo de desenvolvimento, volte em breve...
 
 Endereço para visualização do portfólio: **[lucasdaher.com](https://lucasdaher.com)**
 
 ## Futuras atualizações
-> [!CAUTION] Prioridades
+> [!CAUTION]
 > - Corrigir a responsividade para dispositivos menores (tablet e mobile);
 
-> [!NOTE] Em desenvolvimento 
+> [!NOTE]
 > - Alternar entre idiomas [Português Brasileiro e Inglês];
 > - Adicionar mais configurações ao menu de preferências.
 
-> [!TIP] Pendentes
+> [!TIP]
 > - Adicionar uma área para expor meus projetos acadêmicos e profissionais.
 
 ## Colaborações
