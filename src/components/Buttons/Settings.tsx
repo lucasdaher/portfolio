@@ -29,8 +29,12 @@ export default function Settings({
   return (
     <React.Fragment>
       <DropdownMenu>
-        <DropdownMenuTrigger className="outline-none  p-1 rounded-full group hover:bg-normal-hover transition-all duration-200">
-          <AiFillSetting className={`${iconStyle} text-white`} />
+        <DropdownMenuTrigger className="outline-none p-1 rounded-full hover:transform hover:scale-110 transition-all duration-200">
+          <AiFillSetting
+            className={`${iconStyle} ${
+              isDark === false ? "text-black-gray" : "text-white"
+            }`}
+          />
         </DropdownMenuTrigger>
 
         <DropdownMenuContent

@@ -6,7 +6,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import Header from "@/components/Header/Header";
-import Presentation from "@/components/Presentation/presentation";
+import Presentation from "@/components/Home/Presentation/Presentation";
 import Skills from "@/components/Categories/skills";
 import Projects from "@/components/Projects/projects";
 import Footer from "@/components/footer";
@@ -18,7 +18,7 @@ interface HomeProps {}
 export default function Home({}: HomeProps) {
   const [isDark, setIsDark] = useState<boolean>(() => {
     const isDarkLocalStorage = localStorage.getItem("darkMode");
-    return isDarkLocalStorage ? !!JSON.parse(isDarkLocalStorage) : false;
+    return isDarkLocalStorage ? !!JSON.parse(isDarkLocalStorage) : true;
   });
 
   const handleIsDark = () => {
@@ -38,13 +38,15 @@ export default function Home({}: HomeProps) {
     <React.Fragment>
       <Header isDark={isDark} handleDark={handleIsDark} />
 
-      <main className="mt-12 md:mt-24">
-        <Presentation
+      <main className="mt-6 md:mt-[45px]">
+        <Presentation isDark={isDark} />
+
+        {/* <Presentation
           isDark={isDark}
           title="Me chamo Lucas Daher"
           data-aos="fade-up"
           data-aos-delay="200"
-        />
+        /> */}
         <Skills isDark={isDark} />
 
         <Projects />

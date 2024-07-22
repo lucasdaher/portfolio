@@ -15,7 +15,7 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
         className={`fixed top-0 left-1/2 translate-x-[-50%] w-full flex justify-between items-center 
         ${
           isDark === false
-            ? "bg-white/60 border-black/10 "
+            ? "bg-white/60 border-black/10"
             : "bg-header-bg border-header-border-bottom"
         } backdrop-blur-[20px] px-4 py-2 border-b z-10 transition-all duration-400 ease-in-out`}
       >
@@ -32,7 +32,11 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
             <div className="flex justify-center items-center gap-3">
               <TipBox
                 tip="PT-BR"
-                buttonStyle="bg-[#222] hover:bg-[#323232]"
+                buttonStyle={`${
+                  isDark === true
+                    ? "bg-[#222] hover:bg-[#323232]"
+                    : "bg-[#9b9b9b] hover:bg-[#ccc]"
+                }`}
                 onClick={() => {
                   window.alert(
                     "A alteração de idiomas está em desenvolvimento..."

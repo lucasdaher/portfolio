@@ -4,6 +4,10 @@ export default {
   theme: {
     extend: {
       keyframes: {
+        "gradient-animation": {
+          "0%, 100%": { background: "background-position: 0% 50%" },
+          "50%": { background: "background-position: 100% 50%;" },
+        },
         rotate: {
           "0%, 100%": { transform: "translateY(-12%)" },
           "50%": { transform: "translateY(0%)" },
@@ -22,6 +26,7 @@ export default {
         },
       },
       animation: {
+        "gradient-animation": "gradient-animation 1s ease-in-out infinite",
         ia: "ia 1s ease-in-out infinite",
         rotate: "rotate 1s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -48,6 +53,8 @@ export default {
         "social-btn-bg": "#363636",
         "header-bg": "rgba(25, 25, 25, 0.60)",
         "header-border-bottom": "rgba(155, 155, 155, 0.10)",
+        "gradient-first": "#692dcc",
+        "gradient-second": "#ed178e",
         //////////////////////////// shadcn
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -82,6 +89,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+      },
+      backgroundImage: {
+        "custom-gradient":
+          "linear-gradient(to right, var(--tw-gradient-stops))",
+      },
+      linearGradientColors: {
+        custom: ["#692dcc", "#ed178e"],
       },
     },
   },
