@@ -35,7 +35,7 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
                 buttonStyle="bg-[#222] hover:bg-[#323232]"
                 onClick={() => {
                   window.alert(
-                    "Esta funcionalidade está em desenvolvimento..."
+                    "A alteração de idiomas está em desenvolvimento..."
                   );
                 }}
                 titleButton="Clique para alterar o idioma da página."

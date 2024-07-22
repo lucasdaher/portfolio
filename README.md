@@ -15,6 +15,10 @@ Neste repositório você encontrará o código fonte do meu portfólio, desenvol
 
 Endereço para visualização do portfólio: **[lucasdaher.com](https://lucasdaher.com)**
 
+## Futuras atualizações
+- Alternar entre idiomas [Português Brasileiro e Inglês];
+- Adicionar mais configurações ao menu de preferências.
+
 ## Colaborações
 Interessados em contribuir no meu portfólio de alguma forma devem seguir os seguintes passos:
 
