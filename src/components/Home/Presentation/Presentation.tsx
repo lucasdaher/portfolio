@@ -1,15 +1,32 @@
 import Default from "@/components/Buttons/Default";
 import SocialButton from "@/components/Buttons/SocialButton";
 
+// import { Messages, Language } from "@/locales/languages";
+
+// import en from "../../../locales/en.json";
+// import ptbr from "../../../locales/ptbr.json";
+
+// const messages: Record<Language, Messages> = {
+//   en: en,
+//   ptbr: ptbr,
+// };
+
 import Capa from "../../../assets/capa.svg";
 
 import { MdFileDownload } from "react-icons/md";
+// import { useState } from "react";
 
 interface PresentationProps {
   isDark: boolean;
 }
 
 export default function Presentation({ isDark }: PresentationProps) {
+  // const [language, setLanguage] = useState<Language>("en");
+
+  // const toggleLanguage = () => {
+  //   setLanguage((prevLanguage) => (prevLanguage === "en" ? "ptbr" : "en"));
+  // };
+
   return (
     <section
       className={`gradient-background-${
@@ -57,6 +74,7 @@ export default function Presentation({ isDark }: PresentationProps) {
           <ul className="flex justify-center items-center gap-8 mt-14">
             <li>
               <Default
+                // name={messages[language].resumeBtnDownload}
                 name="Baixar currículo"
                 leftIcon={<MdFileDownload className="w-6 h-6" />}
                 gap={2}
