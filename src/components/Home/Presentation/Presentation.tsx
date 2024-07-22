@@ -89,11 +89,14 @@ export default function Presentation({ isDark }: PresentationProps) {
 
         {/* Imagem */}
         <div>
-          <img
-            src={Capa}
-            alt="Lucas Daher Picture"
-            className="w-[80%] lg:w-full"
-          />
+          <picture>
+            <source type="image/svg+xml" srcSet={Capa} />
+            <img
+              src={Capa}
+              alt="Lucas Daher Picture"
+              className="w-[80%] lg:w-full"
+            />
+          </picture>
         </div>
       </div>
     </section>

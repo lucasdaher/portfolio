@@ -32,7 +32,7 @@ body.dark {
 
 .gradient-background-light {
   transition: all 0.4s ease-in-out;
-  background: linear-gradient(150deg, #2176ff, #bad5ff, #2176ff);
+  background: linear-gradient(150deg, #fff, #cfe2ff, #fff);
   background-size: 180% 180%;
   animation: gradient-animation 12s ease-in-out infinite;
 }
