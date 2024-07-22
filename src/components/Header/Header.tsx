@@ -1,7 +1,7 @@
+import Settings from "../Buttons/Settings";
 import TipBox from "../Tip/TipBox";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
-import ThemeButton from "./ThemeButton";
 
 interface HeaderProps {
   isDark: boolean;
@@ -30,20 +30,34 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
             </a>
 
             <div className="flex justify-center items-center gap-3">
-              <TipBox tip="PT-BR" href="#" buttonStyle="bg-[#222]" />
               <TipBox
-                tip="Um novo projeto foi adicionado, clique aqui para visualizar."
+                tip="PT-BR"
+                buttonStyle="bg-[#222] hover:bg-[#323232]"
+                onClick={() => {
+                  window.alert(
+                    "Esta funcionalidade está em desenvolvimento..."
+                  );
+                }}
+                titleButton="Clique para alterar o idioma da página."
+              />
+              <TipBox
+                tip="Um novo projeto foi adicionado recentemente"
                 href="#"
               />
             </div>
           </div>
-          <nav className="flex justify-center items-center gap-8">
+          <nav className="flex justify-center items-center gap-6">
             <ul className="flex justify-center items-center gap-4 border-r border-gray border-opacity-50 px-8">
               <NavItem name="Sobre" type="header" href="#" isDark={isDark} />
               <NavItem name="Projetos" type="header" href="#" isDark={isDark} />
               <NavItem name="Contato" type="header" href="#" isDark={isDark} />
             </ul>
-            <ThemeButton handleIsDark={handleDark} isDark={isDark} />
+            <Settings
+              name="teste"
+              isDark={isDark}
+              handleIsDark={handleDark}
+              iconStyle="w-5 h-5"
+            />
           </nav>
         </div>
       </div>
