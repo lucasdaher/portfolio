@@ -18,11 +18,8 @@ Endereço para visualização do portfólio: **[lucasdaher.com](https://lucasdah
 > [!CAUTION]
 > - Corrigir a responsividade para dispositivos menores (tablet e mobile);
 
-> [!NOTE]
 > - Alternar entre idiomas [Português Brasileiro e Inglês];
 > - Adicionar mais configurações ao menu de preferências.
-
-> [!TIP]
 > - Adicionar uma área para expor meus projetos acadêmicos e profissionais.
 
 ## Colaborações
