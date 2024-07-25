@@ -77,15 +77,15 @@ export default function Presentation({ isDark }: PresentationProps) {
               {textoDinamico}
             </h1>
             <p
-              className={`w-full lg:max-w-[950px] lg:w-[950px] text-center font-normal text-base md:text-lg mt-4 transition-all duration-400 ease-in-out ${
+              className={`w-full lg:max-w-[950px] lg:w-[950px] text-center font-normal text-base md:text-lg mt-6 transition-all duration-400 ease-in-out ${
                 isDark ? "text-white" : "text-black-gray"
               }`}
             >
               Com quase um ano de experiência como{" "}
               <span
                 className={`${
-                  isDark === true ? "bg-dark-active" : "bg-normal"
-                } text-white text-sm uppercase font-bold px-[2px] rounded-md`}
+                  isDark === true ? "bg-dark-hover" : "bg-normal"
+                } text-white text-sm uppercase font-bold px-[4px] rounded-md`}
               >
                 {" "}
                 desenvolvedor front-end
@@ -93,8 +93,8 @@ export default function Presentation({ isDark }: PresentationProps) {
               e{" "}
               <span
                 className={`${
-                  isDark === true ? "bg-dark-active" : "bg-normal"
-                } text-white text-sm uppercase font-bold px-[2px] rounded-md`}
+                  isDark === true ? "bg-dark-hover" : "bg-normal"
+                } text-white text-sm uppercase font-bold px-[4px] rounded-md`}
               >
                 ux designer
               </span>

@@ -42,7 +42,7 @@ export default function Home({}: HomeProps) {
       <main className="mt-6 md:mt-[45px]">
         <Presentation isDark={isDark} />
 
-        <Demonstration />
+        <Demonstration isDark={isDark} />
 
         {/* <Presentation
           isDark={isDark}

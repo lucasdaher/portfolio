@@ -32,7 +32,7 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
             <div className="flex justify-center items-center gap-3">
               <TipBox
                 tip="PT-BR"
-                buttonStyle={`hidden md:flex ${
+                buttonStyle={`hidden md:flex py-1 ${
                   isDark === true
                     ? "bg-[#222] hover:bg-[#323232]"
                     : "bg-[#9b9b9b] hover:bg-[#ccc]"
@@ -45,7 +45,7 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
                 titleButton="Clique para alterar o idioma da página."
               />
               <TipBox
-                buttonStyle="hidden lg:flex bg-normal"
+                buttonStyle="hidden lg:flex bg-normal hover:bg-dark py-1"
                 tip="Um novo projeto foi adicionado recentemente"
                 href="#"
               />
