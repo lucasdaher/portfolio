@@ -9,7 +9,7 @@ const data = [
       <img
         src={bancomalvader}
         alt="Banco Malvader Thumbnail"
-        className="md:w-[32rem] md:h-[32rem] w-40 h-40 object-cover object-center rounded-lg"
+        className="md:w-[32rem] md:h-[32rem] w-full h-[480px] object-cover object-center rounded-lg"
       />
     ),
     tags: [
@@ -32,7 +32,7 @@ const data = [
       <img
         src={sosclima}
         alt="SOSClima Thumbnail"
-        className="md:w-[32rem] md:h-[32rem] w-40 h-40 object-cover object-center rounded-lg"
+        className="md:w-[32rem] md:h-[32rem] w-full h-[480px] object-cover object-center rounded-lg"
       />
     ),
     tags: [

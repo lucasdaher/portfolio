@@ -20,17 +20,17 @@ interface ProjectsProps {
 
 export default function Projects({ isDark }: ProjectsProps) {
   return (
-    <section className="bg-transparent mt-36">
+    <section className="bg-transparent mt-36 px-4">
       <div className="max-w-[1440px] mx-auto w-full text-white">
         <h1
-          className={`w-full h-auto text-3xl md:text-4xl font-bold text-center md:text-left ${
+          className={`w-full h-auto text-3xl md:text-4xl font-bold text-left ${
             isDark === true ? "text-white" : "text-black-gray"
           }`}
         >
           Meus projetos
         </h1>
         <p
-          className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 ${
+          className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 text-left ${
             isDark === true ? "text-white/70 " : "text-black-gray/70"
           }`}
         >
@@ -111,11 +111,11 @@ export default function Projects({ isDark }: ProjectsProps) {
         </DropdownMenu>
 
         {/* Implementar os cards com os projetos */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-x-4 gap-y-8 w-full max-w-none mt-12 items-start">
+        <div className="grid grid-cols-1 gap-16 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 md:gap-x-4 md:gap-y-8 w-full max-w-none mt-12 items-start">
           {projects.map((projeto) => (
             <React.Fragment key={projeto.id}>
               <div className="flex flex-col justify-between items-start gap-4 max-h-[750px] min-h-[748px]">
-                <picture className="shadow-projectCard rounded-lg">
+                <picture className="shadow-projectCard rounded-lg w-full">
                   {projeto.thumbnail}
                 </picture>
                 <div className="flex flex-col justify-center items-start gap-2">
