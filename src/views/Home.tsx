@@ -9,8 +9,8 @@ import Header from "@/components/Header/Header";
 import Presentation from "@/components/Home/Presentation/Presentation";
 import Skills from "@/components/Categories/skills";
 // import Projects from "@/components/Projects/projects";
-import Footer from "@/components/footer";
 import Demonstration from "@/components/Home/Demonstration/Demonstration";
+import Footer from "@/components/Footer/Footer";
 
 AOS.init();
 

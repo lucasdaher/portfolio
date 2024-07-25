@@ -1,22 +1,19 @@
-import { FaCode } from "react-icons/fa";
+import Logo from "../Header/Logo";
 
 interface FooterProps {
   isDark: boolean;
 }
 
-const Footer = ({ isDark }: FooterProps) => {
+export default function Footer({ isDark }: FooterProps) {
   return (
     <footer
       className={`${
-        isDark ? "bg-normal" : "bg-black"
+        isDark ? "bg-black-gray" : "bg-normal"
       } w-full px-12 py-24 mt-48 transition-all duration-300`}
     >
       <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center items-center gap-2">
-          <FaCode className="text-white text-3xl transition-all duration-200" />
-          <h1 className="text-white leading-none font-bold text-xl transition-all duration-200 cursor-default">
-            Lucas Daher
-          </h1>
+          <Logo isDark={isDark} />
         </div>
 
         <div className="mt-2">
@@ -27,6 +24,4 @@ const Footer = ({ isDark }: FooterProps) => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}

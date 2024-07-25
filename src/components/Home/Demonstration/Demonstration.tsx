@@ -1,7 +1,5 @@
 import React from "react";
 
-import "../../../index.css";
-
 import malvaderbank from "../../../assets/projects/malvaderbank.jpg";
 import sosclima from "../../../assets/projects/sosclima.png";
 import uniassist from "../../../assets/projects/uniassist.png";
