@@ -8,8 +8,9 @@ import "aos/dist/aos.css";
 import Header from "@/components/Header/Header";
 import Presentation from "@/components/Home/Presentation/Presentation";
 import Skills from "@/components/Categories/skills";
-import Projects from "@/components/Projects/projects";
+// import Projects from "@/components/Projects/projects";
 import Footer from "@/components/footer";
+import Demonstration from "@/components/Home/Demonstration/Demonstration";
 
 AOS.init();
 
@@ -41,6 +42,8 @@ export default function Home({}: HomeProps) {
       <main className="mt-6 md:mt-[45px]">
         <Presentation isDark={isDark} />
 
+        <Demonstration />
+
         {/* <Presentation
           isDark={isDark}
           title="Me chamo Lucas Daher"
@@ -49,7 +52,7 @@ export default function Home({}: HomeProps) {
         /> */}
         <Skills isDark={isDark} />
 
-        <Projects />
+        {/* <Projects /> */}
       </main>
 
       <Footer isDark={isDark} />

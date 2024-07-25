@@ -3,6 +3,12 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      background: {
+        "marquee-left":
+          "linear-gradient(to left, rgba(255, 255, 255, 0), white)",
+        "marquee-right":
+          "linear-gradient(to right, rgba(255, 255, 255, 0), white)",
+      },
       keyframes: {
         "gradient-animation": {
           "0%, 100%": { background: "background-position: 0% 50%" },

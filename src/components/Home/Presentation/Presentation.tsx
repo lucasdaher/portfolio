@@ -47,7 +47,8 @@ export default function Presentation({ isDark }: PresentationProps) {
     }
 
     if (!isDeleting && textoDinamico === mensagem) {
-      setTimeout(() => setIsDeleting(true), 4000);
+      // Este tempo representa o tempo em que o texto ficará fixo sem ser apagado.
+      setTimeout(() => setIsDeleting(true), 8000);
     } else if (isDeleting && textoDinamico === "") {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
@@ -69,7 +70,7 @@ export default function Presentation({ isDark }: PresentationProps) {
         <div className="flex flex-col md:flex-col justify-between items-center mx-auto w-full">
           <div className="flex justify-center items-center flex-col gap-4 px-4">
             <h1
-              className={`lg:w-[75.5rem] h-[120px] w-96 text-4xl md:text-7xl font-bold text-center ${
+              className={`lg:w-full h-[120px] w-full text-3xl md:text-7xl font-bold text-center ${
                 isDark === true ? "text-white" : "text-black-gray"
               }`}
             >
