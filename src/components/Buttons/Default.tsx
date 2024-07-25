@@ -27,7 +27,7 @@ export default function Default({
     <React.Fragment>
       {(download === false && (
         <button
-          className={`flex justify-center items-center gap-${gap} bg-normal px-8 md:px-16 py-4 rounded-full hover:bg-normal-hover hover:transform hover:scale-105 transition-all duration-200 ease-in-out ${className} text-white`}
+          className={`flex justify-center items-center gap-${gap} bg-normal px-8 md:px-16 py-4 rounded-full hover:bg-normal-hover hover:transform hover:scale-105 transition-all duration-200 ease-in-out text-white ${className}`}
           title={title}
         >
           {leftIcon}
@@ -43,7 +43,7 @@ export default function Default({
             download={downloadFile}
           >
             <button
-              className={`flex justify-center items-center gap-${gap} bg-normal px-16 py-4 rounded-full hover:bg-normal-hover hover:transform hover:scale-105 transition-all duration-200 ease-in-out ${className} text-white w-full`}
+              className={`flex justify-center items-center gap-${gap} bg-normal px-16 py-4 rounded-full hover:bg-normal-hover hover:transform hover:scale-105 transition-all duration-200 ease-in-out text-white w-full ${className}`}
               title={title}
             >
               {leftIcon}

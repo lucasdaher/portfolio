@@ -1,4 +1,4 @@
-import Settings from "../Buttons/Settings";
+import Menu from "../Buttons/Menu";
 import TipBox from "../Tip/TipBox";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
@@ -46,7 +46,7 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
               />
               <TipBox
                 buttonStyle="hidden lg:flex bg-normal hover:bg-dark py-1"
-                tip="Um novo projeto foi adicionado recentemente"
+                tip="Novo projeto adicionado"
                 href="#"
               />
             </div>
@@ -57,11 +57,11 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
               <NavItem name="Projetos" type="header" href="#" isDark={isDark} />
               <NavItem name="Contato" type="header" href="#" isDark={isDark} />
             </ul>
-            <Settings
+            <Menu
               name="teste"
               isDark={isDark}
               handleIsDark={handleDark}
-              iconStyle="w-5 h-5"
+              iconStyle="w-6 h-6"
             />
           </nav>
         </div>

@@ -6,6 +6,9 @@ import Header from "@/components/Header/Header";
 import Presentation from "@/components/Home/Presentation/Presentation";
 import Demonstration from "@/components/Home/Demonstration/Demonstration";
 import Footer from "@/components/Footer/Footer";
+import About from "@/components/Home/AboutMe/About";
+import Skills from "@/components/Home/Skills/Skills";
+import Projects from "@/components/Home/Projects/Projects";
 
 interface HomeProps {}
 
@@ -35,6 +38,9 @@ export default function Home({}: HomeProps) {
       <main className="mt-6 md:mt-[45px]">
         <Presentation isDark={isDark} data-aos="fade-up" data-aos-delay="200" />
         <Demonstration isDark={isDark} />
+        <About isDark={isDark} />
+        <Skills isDark={isDark} />
+        <Projects isDark={isDark} />
       </main>
 
       <Footer isDark={isDark} />

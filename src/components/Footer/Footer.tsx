@@ -17,7 +17,7 @@ export default function Footer({ isDark }: FooterProps) {
         </div>
 
         <div className="mt-2">
-          <p className="font-medium text-white text-sm">
+          <p className="font-medium text-white text-sm text-center">
             Todos os direitos reservados para Lucas Daher. &copy;
           </p>
         </div>

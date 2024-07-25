@@ -70,7 +70,7 @@ export default function Presentation({ isDark }: PresentationProps) {
         <div className="flex flex-col md:flex-col justify-between items-center mx-auto w-full">
           <div className="flex justify-center items-center flex-col gap-4 px-4">
             <h1
-              className={`lg:w-full h-[120px] w-full text-3xl md:text-7xl font-bold text-center ${
+              className={`lg:w-full h-auto min-h-[120px] md:min-h-[120px] max-h-none w-full text-3xl md:text-7xl font-bold text-center ${
                 isDark === true ? "text-white" : "text-black-gray"
               }`}
             >

@@ -103,6 +103,9 @@ export default {
       linearGradientColors: {
         custom: ["#692dcc", "#ed178e"],
       },
+      boxShadow: {
+        projectCard: "0px 8px 18px 0px rgba(25, 25, 25, 0.25)",
+      },
     },
   },
   plugins: [],

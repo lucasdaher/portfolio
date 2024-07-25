@@ -1,7 +1,5 @@
 import React from "react";
 
-import { AiFillSetting } from "react-icons/ai";
-
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,25 +10,21 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { Link } from "react-router-dom";
-import { History, Moon, Sun } from "lucide-react";
+import { AlignRight, History, Moon, Sun } from "lucide-react";
 
-interface SettingsProps {
+interface MenuProps {
   iconStyle?: string;
   name?: string;
   handleIsDark: () => void;
   isDark: boolean;
 }
 
-export default function Settings({
-  iconStyle,
-  handleIsDark,
-  isDark,
-}: SettingsProps) {
+export default function Menu({ iconStyle, handleIsDark, isDark }: MenuProps) {
   return (
     <React.Fragment>
       <DropdownMenu>
         <DropdownMenuTrigger className="outline-none p-1 rounded-full hover:transform hover:scale-110 transition-all duration-200">
-          <AiFillSetting
+          <AlignRight
             className={`${iconStyle} ${
               isDark === false ? "text-black-gray" : "text-white"
             }`}
