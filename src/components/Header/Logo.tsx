@@ -1,4 +1,5 @@
 import codeIcon from "../../assets/icons/codeIcon.svg";
+import React from "react";
 
 interface LogoProps {
   isDark: boolean;
@@ -7,7 +8,7 @@ interface LogoProps {
 
 export default function Logo({ isDark, name = "lucasdaher" }: LogoProps) {
   return (
-    <div className="hidden lg:flex">
+    <React.Fragment>
       <picture>
         <source type="image/svg+xml" srcSet={codeIcon} />
         <img src={codeIcon} alt="Code Icon" />
@@ -19,6 +20,6 @@ export default function Logo({ isDark, name = "lucasdaher" }: LogoProps) {
       >
         {name}
       </h1>
-    </div>
+    </React.Fragment>
   );
 }

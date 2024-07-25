@@ -1,5 +1,6 @@
 import Default from "@/components/Buttons/Default";
 import SocialButton from "@/components/Buttons/SocialButton";
+import { useEffect, useState } from "react";
 
 // import { Messages, Language } from "@/locales/languages";
 
@@ -10,8 +11,6 @@ import SocialButton from "@/components/Buttons/SocialButton";
 //   en: en,
 //   ptbr: ptbr,
 // };
-
-import Capa from "../../../assets/capa.svg";
 
 import { MdFileDownload } from "react-icons/md";
 // import { useState } from "react";
@@ -27,6 +26,37 @@ export default function Presentation({ isDark }: PresentationProps) {
   //   setLanguage((prevLanguage) => (prevLanguage === "en" ? "ptbr" : "en"));
   // };
 
+  const mensagem = "Sou Lucas Daher, apaixonado por tecnologia e design.";
+  const [textoDinamico, settextoDinamico] = useState("");
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [loopNum, setLoopNum] = useState(0);
+  const [typingSpeed, setTypingSpeed] = useState(350); // 350ms
+
+  useEffect(() => {
+    let timer;
+    if (isDeleting) {
+      timer = setTimeout(() => {
+        settextoDinamico(mensagem.substring(0, textoDinamico.length - 1));
+        setTypingSpeed(30);
+      }, typingSpeed);
+    } else {
+      timer = setTimeout(() => {
+        settextoDinamico(mensagem.substring(0, textoDinamico.length + 1));
+        setTypingSpeed(150);
+      }, typingSpeed);
+    }
+
+    if (!isDeleting && textoDinamico === mensagem) {
+      setTimeout(() => setIsDeleting(true), 4000);
+    } else if (isDeleting && textoDinamico === "") {
+      setIsDeleting(false);
+      setLoopNum(loopNum + 1);
+      setTypingSpeed(200);
+    }
+
+    return () => clearTimeout(timer);
+  }, [textoDinamico, isDeleting, , mensagem, typingSpeed, loopNum]);
+
   return (
     <section
       className={`gradient-background-${
@@ -35,17 +65,18 @@ export default function Presentation({ isDark }: PresentationProps) {
     >
       <div className="max-w-[1440px] w-full mx-auto py-16 flex justify-between items-center lg:gap-24">
         {/* Informações de apresentação */}
-        <div>
-          <div className="flex justify-center items-start flex-col gap-4">
+
+        <div className="flex flex-col md:flex-col justify-between items-center mx-auto w-full">
+          <div className="flex justify-center items-center flex-col gap-4 px-4">
             <h1
-              className={`w-96 lg:w-[550px] text-5xl md:text-7xl font-bold text-center md:text-left mt-4 md:mt-0 ${
+              className={`lg:w-[75.5rem] h-[120px] w-96 text-4xl md:text-7xl font-bold text-center ${
                 isDark === true ? "text-white" : "text-black-gray"
               }`}
             >
-              Olá! Me chamo Lucas Daher
+              {textoDinamico}
             </h1>
             <p
-              className={`w-full max-w-96 lg:w-[450px] text-center md:text-left font-normal text-base md:text-lg mt-4 transition-all duration-400 ease-in-out ${
+              className={`w-full lg:max-w-[950px] lg:w-[950px] text-center font-normal text-base md:text-lg mt-4 transition-all duration-400 ease-in-out ${
                 isDark ? "text-white" : "text-black-gray"
               }`}
             >
@@ -71,7 +102,7 @@ export default function Presentation({ isDark }: PresentationProps) {
             </p>
           </div>
 
-          <ul className="flex justify-center items-center gap-8 mt-14">
+          <ul className="flex md:flex-row flex-col justify-center items-center gap-8 mt-14">
             <li>
               <Default
                 // name={messages[language].resumeBtnDownload}
@@ -103,18 +134,6 @@ export default function Presentation({ isDark }: PresentationProps) {
               />
             </li>
           </ul>
-        </div>
-
-        {/* Imagem */}
-        <div>
-          <picture>
-            <source type="image/svg+xml" srcSet={Capa} />
-            <img
-              src={Capa}
-              alt="Lucas Daher Picture"
-              className="w-[80%] lg:w-full"
-            />
-          </picture>
         </div>
       </div>
     </section>

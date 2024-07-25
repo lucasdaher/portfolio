@@ -27,7 +27,7 @@ export default function Default({
     <React.Fragment>
       {(download === false && (
         <button
-          className={`flex justify-center items-center gap-${gap} bg-black-gray px-16 py-4 rounded-full hover:bg-black transition-all duration-200 ease-in-out ${className} text-white`}
+          className={`flex justify-center items-center gap-${gap} bg-black-gray px-8 md:px-16 py-4 rounded-full hover:bg-black transition-all duration-200 ease-in-out ${className} text-white`}
           title={title}
         >
           {leftIcon}
