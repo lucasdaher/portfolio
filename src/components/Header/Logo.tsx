@@ -14,7 +14,7 @@ export default function Logo({ isDark, name = "lucasdaher" }: LogoProps) {
         <img src={codeIcon} alt="Code Icon" />
       </picture>
       <h1
-        className={`text-xl ${
+        className={`text-xl font-medium leading-none h-auto w-auto ${
           isDark === true ? "text-white" : "text-black-gray"
         } transition-all duration-400 ease-in-out`}
       >

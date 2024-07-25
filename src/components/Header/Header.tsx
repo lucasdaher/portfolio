@@ -23,7 +23,7 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
           <div className="flex justify-center items-center gap-8">
             <a
               href="#"
-              className="flex justify-center items-center gap-3 no-underline hover:scale-105 hover:transform 
+              className="flex justify-center items-center gap-2 no-underline hover:scale-105 hover:transform 
               transition-all duration-400"
             >
               <Logo isDark={isDark} />

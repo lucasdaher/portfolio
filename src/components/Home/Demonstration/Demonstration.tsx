@@ -8,6 +8,7 @@ import uniassist from "../../../assets/projects/uniassist.png";
 import doityarte02 from "../../../assets/projects/doity-arte-02.png";
 import hamburguer from "../../../assets/projects/Hamburguer.png";
 import heineken from "../../../assets/projects/Heineken.png";
+import instagramredesign from "../../../assets/projects/instagramwebredesign.jpg";
 
 import Marquee from "react-fast-marquee";
 
@@ -64,8 +65,8 @@ export default function Demonstration({ isDark }: DemonstrationProps) {
             />
             <img
               loading="lazy"
-              src={uniassist}
-              alt="UniAssist Thumbnail"
+              src={instagramredesign}
+              alt="Instagram Case Study Thumbnail"
               className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
             />
           </Marquee>

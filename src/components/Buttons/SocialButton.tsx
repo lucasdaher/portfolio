@@ -20,7 +20,7 @@ export default function SocialButton({
         href={href}
         target="_blank"
         rel="noopener norefferer"
-        className="hover:transform hover:scale-105 transition-all duration-400 ease-in-out flex justify-center items-center p-4 bg-black-gray hover:bg-black rounded-full cursor-pointer"
+        className="hover:transform hover:scale-105 transition-all duration-400 ease-in-out flex justify-center items-center p-4 bg-normal hover:bg-normal-hover rounded-full cursor-pointer"
       >
         <button>
           {(socialName === "github" && (
