@@ -40,16 +40,10 @@ export default function Home({}: HomeProps) {
       <Header isDark={isDark} handleDark={handleIsDark} />
 
       <main className="mt-6 md:mt-[45px]">
-        <Presentation isDark={isDark} />
+        <Presentation isDark={isDark} data-aos="fade-up" data-aos-delay="200" />
 
         <Demonstration isDark={isDark} />
 
-        {/* <Presentation
-          isDark={isDark}
-          title="Me chamo Lucas Daher"
-          data-aos="fade-up"
-          data-aos-delay="200"
-        /> */}
         <Skills isDark={isDark} />
 
         {/* <Projects /> */}
