@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Menu from "../Buttons/Menu";
 import TipBox from "../Tip/TipBox";
 import Logo from "./Logo";
@@ -21,13 +22,13 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
       >
         <div className="w-full max-w-[1440px] mx-auto flex justify-between items-center">
           <div className="flex justify-center items-center gap-8">
-            <a
-              href="#"
+            <Link
+              to={`/`}
               className="flex justify-center items-center gap-2 no-underline hover:scale-105 hover:transform 
               transition-all duration-400"
             >
               <Logo isDark={isDark} />
-            </a>
+            </Link>
 
             <div className="flex justify-center items-center gap-3">
               <TipBox
