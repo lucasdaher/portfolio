@@ -1,8 +1,9 @@
 import Error from "./views/error/Error";
-// import Home from "./views/Home";
 
 import { createBrowserRouter } from "react-router-dom";
-import Maintenance from "./views/maintanance/Maintanance";
+
+// import Home from "./views/Home";
+import Maintenance from "./views/maintenance/Maintenance"; // Comment this to active maintenance
 
 export const router = createBrowserRouter([
   {
