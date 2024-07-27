@@ -37,10 +37,10 @@ export default function Home({}: HomeProps) {
 
       <main className="mt-6 md:mt-[45px]">
         <Presentation isDark={isDark} data-aos="fade-up" data-aos-delay="200" />
-        <Demonstration isDark={isDark} />
-        <About isDark={isDark} />
-        <Skills isDark={isDark} />
-        <Projects isDark={isDark} />
+        <Demonstration isDark={isDark} id="demonstration" />
+        <About isDark={isDark} id="aboutme" />
+        <Skills isDark={isDark} id="skills" />
+        <Projects isDark={isDark} id="projects" />
       </main>
 
       <Footer isDark={isDark} />

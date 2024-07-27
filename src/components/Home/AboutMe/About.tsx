@@ -2,11 +2,12 @@ import { ArrowRight } from "lucide-react";
 
 interface AboutProps {
   isDark: boolean;
+  id?: string;
 }
 
-export default function About({ isDark }: AboutProps) {
+export default function About({ isDark, id }: AboutProps) {
   return (
-    <section className="mt-24 md:mt-32 px-4">
+    <section className="mt-24 md:mt-32 px-4" id={id}>
       <div className="max-w-[1440px] mx-auto w-full flex flex-col justify-center items-start">
         <div className="">
           <h1

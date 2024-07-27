@@ -47,16 +47,37 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
               />
               <TipBox
                 buttonStyle="hidden lg:flex bg-normal hover:bg-dark py-1"
-                tip="Novo projeto adicionado"
+                tip="Em desenvolvimento..."
                 href="#"
               />
             </div>
           </div>
           <nav className="flex justify-center items-center gap-6">
             <ul className="hidden md:flex justify-center items-center gap-4 border-r border-gray border-opacity-50 px-8">
-              <NavItem name="Sobre" type="header" href="#" isDark={isDark} />
-              <NavItem name="Projetos" type="header" href="#" isDark={isDark} />
-              <NavItem name="Contato" type="header" href="#" isDark={isDark} />
+              <NavItem
+                name="Sobre"
+                type="header"
+                href="#aboutme"
+                isDark={isDark}
+              />
+              <NavItem
+                name="Habilidades"
+                type="header"
+                href="#skills"
+                isDark={isDark}
+              />
+              <NavItem
+                name="Projetos"
+                type="header"
+                href="#projects"
+                isDark={isDark}
+              />
+              <NavItem
+                name="Contato"
+                type="header"
+                href="#contact"
+                isDark={isDark}
+              />
             </ul>
             <Menu
               name="teste"

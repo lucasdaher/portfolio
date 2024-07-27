@@ -33,7 +33,7 @@ export default function Error({}: ErrorProps) {
             isDark === true ? "text-white/80" : "text-black-gray"
           } text-lg font-sora font-normal mt-4 text-center transition-all duration-400 ease-in-out`}
         >
-          Não encontramos a página que você está procurando...
+          A página que você está procurando não foi encontrada.
         </p>
         <Link
           to={`/`}
@@ -43,10 +43,15 @@ export default function Error({}: ErrorProps) {
             Clique para voltar à página principal
           </button>
         </Link>
-        <ul className="flex flex-col md:flex-row justify-center items-center gap-8 mt-36 text-white/40">
+        {/* Footer options */}
+        <ul className="flex flex-col md:flex-row justify-center items-center gap-8 mt-36">
           <Link
             to={`/`}
-            className="hover:text-white transition-all duration-200 ease-in-out"
+            className={`${
+              isDark === true
+                ? "text-white/40 hover:text-white"
+                : "font-medium text-black-gray/80 hover:text-normal"
+            } transition-all duration-200 ease-in-out`}
           >
             <li className="text-center text-sm font-sora font-light">
               Projetos
@@ -54,7 +59,11 @@ export default function Error({}: ErrorProps) {
           </Link>
           <Link
             to={`/`}
-            className="hover:text-white transition-all duration-200 ease-in-out"
+            className={`${
+              isDark === true
+                ? "text-white/40 hover:text-white"
+                : "font-medium text-black-gray/80 hover:text-normal"
+            } transition-all duration-200 ease-in-out`}
           >
             <li className="text-center text-sm font-sora font-light">
               Habilidades
@@ -62,7 +71,11 @@ export default function Error({}: ErrorProps) {
           </Link>
           <Link
             to={`/`}
-            className="hover:text-white transition-all duration-200 ease-in-out"
+            className={`${
+              isDark === true
+                ? "text-white/40 hover:text-white"
+                : "font-medium text-black-gray/80 hover:text-normal"
+            } transition-all duration-200 ease-in-out`}
           >
             <li className="text-center text-sm font-sora font-light">
               Contato
@@ -70,7 +83,11 @@ export default function Error({}: ErrorProps) {
           </Link>
           <Link
             to={`/`}
-            className="hover:text-white transition-all duration-200 ease-in-out"
+            className={`${
+              isDark === true
+                ? "text-white/40 hover:text-white"
+                : "font-medium text-black-gray/80 hover:text-normal"
+            } transition-all duration-200 ease-in-out`}
           >
             <li className="text-center text-sm font-sora font-light">
               Baixar Currículo

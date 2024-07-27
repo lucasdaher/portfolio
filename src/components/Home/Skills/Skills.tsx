@@ -3,14 +3,16 @@ import skills from "../../../data/skills";
 
 interface SkillsProps {
   isDark: boolean;
+  id?: string;
 }
 
-export default function Skills({ isDark }: SkillsProps) {
+export default function Skills({ isDark, id }: SkillsProps) {
   return (
     <section
       className={`mt-36 px-4 ${
         isDark === true ? "bg-black-gray" : "bg-light-active/50"
       }`}
+      id={id}
     >
       <div className="max-w-[1440px] mx-auto w-full h-auto py-16">
         <div>

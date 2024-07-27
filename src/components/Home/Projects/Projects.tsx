@@ -16,11 +16,12 @@ import { Link } from "react-router-dom";
 
 interface ProjectsProps {
   isDark: boolean;
+  id?: string;
 }
 
-export default function Projects({ isDark }: ProjectsProps) {
+export default function Projects({ isDark, id }: ProjectsProps) {
   return (
-    <section className="bg-transparent mt-36 px-4">
+    <section className="bg-transparent mt-36 px-4" id={id}>
       <div className="max-w-[1440px] mx-auto w-full text-white">
         <h1
           className={`w-full h-auto text-3xl md:text-4xl font-bold text-left ${
