@@ -21,11 +21,11 @@ export default function Skills({ isDark, id }: SkillsProps) {
               isDark === true ? "text-white" : "text-black-gray"
             }`}
           >
-            Minhas habilidades
+            Habilidades
           </h1>
           <p
             className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 ${
-              isDark === true ? "text-white/70 " : "text-black-gray/70"
+              isDark === true ? "text-white/70 " : "text-black-gray/90"
             }`}
           >
             Conheça um pouco das minhas habilidades de desenvolvimento, design e
@@ -34,7 +34,7 @@ export default function Skills({ isDark, id }: SkillsProps) {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-8 gap-4 w-full">
             {skills.map((skill) => (
               <React.Fragment key={skill.id}>
-                <div className="bg-normal text-white rounded-lg hover:bg-dark px-8 py-4 flex justify-between items-center gap-2">
+                <div className="bg-normal text-white rounded-lg px-8 py-4 flex justify-between items-center gap-2">
                   <div className="flex justify-center items-center gap-2">
                     <span className="w-6 h-6">{skill.icone}</span>
                     <h2 className="leading-none h-auto text-base font-medium">
@@ -48,10 +48,21 @@ export default function Skills({ isDark, id }: SkillsProps) {
               </React.Fragment>
             ))}
           </div>
-          <p className="text-sm text-white/70 font-normal w-full mt-6">
+          <p
+            className={`${
+              isDark === true ? "text-white/70" : "text-black-gray"
+            } text-sm font-normal w-full mt-6`}
+          >
             Atualmente o meu foco de estudo está sendo{" "}
-            <strong className="text-white/80">Java</strong> devido a matéria de{" "}
-            <strong>Programação Orientada a Objetos</strong> da faculdade.
+            <strong
+              className={`${
+                isDark === true ? "text-white/80" : "text-black-gray"
+              }`}
+            >
+              Java
+            </strong>{" "}
+            devido a matéria de <strong>Programação Orientada a Objetos</strong>{" "}
+            da faculdade.
           </p>
         </div>
       </div>

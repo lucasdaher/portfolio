@@ -32,7 +32,7 @@ export default function Projects({ isDark, id }: ProjectsProps) {
         </h1>
         <p
           className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 text-left ${
-            isDark === true ? "text-white/70 " : "text-black-gray/70"
+            isDark === true ? "text-white/70 " : "text-black-gray/90"
           }`}
         >
           Apresento a você uma seleção de projetos autorais, resultado de minha
@@ -145,8 +145,20 @@ export default function Projects({ isDark, id }: ProjectsProps) {
                     ))}
                   </div>
                   <Link to={`${projeto.link}`}>
-                    <button className="mt-6 border border-white rounded-3xl px-4 py-2 group hover:bg-white hover:text-black-gray transition-all duration-200 ease-in-out">
-                      <ArrowRight className="group-hover:text-black-gray transition-all duration-200 ease-in-out" />
+                    <button
+                      className={`mt-6 border rounded-3xl px-4 py-2 ${
+                        isDark === true
+                          ? "border-white group hover:bg-white hover:text-black-gray"
+                          : "border-black-gray group hover:bg-black-gray hover:text-white"
+                      } transition-all duration-200 ease-in-out`}
+                    >
+                      <ArrowRight
+                        className={`transition-all duration-200 ease-in-out ${
+                          isDark === true
+                            ? "text-white group-hover:text-black-gray"
+                            : "text-black-gray group-hover:text-white"
+                        }`}
+                      />
                     </button>
                   </Link>
                 </div>
