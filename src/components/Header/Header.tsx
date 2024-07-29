@@ -80,7 +80,6 @@ export default function Header({ isDark, handleDark }: HeaderProps) {
               />
             </ul>
             <Menu
-              name="teste"
               isDark={isDark}
               handleIsDark={handleDark}
               iconStyle="w-6 h-6"

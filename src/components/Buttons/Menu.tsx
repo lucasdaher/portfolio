@@ -5,16 +5,19 @@ import {
   DropdownMenuContent,
   DropdownMenuGroup,
   DropdownMenuItem,
+  DropdownMenuPortal,
   DropdownMenuSeparator,
+  DropdownMenuSub,
+  DropdownMenuSubContent,
+  DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
 // import { Link } from "react-router-dom";
-import { AlignRight, History, Moon, Sun } from "lucide-react";
+import { AlignRight, Earth, History, Moon, Sun } from "lucide-react";
 
 interface MenuProps {
   iconStyle?: string;
-  name?: string;
   handleIsDark: () => void;
   isDark: boolean;
 }
@@ -61,6 +64,76 @@ export default function Menu({ iconStyle, handleIsDark, isDark }: MenuProps) {
                 NOVO
               </span>
             </DropdownMenuItem>
+          </DropdownMenuGroup>
+          <DropdownMenuGroup className="hover:bg-gray/20 transition-all duration-200 ease-in-out rounded-md">
+            <DropdownMenuSub>
+              <DropdownMenuSubTrigger>
+                {isDark === true ? (
+                  <Earth className={`mr-2 h-4 w-4 text-white`} />
+                ) : (
+                  <Earth className={`mr-2 h-4 w-4 text-black-gray`} />
+                )}
+                <span
+                  className={`${
+                    isDark === true ? "text-white" : "text-black-gray"
+                  }`}
+                >
+                  Idioma
+                </span>
+              </DropdownMenuSubTrigger>
+              <DropdownMenuPortal>
+                <DropdownMenuSubContent
+                  className={`${
+                    isDark === false
+                      ? "bg-white/60 text-black-gray border-black/10"
+                      : "bg-header-bg text-white border-header-border-bottom"
+                  } backdrop-blur-[20px]`}
+                >
+                  <DropdownMenuItem
+                    className="text-white cursor-pointer"
+                    onClick={handleIsDark}
+                  >
+                    <span
+                      className={`${
+                        isDark === true ? "text-white" : "text-black-gray"
+                      }`}
+                    >
+                      Português
+                    </span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem
+                    className="text-white cursor-pointer"
+                    onClick={handleIsDark}
+                  >
+                    <span
+                      className={`${
+                        isDark === true ? "text-white" : "text-black-gray"
+                      }`}
+                    >
+                      Inglês
+                    </span>
+                  </DropdownMenuItem>
+                  <DropdownMenuItem
+                    className="text-white cursor-pointer"
+                    onClick={handleIsDark}
+                    disabled={true}
+                  >
+                    <span
+                      className={`${
+                        isDark === true ? "text-white" : "text-black-gray"
+                      }`}
+                    >
+                      Espanhol
+                    </span>
+                    <span
+                      className={`ml-2 bg-gray rounded-md font-sora font-bold text-xs px-1 text-white`}
+                    >
+                      EM BREVE
+                    </span>
+                  </DropdownMenuItem>
+                </DropdownMenuSubContent>
+              </DropdownMenuPortal>
+            </DropdownMenuSub>
           </DropdownMenuGroup>
           <DropdownMenuSeparator className="bg-gray/20" />
           {/* <DropdownMenuGroup className="hover:bg-gray/20 transition-all duration-200 ease-in-out rounded-md"> */}
