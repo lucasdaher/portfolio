@@ -1,5 +1,29 @@
 {
-  "resumeBtnDownload": "Download resume",
   "presentationTitle": "I'm Lucas Daher, A technology and design enthusiast.",
-  "presentationTitleDesc": "With almost a year of experience as a FRONT-END DEVELOPER and UX DESIGNER, I am always looking for new challenges and improving my skills to create amazing and functional interfaces."
+  "presentationTitleDesc": "With almost a year of experience as a front-end developer and ux designer, I am always looking for new challenges and improving my skills to create amazing and functional interfaces.",
+  "langs": {
+    "ptbr": "Portuguese",
+    "en": "English",
+    "es": "Spanish"
+  },
+  "alerts": {
+    "tipBox": "Under development..."
+  },
+  "header": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "buttons": {
+    "resumeBtnDownload": "Download resume",
+    "switchModeToLight": "Light mode",
+    "switchModeToDark": "Dark mode",
+    "lastUpdates": "Recent updates",
+    "new": "NEW",
+    "soon": "SOON"
+  },
+  "buttonTitles": {
+    "resumeBtn": "Click to download my resume."
+  }
 }

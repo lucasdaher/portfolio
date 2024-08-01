@@ -1,5 +1,29 @@
 {
-  "resumeBtnDownload": "Baixar currículo",
   "presentationTitle": "Sou Lucas Daher, apaixonado por tecnologia e design.",
-  "presentationTitleDesc": "Com quase um ano de experiência como DESENVOLVEDOR FRONT-END e UX DESIGNER, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais."
+  "presentationTitleDesc": "Com quase um ano de experiência como desenvolvedor front-end e ux designer, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais.",
+  "langs": {
+    "ptbr": "Português",
+    "en": "Inglês",
+    "es": "Espanhol"
+  },
+  "alerts": {
+    "tipBox": "Em desenvolvimento..."
+  },
+  "header": {
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "buttons": {
+    "resumeBtnDownload": "Baixar currículo",
+    "switchModeToLight": "Modo claro",
+    "switchModeToDark": "Modo escuro",
+    "lastUpdates": "Atualizações recentes",
+    "new": "NOVO",
+    "soon": "EM BREVE"
+  },
+  "buttonTitles": {
+    "resumeBtn": "Clique para realizar o download do meu currículo."
+  }
 }
