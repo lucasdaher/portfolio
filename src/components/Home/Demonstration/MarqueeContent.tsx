@@ -9,19 +9,19 @@ import heineken from "../../../assets/projects/Heineken.png";
 import instagramredesign from "../../../assets/projects/instagramwebredesign.jpg";
 
 import Marquee from "react-fast-marquee";
+import { useDarkMode } from "@/services/ThemeService";
 
-interface MarqueeContentProps {
-  isDark: boolean;
-}
+interface MarqueeContentProps {}
 
-export default function MarqueeContent({ isDark }: MarqueeContentProps) {
+export default function MarqueeContent({}: MarqueeContentProps) {
+  const { dark } = useDarkMode();
   return (
     <React.Fragment>
       <Marquee
         pauseOnClick={true}
         speed={30}
         gradient={true}
-        gradientColor={`${isDark === true ? "#121212" : "#fff"}`}
+        gradientColor={`${dark === true ? "#121212" : "#fff"}`}
       >
         <img
           loading="lazy"

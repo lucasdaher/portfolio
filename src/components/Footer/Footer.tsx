@@ -1,19 +1,19 @@
+import { useDarkMode } from "@/services/ThemeService";
 import Logo from "../Header/Logo";
 
-interface FooterProps {
-  isDark: boolean;
-}
+interface FooterProps {}
 
-export default function Footer({ isDark }: FooterProps) {
+export default function Footer({}: FooterProps) {
+  const { dark } = useDarkMode();
   return (
     <footer
       className={`${
-        isDark ? "bg-black-gray" : "bg-normal"
+        dark ? "bg-black-gray" : "bg-normal"
       } w-full px-12 py-24 mt-48 transition-all duration-300`}
     >
       <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center items-center gap-2">
-          <Logo isDark={isDark} />
+          <Logo />
         </div>
 
         <div className="mt-2">

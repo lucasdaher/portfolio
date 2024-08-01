@@ -1,3 +1,4 @@
+import { useDarkMode } from "@/services/ThemeService";
 import projects from "../../../data/projects";
 
 import {
@@ -15,24 +16,24 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 interface ProjectsProps {
-  isDark: boolean;
   id?: string;
 }
 
-export default function Projects({ isDark, id }: ProjectsProps) {
+export default function Projects({ id }: ProjectsProps) {
+  const { dark } = useDarkMode();
   return (
     <section className="bg-transparent mt-36 px-4" id={id}>
       <div className="max-w-[1440px] mx-auto w-full text-white">
         <h1
           className={`w-full h-auto text-3xl md:text-4xl font-bold text-left ${
-            isDark === true ? "text-white" : "text-black-gray"
+            dark === true ? "text-white" : "text-black-gray"
           }`}
         >
           Meus projetos
         </h1>
         <p
           className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 text-left ${
-            isDark === true ? "text-white/70 " : "text-black-gray/90"
+            dark === true ? "text-white/70 " : "text-black-gray/90"
           }`}
         >
           Apresento a você uma seleção de projetos autorais, resultado de minha
@@ -49,7 +50,7 @@ export default function Projects({ isDark, id }: ProjectsProps) {
 
           <DropdownMenuContent
             className={`${
-              isDark === false
+              dark === false
                 ? "bg-white/60 text-black-gray border-black/10"
                 : "bg-header-bg text-white border-header-border-bottom"
             } backdrop-blur-[20px]`}
@@ -122,14 +123,14 @@ export default function Projects({ isDark, id }: ProjectsProps) {
                 <div className="flex flex-col justify-center items-start gap-2">
                   <h1
                     className={`font-sora font-bold text-xl leading-none h-auto ${
-                      isDark === true ? "text-white" : "text-black-gray"
+                      dark === true ? "text-white" : "text-black-gray"
                     } transition-all duration-400 ease-in-out`}
                   >
                     {projeto.titulo}
                   </h1>
                   <p
                     className={`font-sora font-normal text-base leading-normal min-h-16 ${
-                      isDark === true ? "text-white/70" : "text-black-gray"
+                      dark === true ? "text-white/70" : "text-black-gray"
                     }`}
                   >
                     {projeto.descricao}
@@ -147,14 +148,14 @@ export default function Projects({ isDark, id }: ProjectsProps) {
                   <Link to={`${projeto.link}`}>
                     <button
                       className={`mt-6 border rounded-3xl px-4 py-2 ${
-                        isDark === true
+                        dark === true
                           ? "border-white group hover:bg-white hover:text-black-gray"
                           : "border-black-gray group hover:bg-black-gray hover:text-white"
                       } transition-all duration-200 ease-in-out`}
                     >
                       <ArrowRight
                         className={`transition-all duration-200 ease-in-out ${
-                          isDark === true
+                          dark === true
                             ? "text-white group-hover:text-black-gray"
                             : "text-black-gray group-hover:text-white"
                         }`}

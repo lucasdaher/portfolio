@@ -1,12 +1,14 @@
 import codeIcon from "../../assets/icons/codeIcon.svg";
 import React from "react";
 
+import { useDarkMode } from "@/services/ThemeService";
+
 interface LogoProps {
-  isDark: boolean;
   name?: string;
 }
 
-export default function Logo({ isDark, name = "lucasdaher" }: LogoProps) {
+export default function Logo({ name = "lucasdaher" }: LogoProps) {
+  const { dark } = useDarkMode();
   return (
     <React.Fragment>
       <picture>
@@ -15,7 +17,7 @@ export default function Logo({ isDark, name = "lucasdaher" }: LogoProps) {
       </picture>
       <h1
         className={`text-xl font-medium leading-none h-auto w-auto ${
-          isDark === true ? "text-white" : "text-black-gray"
+          dark === true ? "text-white" : "text-black-gray"
         } transition-all duration-400 ease-in-out`}
       >
         {name}

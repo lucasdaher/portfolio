@@ -1,16 +1,17 @@
 import React from "react";
 import skills from "../../../data/skills";
+import { useDarkMode } from "@/services/ThemeService";
 
 interface SkillsProps {
-  isDark: boolean;
   id?: string;
 }
 
-export default function Skills({ isDark, id }: SkillsProps) {
+export default function Skills({ id }: SkillsProps) {
+  const { dark } = useDarkMode();
   return (
     <section
       className={`mt-36 px-4 ${
-        isDark === true ? "bg-black-gray" : "bg-light-active/50"
+        dark === true ? "bg-black-gray" : "bg-light-active/50"
       }`}
       id={id}
     >
@@ -18,14 +19,14 @@ export default function Skills({ isDark, id }: SkillsProps) {
         <div>
           <h1
             className={`w-full h-auto text-3xl md:text-4xl font-bold text-center md:text-left ${
-              isDark === true ? "text-white" : "text-black-gray"
+              dark === true ? "text-white" : "text-black-gray"
             }`}
           >
             Habilidades
           </h1>
           <p
             className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 ${
-              isDark === true ? "text-white/70 " : "text-black-gray/90"
+              dark === true ? "text-white/70 " : "text-black-gray/90"
             }`}
           >
             Conheça um pouco das minhas habilidades de desenvolvimento, design e
@@ -50,13 +51,13 @@ export default function Skills({ isDark, id }: SkillsProps) {
           </div>
           <p
             className={`${
-              isDark === true ? "text-white/70" : "text-black-gray"
+              dark === true ? "text-white/70" : "text-black-gray"
             } text-sm font-normal w-full mt-6`}
           >
             Atualmente o meu foco de estudo está sendo{" "}
             <strong
               className={`${
-                isDark === true ? "text-white/80" : "text-black-gray"
+                dark === true ? "text-white/80" : "text-black-gray"
               }`}
             >
               Java

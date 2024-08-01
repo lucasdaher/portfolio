@@ -1,32 +1,27 @@
 import Default from "@/components/Buttons/Default";
 import SocialButton from "@/components/Buttons/SocialButton";
+import { MdFileDownload } from "react-icons/md";
+
+import { useLanguage } from "@/services/LanguageService";
+
 import { useEffect, useState } from "react";
 
-// import { Messages, Language } from "@/locales/languages";
+import { useDarkMode } from "@/services/ThemeService";
 
-// import en from "../../../locales/en.json";
-// import ptbr from "../../../locales/ptbr.json";
+interface PresentationProps {}
 
-// const messages: Record<Language, Messages> = {
-//   en: en,
-//   ptbr: ptbr,
-// };
+/**
+ * Renders the presentation section of the home page.
+ *
+ * @param {Object} props - The component props.
+ * @param {boolean} props.isDark - Indicates whether the dark mode is enabled.
+ * @returns {JSX.Element} The rendered presentation section.
+ */
 
-import { MdFileDownload } from "react-icons/md";
-// import { useState } from "react";
+export default function Presentation({}: PresentationProps) {
+  const { messages } = useLanguage();
 
-interface PresentationProps {
-  isDark: boolean;
-}
-
-export default function Presentation({ isDark }: PresentationProps) {
-  // const [language, setLanguage] = useState<Language>("en");
-
-  // const toggleLanguage = () => {
-  //   setLanguage((prevLanguage) => (prevLanguage === "en" ? "ptbr" : "en"));
-  // };
-
-  const mensagem = "Sou Lucas Daher, apaixonado por tecnologia e design.";
+  const mensagem = messages.presentationTitle;
   const [textoDinamico, settextoDinamico] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
@@ -47,7 +42,6 @@ export default function Presentation({ isDark }: PresentationProps) {
     }
 
     if (!isDeleting && textoDinamico === mensagem) {
-      // Este tempo representa o tempo em que o texto ficará fixo sem ser apagado.
       setTimeout(() => setIsDeleting(true), 8000);
     } else if (isDeleting && textoDinamico === "") {
       setIsDeleting(false);
@@ -58,62 +52,43 @@ export default function Presentation({ isDark }: PresentationProps) {
     return () => clearTimeout(timer);
   }, [textoDinamico, isDeleting, , mensagem, typingSpeed, loopNum]);
 
+  const { dark } = useDarkMode();
+
   return (
     <section
       className={`gradient-background-${
-        isDark === false ? "light" : "dark"
+        dark === false ? "light" : "dark"
       } h-auto w-full transition-all duration-400 ease-in-out`}
     >
       <div className="max-w-[1440px] w-full mx-auto py-16 flex justify-between items-center lg:gap-24">
-        {/* Informações de apresentação */}
-
         <div className="flex flex-col md:flex-col justify-between items-center mx-auto w-full">
           <div className="flex justify-center items-center flex-col gap-4 px-4">
             <h1
               className={`lg:w-full h-auto min-h-[144px] md:min-h-[144px] max-h-none w-full text-3xl md:text-7xl font-bold text-center ${
-                isDark === true ? "text-white" : "text-black-gray"
+                dark === true ? "text-white" : "text-black-gray"
               }`}
             >
               {textoDinamico}
             </h1>
             <p
               className={`w-full lg:max-w-[950px] lg:w-[950px] text-center font-normal text-base md:text-lg mt-6 transition-all duration-400 ease-in-out ${
-                isDark ? "text-white" : "text-black-gray"
+                dark ? "text-white" : "text-black-gray"
               }`}
             >
-              Com quase um ano de experiência como{" "}
-              <span
-                className={`${
-                  isDark === true ? "bg-dark-hover" : "bg-normal"
-                } text-white text-sm uppercase font-bold px-[4px] rounded-md`}
-              >
-                {" "}
-                desenvolvedor front-end
-              </span>{" "}
-              e{" "}
-              <span
-                className={`${
-                  isDark === true ? "bg-dark-hover" : "bg-normal"
-                } text-white text-sm uppercase font-bold px-[4px] rounded-md`}
-              >
-                ux designer
-              </span>
-              , estou sempre buscando novos desafios e aprimorando minhas
-              habilidades para criar interfaces incríveis e funcionais.
+              {messages.presentationTitleDesc}
             </p>
           </div>
 
           <ul className="flex md:flex-row flex-col justify-center items-center gap-8 mt-14">
             <li>
               <Default
-                // name={messages[language].resumeBtnDownload}
-                name="Baixar currículo"
+                name={messages.buttons.resumeBtnDownload}
                 leftIcon={<MdFileDownload className="w-6 h-6" />}
                 gap={2}
                 download={true}
                 downloadHref="/curriculo.pdf"
                 downloadFile="curriculo.pdf"
-                title="Clique para realizar o download do meu currículo."
+                title={messages.buttonTitles.resumeBtn}
               />
             </li>
             <li className="flex justify-center items-center gap-2">

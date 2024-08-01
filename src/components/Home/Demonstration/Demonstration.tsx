@@ -1,15 +1,17 @@
 import MarqueeContent from "./MarqueeContent";
 
+import { useDarkMode } from "@/services/ThemeService";
+
 interface DemonstrationProps {
-  isDark: boolean;
   id?: string;
 }
 
-export default function Demonstration({ isDark, id }: DemonstrationProps) {
+export default function Demonstration({ id }: DemonstrationProps) {
+  const { dark } = useDarkMode();
   return (
     <section className="w-full mt-12" id={id}>
       <div className="w-full">
-        <MarqueeContent isDark={isDark} />
+        <MarqueeContent />
       </div>
     </section>
   );
