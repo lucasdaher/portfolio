@@ -6,21 +6,34 @@ export const useDarkMode = () => {
     return modeStorage ? !!JSON.parse(modeStorage) : true;
   });
 
-  const updateMode = (newMode: boolean) => {
-    setDark(newMode);
-    useEffect(() => {
-      localStorage.setItem("darkMode", JSON.stringify(dark));
+  const handleMode = () => {
+    setDark((prevDark) => !prevDark);
+  };
+
+  useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(dark));
+    if (dark) {
+      document.body.classList.add("dark");
+    } else {
+      document.body.classList.remove("dark");
+    }
+  }, [dark]);
+
+  useEffect(() => {
+    const modeStorage = localStorage.getItem("darkMode");
+    if (modeStorage) {
+      const dark = JSON.parse(modeStorage);
       if (dark) {
         document.body.classList.add("dark");
       } else {
         document.body.classList.remove("dark");
       }
-    }, [dark]);
-  };
+    }
+  }, []);
 
   return {
     dark,
     setDark,
-    updateMode,
+    handleMode,
   };
 };

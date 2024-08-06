@@ -25,7 +25,7 @@ interface MenuProps {
 
 export default function Menu({ iconStyle }: MenuProps) {
   const { language, updateLanguage, messages } = useLanguage();
-  const { dark, updateMode } = useDarkMode();
+  const { dark, handleMode } = useDarkMode();
   return (
     <React.Fragment>
       <DropdownMenu>
@@ -47,7 +47,7 @@ export default function Menu({ iconStyle }: MenuProps) {
           <DropdownMenuGroup className="hover:bg-gray/20 transition-all duration-200 ease-in-out rounded-md">
             <DropdownMenuItem
               className="text-white cursor-pointer"
-              onClick={() => updateMode}
+              onClick={handleMode}
             >
               {dark === true ? (
                 <Sun className={`mr-2 h-4 w-4 text-white`} />
@@ -121,7 +121,6 @@ export default function Menu({ iconStyle }: MenuProps) {
                   </DropdownMenuItem>
                   <DropdownMenuItem
                     className="text-white cursor-pointer"
-                    onClick={() => updateMode}
                     disabled={true}
                   >
                     <span

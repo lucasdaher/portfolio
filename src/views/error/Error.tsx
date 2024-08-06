@@ -1,36 +1,21 @@
 import Header from "@/components/Header/Header";
-import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+
+import { useDarkMode } from "@/services/ThemeService";
+import React from "react";
 
 interface ErrorProps {}
 
 export default function Error({}: ErrorProps) {
-  const [isDark, setIsDark] = useState<boolean>(() => {
-    const isDarkLocalStorage = localStorage.getItem("darkMode");
-    return isDarkLocalStorage ? !!JSON.parse(isDarkLocalStorage) : true;
-  });
-
-  const handleIsDark = () => {
-    setIsDark(!isDark);
-  };
-
-  useEffect(() => {
-    localStorage.setItem("darkMode", JSON.stringify(isDark));
-    if (isDark) {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  }, [isDark]);
-
+  const { dark } = useDarkMode();
   return (
     <React.Fragment>
-      <Header isDark={isDark} handleDark={handleIsDark} />
+      <Header />
       <main className="flex flex-col justify-center items-center mt-36 px-4">
         <h1 className="text-normal text-5xl font-sora font-bold">Oops!</h1>
         <p
           className={`${
-            isDark === true ? "text-white/80" : "text-black-gray"
+            dark === true ? "text-white/80" : "text-black-gray"
           } text-lg font-sora font-normal mt-4 text-center transition-all duration-400 ease-in-out`}
         >
           A página que você está procurando não foi encontrada.
@@ -48,7 +33,7 @@ export default function Error({}: ErrorProps) {
           <Link
             to={`/`}
             className={`${
-              isDark === true
+              dark === true
                 ? "text-white/40 hover:text-white"
                 : "font-medium text-black-gray/80 hover:text-normal"
             } transition-all duration-200 ease-in-out`}
@@ -60,7 +45,7 @@ export default function Error({}: ErrorProps) {
           <Link
             to={`/`}
             className={`${
-              isDark === true
+              dark === true
                 ? "text-white/40 hover:text-white"
                 : "font-medium text-black-gray/80 hover:text-normal"
             } transition-all duration-200 ease-in-out`}
@@ -72,7 +57,7 @@ export default function Error({}: ErrorProps) {
           <Link
             to={`/`}
             className={`${
-              isDark === true
+              dark === true
                 ? "text-white/40 hover:text-white"
                 : "font-medium text-black-gray/80 hover:text-normal"
             } transition-all duration-200 ease-in-out`}
@@ -84,7 +69,7 @@ export default function Error({}: ErrorProps) {
           <Link
             to={`/`}
             className={`${
-              isDark === true
+              dark === true
                 ? "text-white/40 hover:text-white"
                 : "font-medium text-black-gray/80 hover:text-normal"
             } transition-all duration-200 ease-in-out`}
