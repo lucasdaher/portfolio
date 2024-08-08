@@ -11,7 +11,7 @@ const messages: Record<Language, Messages> = {
 export const useLanguage = () => {
   const [language, setLanguage] = useState<Language>(() => {
     const langStorage = localStorage.getItem("lang");
-    return langStorage ? (JSON.parse(langStorage) as Language) : "en";
+    return langStorage ? (JSON.parse(langStorage) as Language) : "ptbr";
   });
 
   const updateLanguage = (newLanguage: Language) => {

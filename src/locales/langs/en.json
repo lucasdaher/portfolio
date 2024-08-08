@@ -7,7 +7,7 @@
       },
       "skills": "Minhas habilidades",
       "projects": {
-        "title": "Meus projetos",
+        "title": "My projects",
         "desc": "Apresento a você uma seleção de projetos autorais, resultado de minha dedicação em design e desenvolvimento."
       }
     }
@@ -15,16 +15,16 @@
   "menu": {
     "switchModeToLight": "Modo claro",
     "switchModeToDark": "Modo escuro",
-    "lastUpdates": "Atualizações recentes",
+    "lastUpdates": "Last updates",
     "language": "Language",
     "tips": {
-      "new": "NOVO",
-      "soon": "EM BREVE"
+      "new": "NEW",
+      "soon": "COMING SOON"
     },
     "langs": {
-      "ptbr": "Português",
-      "en": "Inglês",
-      "es": "Espanhol"
+      "ptbr": "Portuguese",
+      "en": "English",
+      "es": "Spanish"
     }
   },
   "buttons": {
