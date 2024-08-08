@@ -1,17 +1,60 @@
 export type Language = "en" | "ptbr";
+
 export interface Messages {
-  presentationTitle: string;
-  presentationTitleDesc: string;
-  langs: { ptbr: string; en: string; es: string };
-  alerts: { tipBox: string };
-  header: { about: string; skills: string; projects: string; contact: string };
-  buttons: {
-    resumeBtnDownload: string;
+  titles: {
+    sections: {
+      presentation: {
+        title: string;
+        desc: string;
+      };
+      skills: string;
+      projects: {
+        title: string;
+        desc: string;
+      };
+    };
+  };
+  menu: {
     switchModeToLight: string;
     switchModeToDark: string;
     lastUpdates: string;
-    new: string;
-    soon: string;
+    language: string;
+    tips: {
+      new: string;
+      soon: string;
+    };
+    langs: {
+      ptbr: string;
+      en: string;
+      es: string;
+    };
   };
-  buttonTitles: { resumeBtn: string };
+  buttons: {
+    sections: {
+      presentation: {
+        resumeBtnDownload: string;
+      };
+      header: {
+        about: string;
+        skills: string;
+        projects: string;
+        contact: string;
+      };
+      projects: {
+        filter: {
+          title: string;
+          dropDownLabel: string;
+          tags: {};
+        };
+      };
+    };
+  };
+  alerts: {
+    alert: string;
+  };
+  elements: {
+    buttonTitles: {
+      resumeBtn: string;
+    };
+  };
 }

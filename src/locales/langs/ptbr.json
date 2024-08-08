@@ -1,29 +1,58 @@
 {
-  "presentationTitle": "Sou Lucas Daher, apaixonado por tecnologia e design.",
-  "presentationTitleDesc": "Com quase um ano de experiência como desenvolvedor front-end e ux designer, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais.",
-  "langs": {
-    "ptbr": "Português",
-    "en": "Inglês",
-    "es": "Espanhol"
+  "titles": {
+    "sections": {
+      "presentation": {
+        "title": "Sou Lucas Daher, apaixonado por tecnologia e design.",
+        "desc": "Com quase um ano de experiência como desenvolvedor front-end e ux designer, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais."
+      },
+      "skills": "Minhas habilidades",
+      "projects": {
+        "title": "Meus projetos",
+        "desc": "Apresento a você uma seleção de projetos autorais, resultado de minha dedicação em design e desenvolvimento."
+      }
+    }
   },
-  "alerts": {
-    "tipBox": "Em desenvolvimento..."
-  },
-  "header": {
-    "about": "Sobre",
-    "skills": "Habilidades",
-    "projects": "Projetos",
-    "contact": "Contato"
-  },
-  "buttons": {
-    "resumeBtnDownload": "Baixar currículo",
+  "menu": {
     "switchModeToLight": "Modo claro",
     "switchModeToDark": "Modo escuro",
     "lastUpdates": "Atualizações recentes",
-    "new": "NOVO",
-    "soon": "EM BREVE"
+    "language": "Idioma",
+    "tips": {
+      "new": "NOVO",
+      "soon": "EM BREVE"
+    },
+    "langs": {
+      "ptbr": "Português",
+      "en": "Inglês",
+      "es": "Espanhol"
+    }
   },
-  "buttonTitles": {
-    "resumeBtn": "Clique para realizar o download do meu currículo."
+  "buttons": {
+    "sections": {
+      "presentation": {
+        "resumeBtnDownload": "Baixar currículo"
+      },
+      "header": {
+        "about": "Sobre",
+        "skills": "Habilidades",
+        "projects": "Projetos",
+        "contact": "Contato"
+      },
+      "projects": {
+        "filter": {
+          "title": "Filtrar projetos",
+          "dropDownLabel": "Escolha uma opção de filtro",
+          "tags": {}
+        }
+      }
+    }
+  },
+  "alerts": {
+    "alert": "Em desenvolvimento..."
+  },
+  "elements": {
+    "buttonTitles": {
+      "resumeBtn": "Clique para realizar o download do meu currículo."
+    }
   }
 }

@@ -14,12 +14,14 @@ import {
 import { ArrowRight, ListRestartIcon, Settings2Icon } from "lucide-react";
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { useLanguage } from "@/services/LanguageService";
 
 interface ProjectsProps {
   id?: string;
 }
 
 export default function Projects({ id }: ProjectsProps) {
+  const { messages } = useLanguage();
   const { dark } = useContext(ThemeContext);
   return (
     <section className="bg-transparent mt-36 px-4" id={id}>
@@ -29,22 +31,21 @@ export default function Projects({ id }: ProjectsProps) {
             dark === true ? "text-white" : "text-black-gray"
           }`}
         >
-          Meus projetos
+          {messages.titles.sections.projects.title}
         </h1>
         <p
           className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 text-left ${
             dark === true ? "text-white/70 " : "text-black-gray/90"
           }`}
         >
-          Apresento a você uma seleção de projetos autorais, resultado de minha
-          dedicação em design e desenvolvimento.
+          {messages.titles.sections.projects.desc}
         </p>
 
         <DropdownMenu>
           <DropdownMenuTrigger className="flex justify-center items-center gap-2 bg-black-gray text-white px-8 py-2 rounded-md mt-8 hover:bg-[#303030] transition-all duration-200 ease-in-out">
             <Settings2Icon className="w-4 h-4" />
             <span className="leading-none h-auto font-normal text-base">
-              Filtrar projetos
+              {messages.buttons.sections.projects.filter.title}
             </span>
           </DropdownMenuTrigger>
 
@@ -55,7 +56,9 @@ export default function Projects({ id }: ProjectsProps) {
                 : "bg-header-bg text-white border-header-border-bottom"
             } backdrop-blur-[20px]`}
           >
-            <DropdownMenuLabel>Escolha uma opção de filtro</DropdownMenuLabel>
+            <DropdownMenuLabel>
+              {messages.buttons.sections.projects.filter.dropDownLabel}
+            </DropdownMenuLabel>
             <DropdownMenuSeparator className="bg-gray/20" />
             <DropdownMenuGroup>
               <DropdownMenuItem>

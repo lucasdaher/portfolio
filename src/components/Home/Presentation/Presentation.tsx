@@ -20,7 +20,7 @@ interface PresentationProps {}
 export default function Presentation({}: PresentationProps) {
   const { messages } = useLanguage();
 
-  const mensagem = messages.presentationTitle;
+  const mensagem = messages.titles.sections.presentation.title;
   const [textoDinamico, settextoDinamico] = useState("");
   const [isDeleting, setIsDeleting] = useState(false);
   const [loopNum, setLoopNum] = useState(0);
@@ -74,20 +74,20 @@ export default function Presentation({}: PresentationProps) {
                 dark ? "text-white" : "text-black-gray"
               }`}
             >
-              {messages.presentationTitleDesc}
+              {messages.titles.sections.presentation.desc}
             </p>
           </div>
 
           <ul className="flex md:flex-row flex-col justify-center items-center gap-8 mt-14">
             <li>
               <Default
-                name={messages.buttons.resumeBtnDownload}
+                name={messages.buttons.sections.presentation.resumeBtnDownload}
                 leftIcon={<MdFileDownload className="w-6 h-6" />}
                 gap={2}
                 download={true}
                 downloadHref="/curriculo.pdf"
                 downloadFile="curriculo.pdf"
-                title={messages.buttonTitles.resumeBtn}
+                title={messages.elements.buttonTitles.resumeBtn}
               />
             </li>
             <li className="flex justify-center items-center gap-2">

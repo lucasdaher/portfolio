@@ -61,13 +61,13 @@ export default function Menu({ iconStyle }: MenuProps) {
                 }`}
               >
                 {dark === true
-                  ? messages.buttons.switchModeToLight
-                  : messages.buttons.switchModeToDark}
+                  ? messages.menu.switchModeToLight
+                  : messages.menu.switchModeToDark}
               </span>
               <span
                 className={`ml-2 bg-blue-500 rounded-md font-sora font-bold text-xs px-1 animate-rotate text-white`}
               >
-                {messages.buttons.new}
+                {messages.menu.tips.new}
               </span>
             </DropdownMenuItem>
           </DropdownMenuGroup>
@@ -84,8 +84,7 @@ export default function Menu({ iconStyle }: MenuProps) {
                     dark === true ? "text-white" : "text-black-gray"
                   }`}
                 >
-                  {(language === "ptbr" && "Idioma") ||
-                    (language === "en" && "Language")}
+                  {messages.menu.language}
                 </span>
               </DropdownMenuSubTrigger>
               <DropdownMenuPortal>
@@ -105,7 +104,7 @@ export default function Menu({ iconStyle }: MenuProps) {
                         dark === true ? "text-white" : "text-black-gray"
                       }`}
                     >
-                      {messages.langs.ptbr}
+                      {messages.menu.langs.ptbr}
                     </span>
                   </DropdownMenuItem>
                   <DropdownMenuItem
@@ -117,7 +116,7 @@ export default function Menu({ iconStyle }: MenuProps) {
                         dark === true ? "text-white" : "text-black-gray"
                       }`}
                     >
-                      {messages.langs.en}
+                      {messages.menu.langs.en}
                     </span>
                   </DropdownMenuItem>
                   <DropdownMenuItem
@@ -129,12 +128,12 @@ export default function Menu({ iconStyle }: MenuProps) {
                         dark === true ? "text-white" : "text-black-gray"
                       }`}
                     >
-                      {messages.langs.es}
+                      {messages.menu.langs.es}
                     </span>
                     <span
                       className={`ml-2 bg-gray rounded-md font-sora font-bold text-xs px-1 text-white`}
                     >
-                      {messages.buttons.soon}
+                      {messages.menu.tips.soon}
                     </span>
                   </DropdownMenuItem>
                 </DropdownMenuSubContent>
@@ -159,7 +158,7 @@ export default function Menu({ iconStyle }: MenuProps) {
                   dark === false ? "text-black-gray" : "text-white"
                 }`}
               >
-                {messages.buttons.lastUpdates}
+                {messages.menu.lastUpdates}
               </span>
             </DropdownMenuItem>
             {/* </Link> */}

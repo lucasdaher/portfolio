@@ -38,7 +38,7 @@ export default function Header({}: HeaderProps) {
             <div className="flex justify-center items-center gap-3">
               <TipBox
                 buttonStyle="hidden lg:flex bg-normal hover:bg-dark py-1"
-                tip={messages.alerts.tipBox}
+                tip={messages.alerts.alert}
                 href="#"
               />
             </div>
@@ -46,22 +46,22 @@ export default function Header({}: HeaderProps) {
           <nav className="flex justify-center items-center gap-6">
             <ul className="hidden md:flex justify-center items-center gap-4 border-r border-gray border-opacity-50 px-8">
               <NavItem
-                name={messages.header.about}
+                name={messages.buttons.sections.header.about}
                 type="header"
                 href="#aboutme"
               />
               <NavItem
-                name={messages.header.skills}
+                name={messages.buttons.sections.header.skills}
                 type="header"
                 href="#skills"
               />
               <NavItem
-                name={messages.header.projects}
+                name={messages.buttons.sections.header.projects}
                 type="header"
                 href="#projects"
               />
               <NavItem
-                name={messages.header.contact}
+                name={messages.buttons.sections.header.contact}
                 type="header"
                 href="#contact"
               />
