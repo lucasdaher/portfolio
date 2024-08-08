@@ -1,20 +1,16 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import malvaderbank from "../../../assets/projects/malvaderbank.jpg";
 import sosclima from "../../../assets/projects/sosclima.png";
 import uniassist from "../../../assets/projects/uniassist.png";
-// import doityarte02 from "../../../assets/projects/doity-arte-02.png";
-// import hamburguer from "../../../assets/projects/Hamburguer.png";
-// import heineken from "../../../assets/projects/Heineken.png";
-// import instagramredesign from "../../../assets/projects/instagramwebredesign.jpg";
 
 import Marquee from "react-fast-marquee";
-import { useDarkMode } from "@/services/ThemeService";
+import { ThemeContext } from "@/contexts/ThemeContext";
 
 interface MarqueeContentProps {}
 
 export default function MarqueeContent({}: MarqueeContentProps) {
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
   return (
     <React.Fragment>
       <Marquee
@@ -22,6 +18,7 @@ export default function MarqueeContent({}: MarqueeContentProps) {
         speed={30}
         gradient={true}
         gradientColor={`${dark === true ? "#121212" : "#fff"}`}
+        className="transition-all duration-400 ease-in-out"
       >
         <img
           loading="lazy"
@@ -131,30 +128,6 @@ export default function MarqueeContent({}: MarqueeContentProps) {
           alt="UniAssist Thumbnail"
           className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
         />
-        {/* <img
-          loading="lazy"
-          src={doityarte02}
-          alt="Doity Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
-        />
-        <img
-          loading="lazy"
-          src={hamburguer}
-          alt="Hamburguer Social Media Post"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
-        />
-        <img
-          loading="lazy"
-          src={heineken}
-          alt="Heineken Social Media Post"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
-        />
-        <img
-          loading="lazy"
-          src={instagramredesign}
-          alt="Instagram Case Study Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
-        /> */}
       </Marquee>
     </React.Fragment>
   );

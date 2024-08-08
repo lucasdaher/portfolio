@@ -1,7 +1,7 @@
 import SocialButton from "@/components/Buttons/SocialButton";
-import React from "react";
 
 import cape from "../../assets/maintenance-art.svg";
+import { ThemeContextProvider } from "@/contexts/ThemeContext";
 
 interface MaintenanceProps {}
 
@@ -9,8 +9,7 @@ export default function Maintenance({}: MaintenanceProps) {
   const title: string = "Manutenção | Lucas Daher";
   document.title = title;
   return (
-    <React.Fragment>
-      {/* <Header isDark={isDark} handleDark={handleIsDark} /> */}
+    <ThemeContextProvider>
       <main className="flex flex-col justify-center items-center mt-36 px-4">
         <img src={cape} alt="Maintenance Cape Art" className="w-96 h-96" />
         <h1 className="text-normal text-5xl font-sora font-bold mt-4">Oops!</h1>
@@ -38,6 +37,6 @@ export default function Maintenance({}: MaintenanceProps) {
           />
         </div>
       </main>
-    </React.Fragment>
+    </ThemeContextProvider>
   );
 }

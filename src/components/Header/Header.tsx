@@ -1,18 +1,20 @@
 import { Link } from "react-router-dom";
+
 import Menu from "../Buttons/Menu";
 import TipBox from "../Tip/TipBox";
 import Logo from "./Logo";
 import NavItem from "./NavItem";
 
+import { useContext } from "react";
 import { useLanguage } from "@/services/LanguageService";
-
-import { useDarkMode } from "@/services/ThemeService";
+import { ThemeContext } from "@/contexts/ThemeContext";
 
 interface HeaderProps {}
 
 export default function Header({}: HeaderProps) {
   const { messages } = useLanguage();
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
+
   return (
     <header>
       <div

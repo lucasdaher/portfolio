@@ -4,9 +4,8 @@ import { MdFileDownload } from "react-icons/md";
 
 import { useLanguage } from "@/services/LanguageService";
 
-import { useEffect, useState } from "react";
-
-import { useDarkMode } from "@/services/ThemeService";
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "@/contexts/ThemeContext";
 
 interface PresentationProps {}
 
@@ -52,7 +51,7 @@ export default function Presentation({}: PresentationProps) {
     return () => clearTimeout(timer);
   }, [textoDinamico, isDeleting, , mensagem, typingSpeed, loopNum]);
 
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
 
   return (
     <section

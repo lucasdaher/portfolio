@@ -1,14 +1,13 @@
+import { ThemeContext } from "@/contexts/ThemeContext";
 import codeIcon from "../../assets/icons/codeIcon.svg";
-import React from "react";
-
-import { useDarkMode } from "@/services/ThemeService";
+import React, { useContext } from "react";
 
 interface LogoProps {
   name?: string;
 }
 
 export default function Logo({ name = "lucasdaher" }: LogoProps) {
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
   return (
     <React.Fragment>
       <picture>

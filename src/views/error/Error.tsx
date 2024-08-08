@@ -1,15 +1,15 @@
 import Header from "@/components/Header/Header";
 import { Link } from "react-router-dom";
 
-import { useDarkMode } from "@/services/ThemeService";
-import React from "react";
+import { ThemeContext, ThemeContextProvider } from "@/contexts/ThemeContext";
+import { useContext } from "react";
 
 interface ErrorProps {}
 
 export default function Error({}: ErrorProps) {
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
   return (
-    <React.Fragment>
+    <ThemeContextProvider>
       <Header />
       <main className="flex flex-col justify-center items-center mt-36 px-4">
         <h1 className="text-normal text-5xl font-sora font-bold">Oops!</h1>
@@ -80,6 +80,6 @@ export default function Error({}: ErrorProps) {
           </Link>
         </ul>
       </main>
-    </React.Fragment>
+    </ThemeContextProvider>
   );
 }

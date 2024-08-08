@@ -1,6 +1,5 @@
-import React from "react";
-
-import { useDarkMode } from "@/services/ThemeService";
+import { ThemeContext } from "@/contexts/ThemeContext";
+import React, { useContext } from "react";
 
 interface NavItemProps {
   type: string;
@@ -15,7 +14,7 @@ export default function NavItem({
   name,
   customClassName,
 }: NavItemProps) {
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
   return (
     <React.Fragment>
       {(type === "header" && (

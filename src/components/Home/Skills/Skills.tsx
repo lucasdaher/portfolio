@@ -1,13 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import skills from "../../../data/skills";
-import { useDarkMode } from "@/services/ThemeService";
+import { ThemeContext } from "@/contexts/ThemeContext";
 
 interface SkillsProps {
   id?: string;
 }
 
 export default function Skills({ id }: SkillsProps) {
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
   return (
     <section
       className={`mt-36 px-4 ${

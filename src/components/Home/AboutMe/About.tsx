@@ -1,12 +1,13 @@
-import { useDarkMode } from "@/services/ThemeService";
+import { ThemeContext } from "@/contexts/ThemeContext";
 import { ArrowRight } from "lucide-react";
+import { useContext } from "react";
 
 interface AboutProps {
   id?: string;
 }
 
 export default function About({ id }: AboutProps) {
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
   return (
     <section className="mt-24 md:mt-32 px-4" id={id}>
       <div className="max-w-[1440px] mx-auto w-full flex flex-col justify-center items-start">

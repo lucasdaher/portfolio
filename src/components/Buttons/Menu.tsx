@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 
 import {
   DropdownMenu,
@@ -17,7 +17,7 @@ import {
 import { AlignRight, Earth, History, Moon, Sun } from "lucide-react";
 
 import { useLanguage } from "@/services/LanguageService";
-import { useDarkMode } from "@/services/ThemeService";
+import { ThemeContext } from "@/contexts/ThemeContext";
 
 interface MenuProps {
   iconStyle?: string;
@@ -25,7 +25,8 @@ interface MenuProps {
 
 export default function Menu({ iconStyle }: MenuProps) {
   const { language, updateLanguage, messages } = useLanguage();
-  const { dark, handleMode } = useDarkMode();
+  const { dark, handleDark } = useContext(ThemeContext);
+
   return (
     <React.Fragment>
       <DropdownMenu>
@@ -47,7 +48,7 @@ export default function Menu({ iconStyle }: MenuProps) {
           <DropdownMenuGroup className="hover:bg-gray/20 transition-all duration-200 ease-in-out rounded-md">
             <DropdownMenuItem
               className="text-white cursor-pointer"
-              onClick={handleMode}
+              onClick={handleDark}
             >
               {dark === true ? (
                 <Sun className={`mr-2 h-4 w-4 text-white`} />

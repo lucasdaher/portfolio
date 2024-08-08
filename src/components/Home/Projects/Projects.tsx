@@ -1,4 +1,4 @@
-import { useDarkMode } from "@/services/ThemeService";
+import { ThemeContext } from "@/contexts/ThemeContext";
 import projects from "../../../data/projects";
 
 import {
@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { ArrowRight, ListRestartIcon, Settings2Icon } from "lucide-react";
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
 interface ProjectsProps {
@@ -20,7 +20,7 @@ interface ProjectsProps {
 }
 
 export default function Projects({ id }: ProjectsProps) {
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
   return (
     <section className="bg-transparent mt-36 px-4" id={id}>
       <div className="max-w-[1440px] mx-auto w-full text-white">
