@@ -6,13 +6,13 @@ import About from "@/components/Home/AboutMe/About";
 import Skills from "@/components/Home/Skills/Skills";
 import Projects from "@/components/Home/Projects/Projects";
 
-import { ThemeContextProvider } from "@/contexts/ThemeContext";
+import React from "react";
 
 interface HomeProps {}
 
 export default function Home({}: HomeProps) {
   return (
-    <ThemeContextProvider>
+    <React.Fragment>
       <Header />
 
       <main className="mt-6 md:mt-[45px]">
@@ -24,6 +24,6 @@ export default function Home({}: HomeProps) {
       </main>
 
       <Footer />
-    </ThemeContextProvider>
+    </React.Fragment>
   );
 }
