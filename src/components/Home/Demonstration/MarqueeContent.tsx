@@ -3,10 +3,10 @@ import React from "react";
 import malvaderbank from "../../../assets/projects/malvaderbank.jpg";
 import sosclima from "../../../assets/projects/sosclima.png";
 import uniassist from "../../../assets/projects/uniassist.png";
-import doityarte02 from "../../../assets/projects/doity-arte-02.png";
-import hamburguer from "../../../assets/projects/Hamburguer.png";
-import heineken from "../../../assets/projects/Heineken.png";
-import instagramredesign from "../../../assets/projects/instagramwebredesign.jpg";
+// import doityarte02 from "../../../assets/projects/doity-arte-02.png";
+// import hamburguer from "../../../assets/projects/Hamburguer.png";
+// import heineken from "../../../assets/projects/Heineken.png";
+// import instagramredesign from "../../../assets/projects/instagramwebredesign.jpg";
 
 import Marquee from "react-fast-marquee";
 import { useDarkMode } from "@/services/ThemeService";
@@ -43,6 +43,96 @@ export default function MarqueeContent({}: MarqueeContentProps) {
         />
         <img
           loading="lazy"
+          src={malvaderbank}
+          alt="Malvader Bank Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={sosclima}
+          alt="SOSClima Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={uniassist}
+          alt="UniAssist Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={malvaderbank}
+          alt="Malvader Bank Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={sosclima}
+          alt="SOSClima Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={uniassist}
+          alt="UniAssist Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={malvaderbank}
+          alt="Malvader Bank Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={sosclima}
+          alt="SOSClima Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={uniassist}
+          alt="UniAssist Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={malvaderbank}
+          alt="Malvader Bank Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={sosclima}
+          alt="SOSClima Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={uniassist}
+          alt="UniAssist Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={malvaderbank}
+          alt="Malvader Bank Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={sosclima}
+          alt="SOSClima Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        <img
+          loading="lazy"
+          src={uniassist}
+          alt="UniAssist Thumbnail"
+          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+        />
+        {/* <img
+          loading="lazy"
           src={doityarte02}
           alt="Doity Thumbnail"
           className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
@@ -64,7 +154,7 @@ export default function MarqueeContent({}: MarqueeContentProps) {
           src={instagramredesign}
           alt="Instagram Case Study Thumbnail"
           className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
-        />
+        /> */}
       </Marquee>
     </React.Fragment>
   );
