@@ -1,10 +1,11 @@
-import { useDarkMode } from "@/services/ThemeService";
+import { useContext } from "react";
 import Logo from "../Header/Logo";
+import { ThemeContext } from "@/contexts/ThemeContext";
 
 interface FooterProps {}
 
 export default function Footer({}: FooterProps) {
-  const { dark } = useDarkMode();
+  const { dark } = useContext(ThemeContext);
   return (
     <footer
       className={`${
