@@ -11,7 +11,7 @@ interface ThemeContextType {
 }
 
 const ThemeContextValue = {
-  dark: !!JSON.parse(localStorage.getItem("darkMode") || " "),
+  dark: !!JSON.parse(localStorage.getItem("darkMode") || "true"),
   setDark: () => {},
   handleDark: () => {},
 };
