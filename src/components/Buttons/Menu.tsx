@@ -24,7 +24,7 @@ interface MenuProps {
 }
 
 export default function Menu({ iconStyle }: MenuProps) {
-  const { language, updateLanguage, messages } = useLanguage();
+  const { updateLanguage, messages } = useLanguage();
   const { dark, handleDark } = useContext(ThemeContext);
 
   return (
