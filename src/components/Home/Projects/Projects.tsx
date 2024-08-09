@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { ArrowRight, ListRestartIcon, Settings2Icon } from "lucide-react";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { useLanguage } from "@/hooks/useLanguage";
