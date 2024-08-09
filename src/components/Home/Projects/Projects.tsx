@@ -43,7 +43,7 @@ export default function Projects({ id }: ProjectsProps) {
         </p>
 
         <DropdownMenu>
-          <DropdownMenuTrigger className="flex justify-center items-center gap-2 bg-black-gray text-white px-8 py-2 rounded-md mt-8 hover:bg-[#303030] transition-all duration-200 ease-in-out">
+          <DropdownMenuTrigger className="outline-none flex justify-center items-center gap-2 bg-black-gray text-white px-8 py-2 rounded-md mt-8 hover:bg-[#303030] transition-all duration-200 ease-in-out">
             <Settings2Icon className="w-4 h-4" />
             <span className="leading-none h-auto font-normal text-base">
               {messages.buttons.sections.projects.filter.title}

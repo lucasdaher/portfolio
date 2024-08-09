@@ -40,7 +40,7 @@
       },
       "projects": {
         "filter": {
-          "title": "Filtrar projetos",
+          "title": "Filtrar",
           "dropDownLabel": "Escolha uma opção de filtro",
           "tags": {}
         }
