@@ -15,7 +15,7 @@ import { ArrowRight, ListRestartIcon, Settings2Icon } from "lucide-react";
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 
-import { useLanguage } from "@/services/LanguageService";
+import { useLanguage } from "@/hooks/useLanguage";
 
 interface ProjectsProps {
   id?: string;

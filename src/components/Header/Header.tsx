@@ -6,7 +6,7 @@ import Logo from "./Logo";
 import NavItem from "./NavItem";
 
 import { useContext } from "react";
-import { useLanguage } from "@/services/LanguageService";
+import { useLanguage } from "@/hooks/useLanguage";
 import { ThemeContext } from "@/contexts/ThemeContext";
 
 interface HeaderProps {}

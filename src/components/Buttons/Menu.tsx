@@ -16,7 +16,7 @@ import {
 // import { Link } from "react-router-dom";
 import { AlignRight, Earth, History, Moon, Sun } from "lucide-react";
 
-import { useLanguage } from "@/services/LanguageService";
+import { useLanguage } from "@/hooks/useLanguage";
 import { ThemeContext } from "@/contexts/ThemeContext";
 import Circle from "./Circle";
 

@@ -2,7 +2,7 @@ import Default from "@/components/Buttons/Default";
 import SocialButton from "@/components/Buttons/SocialButton";
 import { MdFileDownload } from "react-icons/md";
 
-import { useLanguage } from "@/services/LanguageService";
+import { useLanguage } from "@/hooks/useLanguage";
 
 import { useContext, useEffect, useState } from "react";
 import { ThemeContext } from "@/contexts/ThemeContext";
