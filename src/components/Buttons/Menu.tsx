@@ -18,13 +18,14 @@ import { AlignRight, Earth, History, Moon, Sun } from "lucide-react";
 
 import { useLanguage } from "@/services/LanguageService";
 import { ThemeContext } from "@/contexts/ThemeContext";
+import Circle from "./Circle";
 
 interface MenuProps {
   iconStyle?: string;
 }
 
 export default function Menu({ iconStyle }: MenuProps) {
-  const { updateLanguage, messages } = useLanguage();
+  const { language, updateLanguage, messages } = useLanguage();
   const { dark, handleDark } = useContext(ThemeContext);
 
   return (
@@ -106,6 +107,7 @@ export default function Menu({ iconStyle }: MenuProps) {
                     >
                       {messages.menu.langs.ptbr}
                     </span>
+                    {language === "ptbr" ? <Circle /> : null}
                   </DropdownMenuItem>
                   <DropdownMenuItem
                     className="text-white cursor-pointer"
@@ -118,6 +120,7 @@ export default function Menu({ iconStyle }: MenuProps) {
                     >
                       {messages.menu.langs.en}
                     </span>
+                    {language === "en" ? <Circle /> : null}
                   </DropdownMenuItem>
                   <DropdownMenuItem
                     className="text-white cursor-pointer"
@@ -135,6 +138,7 @@ export default function Menu({ iconStyle }: MenuProps) {
                     >
                       {messages.menu.tips.soon}
                     </span>
+                    {/* {language === "es" ? <Circle /> : null} */}
                   </DropdownMenuItem>
                 </DropdownMenuSubContent>
               </DropdownMenuPortal>

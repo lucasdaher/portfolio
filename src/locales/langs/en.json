@@ -33,10 +33,10 @@
         "resumeBtnDownload": "Baixar currículo"
       },
       "header": {
-        "about": "Sobre",
-        "skills": "Habilidades",
-        "projects": "Projetos",
-        "contact": "Contato"
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
       },
       "projects": {
         "filter": {
