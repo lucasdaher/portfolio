@@ -6,6 +6,14 @@ interface AboutProps {
   id?: string;
 }
 
+/**
+ * Renders the About component.
+ *
+ * @param {AboutProps} props - The component props.
+ * @param {string} props.id - The ID of the section.
+ * @returns {JSX.Element} The rendered About component.
+ */
+
 export default function About({ id }: AboutProps) {
   const { dark } = useContext(ThemeContext);
   return (

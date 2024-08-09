@@ -9,6 +9,16 @@ import { ThemeContext } from "@/contexts/ThemeContext";
 
 interface MarqueeContentProps {}
 
+/**
+ * Renders the MarqueeContent component.
+ *
+ * @component
+ * @example
+ * ```tsx
+ * <MarqueeContent />
+ * ```
+ */
+
 export default function MarqueeContent({}: MarqueeContentProps) {
   const { dark } = useContext(ThemeContext);
   return (
