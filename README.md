@@ -16,11 +16,10 @@ Endereço para visualização do portfólio: **[lucasdaher.com](https://lucasdah
 
 ## Futuras atualizações
 > [!CAUTION]
-> - Corrigir a responsividade para dispositivos menores (tablet e mobile);
-
-> - Alternar entre idiomas [Português Brasileiro e Inglês];
-> - Adicionar mais configurações ao menu de preferências.
-> - Adicionar uma área para expor meus projetos acadêmicos e profissionais.
+> - Adicionar área para entrar em contato via WhatsApp ou E-mail;
+> - Corrigir pequenos problemas na tradução e no sistema de idiomas;
+> - Adicionar as páginas para cada projeto adicionado;
+> - Adicionar todos os meus projetos (foram adicionados até agora apenas dois para testes).
 
 ## Colaborações
 Interessados em contribuir no meu portfólio de alguma forma devem seguir os seguintes passos:
