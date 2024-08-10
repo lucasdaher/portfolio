@@ -7,7 +7,11 @@ export interface Messages {
         title: string;
         desc: string;
       };
-      skills: string;
+      skills: {
+        title: string;
+        desc: string;
+        focus: string;
+      };
       projects: {
         title: string;
         desc: string;

@@ -2,13 +2,17 @@
   "titles": {
     "sections": {
       "presentation": {
-        "title": "Sou Lucas Daher, apaixonado por tecnologia e design.",
-        "desc": "Com quase um ano de experiência como desenvolvedor front-end e ux designer, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais."
+        "title": "I'm Lucas Daher, passionate about technology and design.",
+        "desc": "With almost a year of experience as a front-end developer and UX designer, I am always seeking new challenges and improving my skills to create amazing and functional interfaces."
       },
-      "skills": "My skills",
+      "skills": {
+        "title": "My skills",
+        "desc": "Get to know some of my development, design and user experience skills.",
+        "focus": "Atualmente meu foco está sendo Java devido a matéria de Programação Orientada a Objetos da faculdade."
+      },
       "projects": {
         "title": "My projects",
-        "desc": "Apresento a você uma seleção de projetos autorais, resultado de minha dedicação em design e desenvolvimento."
+        "desc": "I present to you a selection of original projects, the result of my dedication to design and development."
       }
     }
   },

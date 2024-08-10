@@ -5,7 +5,11 @@
         "title": "Sou Lucas Daher, apaixonado por tecnologia e design.",
         "desc": "Com quase um ano de experiência como desenvolvedor front-end e ux designer, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais."
       },
-      "skills": "Minhas habilidades",
+      "skills": {
+        "title": "Minhas habilidades",
+        "desc": "Conheça um pouco das minhas habilidades de desenvolvimento, design e experiência do usuário.",
+        "focus": "Atualmente meu foco está sendo Java devido a matéria de Programação Orientada a Objetos da faculdade."
+      },
       "projects": {
         "title": "Meus projetos",
         "desc": "Apresento a você uma seleção de projetos autorais, resultado de minha dedicação em design e desenvolvimento."

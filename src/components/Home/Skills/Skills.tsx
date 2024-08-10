@@ -1,12 +1,14 @@
 import React, { useContext } from "react";
 import skills from "../../../data/skills";
 import { ThemeContext } from "@/contexts/ThemeContext";
+import { useLanguage } from "@/hooks/useLanguage";
 
 interface SkillsProps {
   id?: string;
 }
 
 export default function Skills({ id }: SkillsProps) {
+  const { messages } = useLanguage();
   const { dark } = useContext(ThemeContext);
   return (
     <section
@@ -22,15 +24,14 @@ export default function Skills({ id }: SkillsProps) {
               dark === true ? "text-white" : "text-black-gray"
             }`}
           >
-            Habilidades
+            {messages.titles.sections.skills.title}
           </h1>
           <p
             className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 ${
               dark === true ? "text-white/70 " : "text-black-gray/90"
             }`}
           >
-            Conheça um pouco das minhas habilidades de desenvolvimento, design e
-            experiência do usuário.
+            {messages.titles.sections.skills.desc}
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 pt-8 gap-4 w-full">
             {skills.map((skill) => (
