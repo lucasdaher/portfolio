@@ -5,7 +5,7 @@
         "title": "Sou Lucas Daher, apaixonado por tecnologia e design.",
         "desc": "Com quase um ano de experiência como desenvolvedor front-end e ux designer, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais."
       },
-      "skills": "Minhas habilidades",
+      "skills": "My skills",
       "projects": {
         "title": "My projects",
         "desc": "Apresento a você uma seleção de projetos autorais, resultado de minha dedicação em design e desenvolvimento."
@@ -13,8 +13,8 @@
     }
   },
   "menu": {
-    "switchModeToLight": "Modo claro",
-    "switchModeToDark": "Modo escuro",
+    "switchModeToLight": "Light mode",
+    "switchModeToDark": "Dark mode",
     "lastUpdates": "Last updates",
     "language": "Language",
     "tips": {
@@ -30,7 +30,7 @@
   "buttons": {
     "sections": {
       "presentation": {
-        "resumeBtnDownload": "Baixar currículo"
+        "resumeBtnDownload": "Resume download"
       },
       "header": {
         "about": "About",
@@ -40,19 +40,19 @@
       },
       "projects": {
         "filter": {
-          "title": "Filtrar projetos",
-          "dropDownLabel": "Escolha uma opção de filtro",
+          "title": "Filters",
+          "dropDownLabel": "Select filters options",
           "tags": {}
         }
       }
     }
   },
   "alerts": {
-    "alert": "Em desenvolvimento..."
+    "alert": "Under development..."
   },
   "elements": {
     "buttonTitles": {
-      "resumeBtn": "Clique para realizar o download do meu currículo."
+      "resumeBtn": "Click to download my resume."
     }
   }
 }
