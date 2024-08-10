@@ -1,19 +1,18 @@
-import html from "../assets/icons/skills/html.svg";
-import css from "../assets/icons/skills/css.svg";
-import js from "../assets/icons/skills/js.svg";
-import c from "../assets/icons/skills/c.svg";
-import java from "../assets/icons/skills/java.svg";
-import reactjs from "../assets/icons/skills/reactjs.svg";
-import nodejs from "../assets/icons/skills/nodejs.svg";
-import tailwindcss from "../assets/icons/skills/tailwindcss.svg";
-import sass from "../assets/icons/skills/sass.svg";
-import bootstrap from "../assets/icons/skills/bootstrap.svg";
-import github from "../assets/icons/skills/github.svg";
-import git from "../assets/icons/skills/git.svg";
-import figma from "../assets/icons/skills/figma.svg";
-import brain from "../assets/icons/skills/brain.svg";
-import talk from "../assets/icons/skills/talk.svg";
-import notion from "../assets/icons/skills/notion.svg";
+import html from "../../assets/icons/skills/html.svg";
+import css from "../../assets/icons/skills/css.svg";
+import js from "../../assets/icons/skills/js.svg";
+import c from "../../assets/icons/skills/c.svg";
+import java from "../../assets/icons/skills/java.svg";
+import reactjs from "../../assets/icons/skills/reactjs.svg";
+import nodejs from "../../assets/icons/skills/nodejs.svg";
+import tailwindcss from "../../assets/icons/skills/tailwindcss.svg";
+import sass from "../../assets/icons/skills/sass.svg";
+import bootstrap from "../../assets/icons/skills/bootstrap.svg";
+import github from "../../assets/icons/skills/github.svg";
+import git from "../../assets/icons/skills/git.svg";
+import figma from "../../assets/icons/skills/figma.svg";
+import brain from "../../assets/icons/skills/brain.svg";
+import notion from "../../assets/icons/skills/notion.svg";
 
 const data = [
   {
@@ -102,9 +101,9 @@ const data = [
   },
   {
     id: 15,
-    nome: "Comunicação",
-    conhecimento: "Excelente",
-    icone: <img src={talk} alt="Talk Icon" />,
+    nome: "Inglês",
+    conhecimento: "Básico",
+    icone: <img src={brain} alt="Brain Icon" />,
   },
   {
     id: 16,

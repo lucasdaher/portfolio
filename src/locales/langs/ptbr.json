@@ -8,7 +8,12 @@
       "skills": {
         "title": "Minhas habilidades",
         "desc": "Conheça um pouco das minhas habilidades de desenvolvimento, design e experiência do usuário.",
-        "focus": "Atualmente meu foco está sendo Java devido a matéria de Programação Orientada a Objetos da faculdade."
+        "focus": "Atualmente meu foco está sendo Java devido a matéria de Programação Orientada a Objetos da faculdade.",
+        "data": {
+          "advanced": "Avançado",
+          "intermediary": "Intermediário",
+          "basic": "Básico"
+        }
       },
       "projects": {
         "title": "Meus projetos",

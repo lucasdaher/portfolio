@@ -1,4 +1,4 @@
-export type Language = "en" | "ptbr";
+export type Language = "en" | "ptbr" | "es";
 
 export interface Messages {
   titles: {
@@ -11,6 +11,11 @@ export interface Messages {
         title: string;
         desc: string;
         focus: string;
+        data: {
+          advanced: string;
+          intermediary: string;
+          basic: string;
+        };
       };
       projects: {
         title: string;
