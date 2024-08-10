@@ -18,7 +18,7 @@ export default function Skills({ id }: SkillsProps) {
       <div className="max-w-[1440px] mx-auto w-full h-auto py-16">
         <div>
           <h1
-            className={`w-full h-auto text-3xl md:text-4xl font-bold text-center md:text-left ${
+            className={`w-full h-auto text-3xl md:text-4xl font-bold text-left ${
               dark === true ? "text-white" : "text-black-gray"
             }`}
           >
