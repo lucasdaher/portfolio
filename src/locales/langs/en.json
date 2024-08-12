@@ -3,7 +3,7 @@
     "title": "Oops!",
     "desc": "The page you are looking for was not found.",
     "buttons": {
-      "returnToHome": "Back to home page.",
+      "returnToHome": "Return to home page",
       "projects": "Projects",
       "skills": "Skills",
       "contact": "Contact",
