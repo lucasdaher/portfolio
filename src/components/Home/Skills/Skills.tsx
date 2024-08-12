@@ -29,7 +29,7 @@ export default function Skills({ id }: SkillsProps) {
             {messages.titles.sections.skills.title}
           </h1>
           <p
-            className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 ${
+            className={`mt-2 text-base lg:text-lg pb-6 border-b border-gray border-opacity-20 ${
               dark === true ? "text-white/70 " : "text-black-gray/90"
             }`}
           >

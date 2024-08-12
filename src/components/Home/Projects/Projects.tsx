@@ -43,7 +43,7 @@ export default function Projects({ id }: ProjectsProps) {
           {messages.titles.sections.projects.title}
         </h1>
         <p
-          className={`mt-2 text-lg pb-6 border-b border-gray border-opacity-20 text-left ${
+          className={`mt-2 text-base lg:text-lg pb-6 border-b border-gray border-opacity-20 text-left ${
             dark === true ? "text-white/70 " : "text-black-gray/90"
           }`}
         >
