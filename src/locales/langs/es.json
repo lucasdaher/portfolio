@@ -58,7 +58,8 @@
         "filter": {
           "title": "Filters",
           "dropDownLabel": "Select filters options",
-          "tags": {}
+          "tags": {},
+          "resetFilters": "Resetar todos os filtros"
         }
       }
     }

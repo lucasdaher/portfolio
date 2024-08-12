@@ -56,9 +56,10 @@
       },
       "projects": {
         "filter": {
-          "title": "Filters",
+          "title": "Search filters",
           "dropDownLabel": "Select filters options",
-          "tags": {}
+          "tags": {},
+          "resetFilters": "Reset all filters"
         }
       }
     }
