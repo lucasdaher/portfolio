@@ -62,6 +62,7 @@ export interface Messages {
         moreAboutMe: string;
       };
       header: {
+        backToHome: string;
         about: string;
         skills: string;
         projects: string;

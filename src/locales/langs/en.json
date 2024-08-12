@@ -60,6 +60,7 @@
         "moreAboutMe": "See more about me"
       },
       "header": {
+        "backToHome": "Return to home",
         "about": "About",
         "skills": "Skills",
         "projects": "Projects",
