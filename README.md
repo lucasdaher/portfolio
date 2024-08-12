@@ -12,18 +12,25 @@ Após instalar o pnpm em seu computador, você deverá instalar as dependências
 Para executar o projeto, após instalar todas as dependências, utilize o comando `pnpm run dev` e acesse `localhost:5173` em seu navegador.
 
 ## Link
-Endereço para visualização do portfólio: **[lucasdaher.com](https://lucasdaher.com)**
+**[Clique aqui para visualizar o portfólio](https://lucasdaher.com)**
+
+## Últimas atualizações
+
+### [#11.08](https://github.com/lucasdaher/portfolio/commits/main/):
+- Correções de problemas com o sistema de idiomas.
+  - Algumas frases não estavam traduzidas corretamente para a linguagem definida.
+- Adicionado configurações para o componente header:
+  - Agora é necessário especificar se será utilizado na página principal ou não;
+  - Adicionado uma opção para voltar até a página principal caso não esteja nela.
+- Corrigido problemas de responsividade em dispositivos mobile com resoluções menores.
 
 ## Futuras atualizações
-> [!NOTE]
-> - Adicionar área para entrar em contato via WhatsApp ou E-mail;
-
-> - Corrigir pequenos problemas na tradução e no sistema de idiomas;
-> - Adicionar as páginas para cada projeto adicionado;
-> - Adicionar todos os meus projetos (foram adicionados até agora apenas dois para testes).
+- Adicionar área para entrar em contato via WhatsApp ou E-mail;
+- Adicionar as páginas para cada projeto adicionado;
+- Adicionar todos os meus projetos (foram adicionados até agora apenas dois para testes).
 
 ## Colaborações
-Interessados em contribuir no meu portfólio de alguma forma devem seguir os seguintes passos:
+Interessados em contribuir com o meu portfólio devem seguir os seguintes passos:
 
 - Fazer um **fork** do projeto;
 - Criar uma nova **branch** com as suas alterações;
