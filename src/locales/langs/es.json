@@ -2,36 +2,40 @@
   "titles": {
     "sections": {
       "presentation": {
-        "title": "Sou Lucas Daher, apaixonado por tecnologia e design.",
-        "desc": "Com quase um ano de experiência como desenvolvedor front-end e ux designer, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais."
+        "title": "I'm Lucas Daher, passionate about technology and design.",
+        "desc": "With almost a year of experience as a front-end developer and UX designer, I am always seeking new challenges and improving my skills to create amazing and functional interfaces."
+      },
+      "aboutme": {
+        "title": "About me",
+        "desc": "With almost a year of experience in UI/UX Design and Front-end Development using React, TypeScript, TailwindCSS, SASS, and other technologies, I'm currently in the second semester of Systems Analysis and Development at the Catholic University of Brasília."
       },
       "skills": {
-        "title": "Minhas habilidades",
-        "desc": "Conheça um pouco das minhas habilidades de desenvolvimento, design e experiência do usuário.",
-        "focus": "Atualmente meu foco está sendo Java devido a matéria de Programação Orientada a Objetos da faculdade.",
+        "title": "My skills",
+        "desc": "Get to know some of my development, design and user experience skills.",
+        "focus": "Currently, my focus is on Java due to the Object-Oriented Programming course at college.",
         "data": {
-          "advanced": "Avançado",
-          "intermediary": "Intermediário",
-          "basic": "Básico"
+          "advanced": "Advanced",
+          "intermediary": "Intermediary",
+          "basic": "Basic"
         }
       },
       "projects": {
-        "title": "Meus projetos",
-        "desc": "Apresento a você uma seleção de projetos autorais, resultado de minha dedicação em design e desenvolvimento."
+        "title": "My projects",
+        "desc": "I present to you a selection of original projects, the result of my dedication to design and development."
       }
     }
   },
   "menu": {
-    "switchModeToLight": "Modo claro",
-    "switchModeToDark": "Modo escuro",
-    "lastUpdates": "Atualizações recentes",
-    "language": "Idioma",
+    "switchModeToLight": "Light mode",
+    "switchModeToDark": "Dark mode",
+    "lastUpdates": "Last updates",
+    "language": "Language",
     "tips": {
-      "new": "NOVO",
-      "soon": "EM BREVE"
+      "new": "NEW",
+      "soon": "COMING SOON"
     },
     "langs": {
-      "ptbr": "Português",
+      "ptbr": "Portuguese",
       "en": "English",
       "es": "Spanish"
     }
@@ -39,29 +43,32 @@
   "buttons": {
     "sections": {
       "presentation": {
-        "resumeBtnDownload": "Baixar currículo"
+        "resumeBtnDownload": "Resume download"
+      },
+      "aboutme": {
+        "moreAboutMe": "See more about me"
       },
       "header": {
-        "about": "Sobre",
-        "skills": "Habilidades",
-        "projects": "Projetos",
-        "contact": "Contato"
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
       },
       "projects": {
         "filter": {
-          "title": "Filtrar",
-          "dropDownLabel": "Escolha uma opção de filtro",
+          "title": "Filters",
+          "dropDownLabel": "Select filters options",
           "tags": {}
         }
       }
     }
   },
   "alerts": {
-    "alert": "Em desenvolvimento..."
+    "alert": "Under development..."
   },
   "elements": {
     "buttonTitles": {
-      "resumeBtn": "Clique para realizar o download do meu currículo."
+      "resumeBtn": "Click to download my resume."
     }
   }
 }
