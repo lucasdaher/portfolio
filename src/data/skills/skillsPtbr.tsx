@@ -42,7 +42,7 @@ const data = [
   {
     id: 5,
     nome: "Java",
-    conhecimento: "Intermediário",
+    conhecimento: "Básico",
     icone: <img src={java} alt="Java Icon" />,
   },
   {
