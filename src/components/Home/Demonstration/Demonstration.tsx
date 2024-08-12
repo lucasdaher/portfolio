@@ -14,7 +14,7 @@ interface DemonstrationProps {
 
 export default function Demonstration({ id }: DemonstrationProps) {
   return (
-    <section className="w-full mt-12" id={id}>
+    <section className="w-full mt-16" id={id}>
       <div className="w-full">
         <MarqueeContent />
       </div>

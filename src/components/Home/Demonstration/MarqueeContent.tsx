@@ -34,109 +34,109 @@ export default function MarqueeContent({}: MarqueeContentProps) {
           loading="lazy"
           src={malvaderbank}
           alt="Malvader Bank Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={sosclima}
           alt="SOSClima Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={uniassist}
           alt="UniAssist Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={malvaderbank}
           alt="Malvader Bank Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={sosclima}
           alt="SOSClima Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={uniassist}
           alt="UniAssist Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={malvaderbank}
           alt="Malvader Bank Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={sosclima}
           alt="SOSClima Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={uniassist}
           alt="UniAssist Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={malvaderbank}
           alt="Malvader Bank Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={sosclima}
           alt="SOSClima Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={uniassist}
           alt="UniAssist Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={malvaderbank}
           alt="Malvader Bank Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={sosclima}
           alt="SOSClima Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={uniassist}
           alt="UniAssist Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={malvaderbank}
           alt="Malvader Bank Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={sosclima}
           alt="SOSClima Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 object-cover object-center rounded-lg m-6"
         />
         <img
           loading="lazy"
           src={uniassist}
           alt="UniAssist Thumbnail"
-          className="md:w-96 md:h-96 w-40 h-40 object-cover object-center rounded-lg m-6"
+          className="md:w-96 md:h-96 w-52 h-52 w- object-cover object-center rounded-lg m-6"
         />
       </Marquee>
     </React.Fragment>
