@@ -33,7 +33,7 @@ export default function Projects({ id }: ProjectsProps) {
   );
 
   return (
-    <section className="bg-transparent mt-36 px-4" id={id}>
+    <section className="bg-transparent mt-16 px-4" id={id}>
       <div className="max-w-[1440px] mx-auto w-full text-white">
         <h1
           className={`w-full h-auto text-3xl md:text-4xl font-bold text-left ${
@@ -51,8 +51,8 @@ export default function Projects({ id }: ProjectsProps) {
         </p>
 
         <DropdownMenu>
-          <DropdownMenuTrigger className="outline-none flex justify-center items-center gap-2 bg-black-gray text-white px-8 py-2 rounded-md mt-8 hover:bg-[#303030] transition-all duration-200 ease-in-out">
-            <Settings2Icon className="w-4 h-4" />
+          <DropdownMenuTrigger className="outline-none flex justify-center items-center gap-2 bg-black-gray text-white px-8 py-4 rounded-full mt-8 hover:bg-[#303030] transition-all duration-200 ease-in-out">
+            <Settings2Icon className="w-5 h-5" />
             <span className="leading-none h-auto font-normal text-base">
               {messages.buttons.sections.projects.filter.title}
             </span>
@@ -107,11 +107,13 @@ export default function Projects({ id }: ProjectsProps) {
             </DropdownMenuGroup>
             <DropdownMenuSeparator className="bg-gray/20" />
             <DropdownMenuItem
-              className="text-red-500 flex justify-center items-center"
+              className="text-red-500 flex justify-start items-center"
               onClick={() => setSelectedTag(null)}
             >
               <ListRestartIcon className="w-5 h-5 mr-2" />
-              <span className="leading-none h-auto">Resetar filtros</span>
+              <span className="leading-none h-auto">
+                {messages.buttons.sections.projects.filter.resetFilters}
+              </span>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
