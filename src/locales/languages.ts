@@ -61,6 +61,7 @@ export interface Messages {
           title: string;
           dropDownLabel: string;
           tags: {};
+          resetFilters: string;
         };
       };
     };
