@@ -17,7 +17,7 @@ export default function Home({}: HomeProps) {
       <Header homePage={true} />
 
       <main className="mt-6 md:mt-[45px]">
-        <AlertHeader alertContent="Novos projetos estão sendo adicionados em todas as atualizações semanais do meu portfólio." />
+        <AlertHeader />
         <Presentation data-aos="fade-up" data-aos-delay="200" />
         <Demonstration id="demonstration" />
         <About id="aboutme" />
