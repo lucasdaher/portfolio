@@ -65,11 +65,6 @@ export default function Header({ homePage = false }: HeaderProps) {
                   type="header"
                   href="#projects"
                 />
-                <NavItem
-                  name={messages.buttons.sections.header.contact}
-                  type="header"
-                  href="#contact"
-                />
               </ul>
             ) : (
               <ul className="hidden md:flex justify-center items-center gap-4 border-r border-gray border-opacity-50 px-8">
