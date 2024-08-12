@@ -9,9 +9,13 @@ import { useContext } from "react";
 import { useLanguage } from "@/hooks/useLanguage";
 import { ThemeContext } from "@/contexts/ThemeContext";
 
-interface HeaderProps {}
+import { FaArrowLeft } from "react-icons/fa";
 
-export default function Header({}: HeaderProps) {
+interface HeaderProps {
+  homePage?: boolean;
+}
+
+export default function Header({ homePage = false }: HeaderProps) {
   const { messages } = useLanguage();
   const { dark } = useContext(ThemeContext);
 
@@ -44,28 +48,43 @@ export default function Header({}: HeaderProps) {
             </div>
           </div>
           <nav className="flex justify-center items-center gap-6">
-            <ul className="hidden md:flex justify-center items-center gap-4 border-r border-gray border-opacity-50 px-8">
-              <NavItem
-                name={messages.buttons.sections.header.about}
-                type="header"
-                href="#aboutme"
-              />
-              <NavItem
-                name={messages.buttons.sections.header.skills}
-                type="header"
-                href="#skills"
-              />
-              <NavItem
-                name={messages.buttons.sections.header.projects}
-                type="header"
-                href="#projects"
-              />
-              <NavItem
-                name={messages.buttons.sections.header.contact}
-                type="header"
-                href="#contact"
-              />
-            </ul>
+            {homePage === true ? (
+              <ul className="hidden md:flex justify-center items-center gap-4 border-r border-gray border-opacity-50 px-8">
+                <NavItem
+                  name={messages.buttons.sections.header.about}
+                  type="header"
+                  href="#aboutme"
+                />
+                <NavItem
+                  name={messages.buttons.sections.header.skills}
+                  type="header"
+                  href="#skills"
+                />
+                <NavItem
+                  name={messages.buttons.sections.header.projects}
+                  type="header"
+                  href="#projects"
+                />
+                <NavItem
+                  name={messages.buttons.sections.header.contact}
+                  type="header"
+                  href="#contact"
+                />
+              </ul>
+            ) : (
+              <ul className="hidden md:flex justify-center items-center gap-4 border-r border-gray border-opacity-50 px-8">
+                <Link
+                  to={`/`}
+                  className="flex flex-row gap-2 justify-center items-center group hover:text-normal-hover transition-all duration-200 ease-in-out"
+                >
+                  <FaArrowLeft className="w-3" />{" "}
+                  <span className="leading-none text-sm">
+                    Retornar ao ínicio
+                  </span>
+                </Link>
+              </ul>
+            )}
+
             <Menu iconStyle="w-6 h-6" />
           </nav>
         </div>
