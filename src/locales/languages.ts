@@ -7,6 +7,10 @@ export interface Messages {
         title: string;
         desc: string;
       };
+      aboutme: {
+        title: string;
+        desc: string;
+      };
       skills: {
         title: string;
         desc: string;
@@ -42,6 +46,9 @@ export interface Messages {
     sections: {
       presentation: {
         resumeBtnDownload: string;
+      };
+      aboutme: {
+        moreAboutMe: string;
       };
       header: {
         about: string;
