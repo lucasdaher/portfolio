@@ -14,7 +14,7 @@ export default function Skills({ id }: SkillsProps) {
 
   return (
     <section
-      className={`mt-36 px-4 ${
+      className={`mt-16 px-4 ${
         dark === true ? "bg-black-gray" : "bg-light-active/50"
       }`}
       id={id}
