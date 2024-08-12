@@ -49,7 +49,11 @@ export default function Header({ homePage = false }: HeaderProps) {
           </div>
           <nav className="flex justify-center items-center gap-6">
             {homePage === true ? (
-              <ul className="hidden md:flex justify-center items-center gap-4 border-r border-gray border-opacity-50 px-8">
+              <ul
+                className={`hidden md:flex justify-center items-center gap-4 border-r ${
+                  dark === true ? "border-white" : "border-gray"
+                } border-opacity-50 px-8 transition-all duration-400 ease-in-out`}
+              >
                 <NavItem
                   name={messages.buttons.sections.header.about}
                   type="header"
