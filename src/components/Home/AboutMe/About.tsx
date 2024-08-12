@@ -24,7 +24,7 @@ export default function About({ id }: AboutProps) {
       <div className="max-w-[1440px] mx-auto w-full flex flex-col justify-center items-start">
         <div className="">
           <h1
-            className={`w-full h-auto text-3xl md:text-7xl font-bold text-center md:text-left ${
+            className={`w-full h-auto text-3xl md:text-7xl font-bold text-left ${
               dark === true ? "text-white" : "text-black-gray"
             }`}
           >
