@@ -17,6 +17,7 @@ Para executar o projeto, após instalar todas as dependências, utilize o comand
 ## Últimas atualizações
 
 ### [#11.08](https://github.com/lucasdaher/portfolio/commits/main/):
+- A seção **Sobre Mim** foi totalmente refeita e encurtada focando na experiência em dispositivos mobiles.
 - Correções de problemas com o sistema de idiomas.
   - Algumas frases não estavam traduzidas corretamente para a linguagem definida.
 - Adicionado configurações para o componente header:
