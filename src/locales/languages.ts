@@ -1,4 +1,4 @@
-export type Language = "en" | "ptbr" | "es";
+export type Language = "en" | "ptbr";
 
 export interface Messages {
   titles: {
