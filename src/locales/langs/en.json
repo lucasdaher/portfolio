@@ -77,7 +77,8 @@
     }
   },
   "alerts": {
-    "alert": "v1.0.0"
+    "alert": "v1.0.0",
+    "alertHeader": "New projects are being added in every weekly update of my portfolio."
   },
   "elements": {
     "buttonTitles": {

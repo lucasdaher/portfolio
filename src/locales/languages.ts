@@ -80,6 +80,7 @@ export interface Messages {
   };
   alerts: {
     alert: string;
+    alertHeader: string;
   };
   elements: {
     buttonTitles: {
