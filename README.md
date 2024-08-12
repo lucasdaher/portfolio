@@ -15,7 +15,7 @@ Neste repositório você encontrará o código fonte do meu portfólio, desenvol
 Endereço para visualização do portfólio: **[lucasdaher.com](https://lucasdaher.com)**
 
 ## Futuras atualizações
-> [!NOTE](Futura atualização)
+> [!NOTE]
 > - Adicionar área para entrar em contato via WhatsApp ou E-mail;
 
 > - Corrigir pequenos problemas na tradução e no sistema de idiomas;
