@@ -77,7 +77,7 @@
     }
   },
   "alerts": {
-    "alert": "Em desenvolvimento..."
+    "alert": "v1.0.0"
   },
   "elements": {
     "buttonTitles": {
