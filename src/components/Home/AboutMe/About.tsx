@@ -20,11 +20,11 @@ export default function About({ id }: AboutProps) {
   const { messages } = useLanguage();
   const { dark } = useContext(ThemeContext);
   return (
-    <section className="mt-24 md:mt-32 px-4" id={id}>
+    <section className="mt-16 px-4" id={id}>
       <div className="max-w-[1440px] mx-auto w-full flex flex-col justify-center items-start">
         <div className="">
           <h1
-            className={`w-full h-auto text-3xl md:text-7xl font-bold text-left ${
+            className={`w-full h-auto text-3xl md:text-4xl font-bold text-left ${
               dark === true ? "text-white" : "text-black-gray"
             }`}
           >
