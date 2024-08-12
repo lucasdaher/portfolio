@@ -76,9 +76,17 @@ export default function Header({ homePage = false }: HeaderProps) {
                   to={`/`}
                   className="flex flex-row gap-2 justify-center items-center group hover:text-normal-hover transition-all duration-200 ease-in-out"
                 >
-                  <FaArrowLeft className="w-3" />{" "}
-                  <span className="leading-none text-sm">
-                    Retornar ao ínicio
+                  <FaArrowLeft
+                    className={`w-3 group-hover:text-normal-hover ${
+                      dark === true ? "text-white" : "text-black-gray"
+                    } transition-all duration-200 ease-in-out`}
+                  />{" "}
+                  <span
+                    className={`leading-none text-sm group-hover:text-normal-hover ${
+                      dark === true ? "text-white" : "text-black-gray"
+                    } transition-all duration-200 ease-in-out`}
+                  >
+                    {messages.buttons.sections.header.backToHome}
                   </span>
                 </Link>
               </ul>
