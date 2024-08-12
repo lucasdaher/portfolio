@@ -13,7 +13,7 @@ interface HomeProps {}
 export default function Home({}: HomeProps) {
   return (
     <React.Fragment>
-      <Header />
+      <Header homePage={true} />
 
       <main className="mt-6 md:mt-[45px]">
         <Presentation data-aos="fade-up" data-aos-delay="200" />
