@@ -4,9 +4,10 @@ import React, { useContext } from "react";
 
 interface LogoProps {
   name?: string;
+  className?: string;
 }
 
-export default function Logo({ name = "lucasdaher" }: LogoProps) {
+export default function Logo({ name = "lucasdaher", className }: LogoProps) {
   const { dark } = useContext(ThemeContext);
   return (
     <React.Fragment>
@@ -17,7 +18,7 @@ export default function Logo({ name = "lucasdaher" }: LogoProps) {
       <h1
         className={`text-xl font-medium leading-none h-auto w-auto ${
           dark === true ? "text-white" : "text-black-gray"
-        } transition-all duration-400 ease-in-out`}
+        } transition-all duration-400 ease-in-out ${className}`}
       >
         {name}
       </h1>
