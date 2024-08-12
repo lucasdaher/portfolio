@@ -5,6 +5,10 @@
         "title": "I'm Lucas Daher, passionate about technology and design.",
         "desc": "With almost a year of experience as a front-end developer and UX designer, I am always seeking new challenges and improving my skills to create amazing and functional interfaces."
       },
+      "aboutme": {
+        "title": "About me",
+        "desc": "With almost a year of experience in UI/UX Design and Front-end Development using React, TypeScript, TailwindCSS, SASS, and other technologies, I'm currently in the second semester of Systems Analysis and Development at the Catholic University of Brasília."
+      },
       "skills": {
         "title": "My skills",
         "desc": "Get to know some of my development, design and user experience skills.",
@@ -40,6 +44,9 @@
     "sections": {
       "presentation": {
         "resumeBtnDownload": "Resume download"
+      },
+      "aboutme": {
+        "moreAboutMe": "See more about me"
       },
       "header": {
         "about": "About",
