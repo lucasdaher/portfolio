@@ -1,4 +1,15 @@
 {
+  "errorPage": {
+    "title": "Oops!",
+    "desc": "A página que você está procurando não foi encontrada.",
+    "buttons": {
+      "returnToHome": "Clique para voltar à página principal",
+      "projects": "Projetos",
+      "skills": "Habilidades",
+      "contact": "Contato",
+      "aboutme": "Sobre Mim"
+    }
+  },
   "titles": {
     "sections": {
       "presentation": {

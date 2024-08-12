@@ -5,10 +5,12 @@ import React from "react";
 
 import { ThemeContext } from "@/contexts/ThemeContext";
 import { useContext } from "react";
+import { useLanguage } from "@/hooks/useLanguage";
 
 interface ErrorProps {}
 
 export default function Error({}: ErrorProps) {
+  const { messages } = useLanguage();
   const { dark } = useContext(ThemeContext);
   return (
     <React.Fragment>

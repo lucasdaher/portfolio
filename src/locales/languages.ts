@@ -1,6 +1,17 @@
 export type Language = "en" | "ptbr";
 
 export interface Messages {
+  errorPage: {
+    title: string;
+    desc: string;
+    buttons: {
+      returnToHome: string;
+      projects: string;
+      skills: string;
+      contact: string;
+      aboutme: string;
+    };
+  };
   titles: {
     sections: {
       presentation: {
