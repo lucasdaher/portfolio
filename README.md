@@ -11,9 +11,6 @@ Após instalar o pnpm em seu computador, você deverá instalar as dependências
 ## Execução
 Para executar o projeto, após instalar todas as dependências, utilize o comando `pnpm run dev` e acesse `localhost:5173` em seu navegador.
 
-## Link
-**[Clique aqui para visualizar o portfólio](https://lucasdaher.com)**
-
 ## Últimas atualizações
 
 ### [#11.08](https://github.com/lucasdaher/portfolio/commits/main/):
@@ -38,3 +35,6 @@ Interessados em contribuir com o meu portfólio devem seguir os seguintes passos
 - Realizar **commits** das modificações;
 - Fazer um **push** para a **branch**;
 - Abrir um **pull request**.
+
+## Visualizar portfólio
+**[Clique aqui para visualizar o portfólio](https://lucasdaher.com)**
