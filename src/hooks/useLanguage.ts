@@ -17,7 +17,7 @@ export const useLanguage = () => {
   const updateLanguage = (newLanguage: Language) => {
     setLanguage(newLanguage);
     localStorage.setItem("lang", JSON.stringify(newLanguage));
-    window.location.reload(); // Recarregar a página ao mudar o idioma.
+    window.location.reload();
   };
 
   useEffect(() => {

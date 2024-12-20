@@ -1,4 +1,3 @@
-import Header from "@/components/heading/Header";
 import { Link } from "react-router-dom";
 
 import React from "react";
@@ -14,7 +13,6 @@ export default function Error({}: ErrorProps) {
   const { dark } = useContext(ThemeContext);
   return (
     <React.Fragment>
-      <Header homePage={false} />
       <main className="flex flex-col justify-center items-center mt-36 px-4">
         <h1 className="text-normal text-5xl font-sora font-bold">
           {messages.errorPage.title}

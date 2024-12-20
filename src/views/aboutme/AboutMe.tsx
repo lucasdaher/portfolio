@@ -1,5 +1,4 @@
 import Presentation from "@/components/About/Presentation";
-import Header from "@/components/heading/Header";
 import React from "react";
 
 interface AboutMeProps {}
@@ -7,8 +6,6 @@ interface AboutMeProps {}
 export default function AboutMe({}: AboutMeProps) {
   return (
     <React.Fragment>
-      <Header homePage={false} />
-
       <main className="mt-6 md:mt-[45px]">
         <Presentation />
       </main>
