@@ -16,7 +16,6 @@ import React, { useContext } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 
 const alignRight = tv({
-  base: "",
   variants: {
     theme: {
       dark: "text-white",

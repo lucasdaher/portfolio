@@ -6,7 +6,6 @@ import Skills from "@/components/Home/Skills/Skills";
 import Projects from "@/components/Home/Projects/Projects";
 
 import React from "react";
-import AlertHeader from "@/components/heading/AlertHeader";
 import { Header } from "@/components/Header";
 import { HeaderLogo } from "@/components/Header/components/HeaderLogo";
 import { HeaderNav } from "@/components/Header/components/HeaderNav";
@@ -44,7 +43,6 @@ export default function Home({}: HomeProps) {
       </Header>
 
       <main className="mt-6 md:mt-[52px]">
-        <AlertHeader />
         <Presentation data-aos="fade-up" data-aos-delay="200" />
         <Demonstration id="demonstration" />
         <About id="aboutme" />
