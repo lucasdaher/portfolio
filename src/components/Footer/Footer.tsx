@@ -1,4 +1,4 @@
-import Logo from "../heading/Logo";
+import { HeaderLogo } from "../Header/components/HeaderLogo";
 
 interface FooterProps {}
 
@@ -9,7 +9,7 @@ export default function Footer({}: FooterProps) {
     >
       <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center items-center gap-2">
-          <Logo className="text-white" />
+          <HeaderLogo />
         </div>
 
         <div className="mt-2">
