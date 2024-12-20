@@ -1,7 +1,7 @@
-import { createContext, ReactNode, useEffect, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 interface ThemeContextProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 interface ThemeContextType {

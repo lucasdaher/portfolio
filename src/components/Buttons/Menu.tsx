@@ -13,7 +13,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-// import { Link } from "react-router-dom";
 import { AlignRight, Earth, History, Moon, Sun } from "lucide-react";
 
 import { useLanguage } from "@/hooks/useLanguage";
@@ -61,7 +60,7 @@ export default function Menu({ iconStyle }: MenuProps) {
                   dark === true ? "text-white" : "text-black-gray"
                 }`}
               >
-                {dark === true
+                {dark
                   ? messages.menu.switchModeToLight
                   : messages.menu.switchModeToDark}
               </span>

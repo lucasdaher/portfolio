@@ -1,5 +1,5 @@
 import Presentation from "@/components/About/Presentation";
-import Header from "@/components/Header/Header";
+import Header from "@/components/heading/Header";
 import React from "react";
 
 interface AboutMeProps {}

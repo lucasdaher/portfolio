@@ -1,4 +1,4 @@
-import Header from "@/components/Header/Header";
+import Header from "@/components/heading/Header";
 import { Link } from "react-router-dom";
 
 import React from "react";

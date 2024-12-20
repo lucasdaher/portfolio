@@ -1,4 +1,4 @@
-import Logo from "../Header/Logo";
+import Logo from "../heading/Logo";
 
 interface FooterProps {}
 
