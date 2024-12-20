@@ -37,7 +37,7 @@ export default function Home({}: HomeProps) {
             </HeaderNavItem>
           </HeaderNav>
 
-          <HeaderOptions>
+          <HeaderOptions className="ml-6 flex justify-center items-center">
             <HeaderOptionsMenu />
           </HeaderOptions>
         </HeaderContainer>
