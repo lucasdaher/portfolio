@@ -41,6 +41,7 @@ export default {
       },
       transitionDuration: {
         400: "0.4s",
+        200: "0.2s",
       },
       colors: {
         light: "#e9f1ff",
@@ -106,6 +107,9 @@ export default {
       },
       boxShadow: {
         projectCard: "0px 8px 18px 0px rgba(25, 25, 25, 0.25)",
+      },
+      fontFamily: {
+        fraunces: ["Fraunces", "serif"],
       },
     },
   },
