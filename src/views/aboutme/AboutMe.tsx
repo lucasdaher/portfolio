@@ -1,4 +1,4 @@
-import Presentation from "@/components/About/Presentation";
+import { Presentation } from "@/components/Presentation";
 import React from "react";
 
 interface AboutMeProps {}

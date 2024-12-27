@@ -1,11 +1,8 @@
-import Presentation from "@/components/Home/Presentation/Presentation";
-import Demonstration from "@/components/Home/Demonstration/Demonstration";
 import Footer from "@/components/Footer/Footer";
 import About from "@/components/Home/AboutMe/About";
 import Skills from "@/components/Home/Skills/Skills";
 import Projects from "@/components/Home/Projects/Projects";
 
-import React from "react";
 import { Header } from "@/components/Header";
 import { HeaderLogo } from "@/components/Header/components/HeaderLogo";
 import { HeaderNav } from "@/components/Header/components/HeaderNav";
@@ -14,13 +11,22 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { HeaderOptions } from "@/components/Header/components/HeaderOptions/HeaderOptions";
 import { HeaderOptionsMenu } from "@/components/Header/components/HeaderOptions/components/HeaderOptionsMenu";
 import { HeaderContainer } from "@/components/Header/components/HeaderContainer/HeaderContainer";
+import { useContext } from "react";
+import { ThemeContext } from "@/contexts/ThemeContext";
+import { Presentation } from "@/components/Presentation";
+import { Experiences } from "@/components/Experiences";
 
 interface HomeProps {}
 
 export default function Home({}: HomeProps) {
   const { messages } = useLanguage();
+  const { dark } = useContext(ThemeContext);
   return (
-    <React.Fragment>
+    <div
+      className={`min-h-screen bg-cover bg-center bg-no-repeat ${
+        dark && "bg-[url('../assets/background/background-dark.jpg')]"
+      }${!dark && " bg-[url('../assets/background/background-light.jpg')]"}`}
+    >
       <Header>
         <HeaderLogo />
         <HeaderContainer>
@@ -42,15 +48,17 @@ export default function Home({}: HomeProps) {
         </HeaderContainer>
       </Header>
 
-      <main className="mt-6 md:mt-[52px]">
-        <Presentation data-aos="fade-up" data-aos-delay="200" />
-        <Demonstration id="demonstration" />
+      <main className="mt-6 md:mt-32">
+        <Presentation />
+        <Experiences className="mt-24" />
+        {/* <Presentation data-aos="fade-up" data-aos-delay="200" /> */}
+        {/* <Demonstration id="demonstration" /> */}
         <About id="aboutme" />
         <Skills id="skills" />
         <Projects id="projects" />
       </main>
 
       <Footer />
-    </React.Fragment>
+    </div>
   );
 }
