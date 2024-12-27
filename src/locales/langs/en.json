@@ -12,8 +12,12 @@
   },
   "titles": {
     "sections": {
+      "experiences": {
+        "title": "Experiences"
+      },
       "presentation": {
-        "title": "I'm Lucas Daher, passionate about technology and design.",
+        "hello": "Hello, my name is",
+        "title": "Lucas Daher",
         "desc": "With almost a year of experience as a front-end developer and UX designer, I am always seeking new challenges and improving my skills to create amazing and functional interfaces."
       },
       "aboutme": {

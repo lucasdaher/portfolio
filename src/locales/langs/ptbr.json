@@ -12,9 +12,13 @@
   },
   "titles": {
     "sections": {
+      "experiences": {
+        "title": "Experiências"
+      },
       "presentation": {
-        "title": "Sou Lucas Daher, apaixonado por tecnologia e design.",
-        "desc": "Com quase um ano de experiência como desenvolvedor front-end e ux designer, estou sempre buscando novos desafios e aprimorando minhas habilidades para criar interfaces incríveis e funcionais."
+        "hello": "Olá, meu nome é",
+        "title": "Lucas Daher",
+        "desc": "Sou estudante de Análise e Desenvolvimento de Sistemas pela Universidade Católica de Brasília e atualmente tenho experiência com Desenvolvimento Front-end e UI/UX Design."
       },
       "aboutme": {
         "title": "Sobre mim",
@@ -54,7 +58,7 @@
   "buttons": {
     "sections": {
       "presentation": {
-        "resumeBtnDownload": "Baixar currículo"
+        "resumeBtnDownload": "Baixar o meu currículo"
       },
       "aboutme": {
         "moreAboutMe": "Veja mais sobre mim"

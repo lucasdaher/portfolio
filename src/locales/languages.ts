@@ -14,7 +14,11 @@ export interface Messages {
   };
   titles: {
     sections: {
+      experiences: {
+        title: string;
+      };
       presentation: {
+        hello: string;
         title: string;
         desc: string;
       };

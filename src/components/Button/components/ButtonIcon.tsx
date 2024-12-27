@@ -1,3 +1,4 @@
+import { ComponentProps } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 
 const icon = tv({
@@ -15,10 +16,19 @@ const icon = tv({
   },
 });
 
-export interface ButtonIconProps extends VariantProps<typeof icon> {
-  iconSrc: React.ReactNode;
-}
+export type ButtonIconProps = VariantProps<typeof icon> &
+  ComponentProps<"span"> & {
+    iconSrc?: React.ReactNode;
+  };
 
-export function ButtonIcon({ iconSrc, size }: ButtonIconProps) {
-  return <span className={icon({ size })}>{iconSrc}</span>;
+export function ButtonIcon({
+  iconSrc = null,
+  size,
+  ...props
+}: ButtonIconProps) {
+  return iconSrc === null ? (
+    <span className={icon({ size })}>{props.children}</span>
+  ) : (
+    <span className={icon({ size })}>{iconSrc}</span>
+  );
 }

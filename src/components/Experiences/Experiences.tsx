@@ -1,8 +1,11 @@
 import { ComponentProps } from "react";
+import { ExperiencesContainer } from "./components/ExperiencesContainer";
+import { useLanguage } from "@/hooks/useLanguage";
 
 interface ExperiencesProps extends ComponentProps<"div"> {}
 
 export function Experiences({ ...props }: ExperiencesProps) {
+  const { messages } = useLanguage();
   const experienciesData = [
     {
       id: 1,
@@ -33,7 +36,7 @@ export function Experiences({ ...props }: ExperiencesProps) {
     },
     {
       id: 4,
-      role: "UI/UX Designer no",
+      role: "UI Game Designer no",
       company: "NeutralRP",
       time: "Julho de 2023 - Dezembro de 2023",
       imgUrl:
@@ -45,7 +48,7 @@ export function Experiences({ ...props }: ExperiencesProps) {
       role: "Desenvolvedor Front-end no",
       company: "Assistify",
       time: "Outubro de 2023 - Abril de 2024",
-      imgUrl: "../../../public/assistify.svg",
+      imgUrl: "assistify.svg",
       altImg: "Logo da empresa Assistify Solutions",
     },
   ];
@@ -55,13 +58,10 @@ export function Experiences({ ...props }: ExperiencesProps) {
       {...props}
     >
       <div className="mx-auto w-10/12 flex flex-col justify-center items-center gap-10">
-        <div
-          className="bg-black-gray bg-opacity-30 backdrop-blur-[10px] p-10 rounded-lg border-[0.5px] border-[#9c9c9c]/30 
-        w-full flex flex-row justify-between items-start gap-6"
-        >
-          <div className="flex flex-col justify-center items-start gap-2 w-1/3">
+        <ExperiencesContainer>
+          <div className="flex flex-col justify-center items-start gap-2 w-1/2">
             <h1 className="font-normal tracking-tight text-3xl">
-              Experiências
+              {messages.titles.sections.experiences.title}
             </h1>
             <p className="font-light tracking-tight text-base text-white/50">
               Confira todas as minhas experiências profissionais como
@@ -69,7 +69,7 @@ export function Experiences({ ...props }: ExperiencesProps) {
             </p>
           </div>
 
-          <div className="flex flex-col justify-center items-start gap-8 w-auto pl-8 border-l-[0.5px] border-[#9c9c9c]/30">
+          <div className="flex flex-col justify-center items-start gap-8 w-full pl-8 h-full border-l-[0.5px] border-[#9c9c9c]/30">
             {experienciesData.map((experience) => (
               <div key={experience.id}>
                 <div className="flex justify-center items-center gap-4 w-full">
@@ -96,7 +96,7 @@ export function Experiences({ ...props }: ExperiencesProps) {
               </div>
             ))}
           </div>
-        </div>
+        </ExperiencesContainer>
       </div>
     </div>
   );

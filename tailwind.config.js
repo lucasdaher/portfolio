@@ -16,11 +16,11 @@ export default {
           "50%": { background: "background-position: 100% 50%;" },
         },
         rotate: {
-          "0%, 100%": { transform: "translateY(-12%)" },
-          "50%": { transform: "translateY(0%)" },
+          "0%, 100%": { transform: "rotate(32deg)" },
+          "50%": { transform: "rotate(-12deg)" },
         },
         ia: {
-          "0%, 100%": { transform: "translateX(-12%)" },
+          "0%, 100%": { transform: "translateX(12%)" },
           "50%": { transform: "translateX(0%)" },
         },
         "accordion-down": {
