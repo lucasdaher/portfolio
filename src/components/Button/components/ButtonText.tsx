@@ -8,4 +8,6 @@ const text = tv({
 
 export type ButtonTextProps = VariantProps<typeof text>;
 
-export function ButtonText({}: ButtonTextProps) {}
+export function ButtonText({}: ButtonTextProps) {
+  // Esta propriedade do botão está pendente...
+}
