@@ -6,6 +6,7 @@ export interface Messages {
       experiences: string;
       skills: string;
       projects: string;
+      graduation: string;
     };
   };
   errorPage: {
