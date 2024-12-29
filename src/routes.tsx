@@ -1,20 +1,13 @@
-import Error from "./views/error/Error";
+import Error from "@/pages/error/Error";
 
 import { createBrowserRouter } from "react-router-dom";
 
-import Home from "./views/Home";
-import AboutMe from "./views/aboutme/AboutMe";
+import Home from "@/pages/Home/Home";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    // element: <Maintenance />,
     element: <Home />,
-    errorElement: <Error />,
-  },
-  {
-    path: "/aboutme",
-    element: <AboutMe />,
     errorElement: <Error />,
   },
 ]);

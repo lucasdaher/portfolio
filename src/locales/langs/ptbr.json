@@ -4,7 +4,10 @@
       "experiences": "Experiências",
       "skills": "Habilidades",
       "projects": "Projetos",
-      "graduation": "Formações"
+      "education": "Formações"
+    },
+    "desc": {
+      "education": "Clique sobre a formação para ver mais detalhes sobre o certificado ou datas de conclusão."
     }
   },
   "errorPage": {

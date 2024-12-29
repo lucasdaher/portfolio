@@ -1,11 +1,9 @@
-import Footer from "@/components/Footer/Footer";
-import Projects from "@/components/Home/Projects/Projects";
-
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { HeaderLogo } from "@/components/Header/components/HeaderLogo";
 import { HeaderNav } from "@/components/Header/components/HeaderNav";
 import { HeaderNavItem } from "@/components/Header/components/HeaderNav/components/HeaderNavItem";
-import { useLanguage } from "@/hooks/useLanguage";
+import { useLanguage } from "@/hooks/useLanguage/useLanguage";
 import { HeaderOptions } from "@/components/Header/components/HeaderOptions/HeaderOptions";
 import { HeaderOptionsMenu } from "@/components/Header/components/HeaderOptions/components/HeaderOptionsMenu";
 import { HeaderContainer } from "@/components/Header/components/HeaderContainer/HeaderContainer";
@@ -41,7 +39,6 @@ export default function Home() {
       <main className="mt-6 md:mt-32">
         <Presentation data-aos="fade-up" data-aos-delay="200" />
         <InteractiveContainer className="mt-24" />
-        <Projects id="projects" />
       </main>
 
       <Footer />

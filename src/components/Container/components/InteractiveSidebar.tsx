@@ -1,4 +1,4 @@
-import { useLanguage } from "@/hooks/useLanguage";
+import { useLanguage } from "@/hooks/useLanguage/useLanguage";
 
 export function InteractiveSidebar() {
   const { messages } = useLanguage();

@@ -2,7 +2,7 @@ import React from "react";
 
 import profilePhoto from "../../assets/profile/lucasdaher-profile-portf.png";
 
-import { useLanguage } from "@/hooks/useLanguage";
+import { useLanguage } from "@/hooks/useLanguage/useLanguage";
 import { Button } from "../Button";
 import { ButtonText } from "../Button/components/ButtonText";
 import { ButtonIcon } from "../Button/components/ButtonIcon";

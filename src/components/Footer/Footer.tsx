@@ -1,11 +1,13 @@
+import { ComponentProps } from "react";
 import { HeaderLogo } from "../Header/components/HeaderLogo";
 
-interface FooterProps {}
+export type FooterProps = ComponentProps<"footer">;
 
-export default function Footer({}: FooterProps) {
+export function Footer({ ...props }: FooterProps) {
   return (
     <footer
-      className={`bg-black-gray w-full px-12 py-24 mt-48 transition-all duration-300`}
+      className={`bg-black-gray/50 backdrop-blur-lg rounded-t-xl w-full px-12 py-16 mt-32 transition-all duration-300`}
+      {...props}
     >
       <div className="flex flex-col justify-center items-center">
         <div className="flex justify-center items-center gap-2">

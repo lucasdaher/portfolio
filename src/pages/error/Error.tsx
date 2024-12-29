@@ -4,7 +4,7 @@ import React from "react";
 
 import { ThemeContext } from "@/contexts/ThemeContext";
 import { useContext } from "react";
-import { useLanguage } from "@/hooks/useLanguage";
+import { useLanguage } from "@/hooks/useLanguage/useLanguage";
 
 interface ErrorProps {}
 

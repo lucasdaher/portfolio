@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Messages, Language } from "@/locales/languages";
-import en from "../locales/langs/en.json";
-import ptbr from "../locales/langs/ptbr.json";
+import en from "@/locales/langs/en.json";
+import ptbr from "@/locales/langs/ptbr.json";
 
 const messages: Record<Language, Messages> = {
   en: en,

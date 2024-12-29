@@ -10,7 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { ThemeContext } from "@/contexts/ThemeContext";
-import { useLanguage } from "@/hooks/useLanguage";
+import { useLanguage } from "@/hooks/useLanguage/useLanguage";
 import { AlignRight, Earth, Moon, Sun } from "lucide-react";
 import React, { useContext } from "react";
 import { tv, VariantProps } from "tailwind-variants";
