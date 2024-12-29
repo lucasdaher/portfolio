@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ["class"],
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     darkMode: "class",
@@ -11,64 +12,59 @@ export default {
           "linear-gradient(to right, rgba(255, 255, 255, 0), white)",
       },
       keyframes: {
-        "gradient-animation": {
-          "0%, 100%": { background: "background-position: 0% 50%" },
-          "50%": { background: "background-position: 100% 50%;" },
-        },
-        new: {
-          "0%, 100%": { transform: "translateY(-12%)" },
-          "50%": { transform: "translateY(0%)" },
-        },
         rotate: {
-          "0%, 100%": { transform: "rotate(32deg)" },
-          "50%": { transform: "rotate(-12deg)" },
+          "0%, 100%": {
+            transform: "rotate(32deg)",
+          },
+          "50%": {
+            transform: "rotate(-12deg)",
+          },
         },
         ia: {
-          "0%, 100%": { transform: "translateX(12%)" },
-          "50%": { transform: "translateX(0%)" },
+          "0%, 100%": {
+            transform: "translateX(12%)",
+          },
+          "50%": {
+            transform: "translateX(0%)",
+          },
         },
         "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
+          from: {
+            height: "0",
+          },
+          to: {
+            height: "var(--radix-accordion-content-height)",
+          },
         },
         "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
+          from: {
+            height: "var(--radix-accordion-content-height)",
+          },
+          to: {
+            height: "0",
+          },
         },
       },
       animation: {
-        "gradient-animation": "gradient-animation 1s ease-in-out infinite",
         ia: "ia 1s ease-in-out infinite",
         rotate: "rotate 1s ease-in-out infinite",
-        new: "new 1s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       transitionDuration: {
-        400: "0.4s",
         200: "0.2s",
+        400: "0.4s",
       },
       colors: {
-        light: "#e9f1ff",
-        "light-hover": "#deeaff",
-        "light-active": "#bad5ff",
-        normal: "#2176ff",
-        "normal-hover": "#1e6ae6",
-        "normal-active": "#1a5ecc",
-        dark: "#1959bf",
-        "dark-hover": "#144799",
-        "dark-active": "#0f3573",
-        darker: "#0c2959",
-        "black-gray": "#191919",
-        gray: "#565656",
-        "card-bg": "#202020",
-        "card-bg-hover": "#262626",
-        "social-btn-bg": "#363636",
-        "header-bg": "rgba(25, 25, 25, 0.60)",
-        "header-border-bottom": "rgba(155, 155, 155, 0.10)",
-        "gradient-first": "#692dcc",
-        "gradient-second": "#ed178e",
-        //////////////////////////// shadcn
+        black: {
+          light: "#292929",
+          dark: "#191919",
+          darker: "#0e0e0e",
+        },
+        gray: {
+          light: "#575757",
+          dark: "#9c9c9c",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -102,6 +98,13 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        chart: {
+          1: "hsl(var(--chart-1))",
+          2: "hsl(var(--chart-2))",
+          3: "hsl(var(--chart-3))",
+          4: "hsl(var(--chart-4))",
+          5: "hsl(var(--chart-5))",
+        },
       },
       backgroundImage: {
         "custom-gradient":
@@ -116,7 +119,12 @@ export default {
       fontFamily: {
         fraunces: ["Fraunces", "serif"],
       },
+      borderRadius: {
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
+      },
     },
   },
-  plugins: [],
+  plugins: [require("tailwindcss-animate")],
 };
