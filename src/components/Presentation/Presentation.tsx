@@ -57,6 +57,7 @@ export function Presentation() {
               <div className="flex justify-center items-center gap-2">
                 <Link
                   to={`https://linkedin.com/in/lucasdaherdev`}
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
                   <Button size="default" className="px-2 hover:scale-110">
@@ -66,7 +67,11 @@ export function Presentation() {
                   </Button>
                 </Link>
 
-                <Link to={`https://github.com/lucasdaher`} target="_blank">
+                <Link
+                  to={`https://github.com/lucasdaher`}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
                   <Button size="default" className="px-2 hover:scale-110">
                     <ButtonIcon>
                       <FaGithub className="w-6 h-6 fill-current" />

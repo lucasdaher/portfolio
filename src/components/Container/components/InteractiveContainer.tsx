@@ -14,17 +14,13 @@ export function InteractiveContainer({ ...props }: InteractiveContainerProps) {
   const { selectedId } = useSelect();
 
   return (
-    <div className="" {...props}>
+    <div {...props}>
       <div
         className="max-w-[1000px] mx-auto w-10/12 flex justify-center items-center"
         {...props}
       >
         <div className="mx-auto w-10/12 flex flex-col justify-center items-center gap-10">
-          <Container
-            justify="justifyBetween"
-            align="alignStart"
-            flexDirection="row"
-          >
+          <Container flexDirection="row">
             <div className="flex flex-col space-y-4 items-start min-w-36">
               <InteractiveNav
                 selected={selectedId === "experiencias"}
@@ -45,6 +41,13 @@ export function InteractiveContainer({ ...props }: InteractiveContainerProps) {
                 selectedName="habilidades"
               >
                 {messages.interactiveSidebar.title.skills}
+              </InteractiveNav>
+
+              <InteractiveNav
+                selected={selectedId === "formacoes"}
+                selectedName="formacoes"
+              >
+                {messages.interactiveSidebar.title.graduation}
               </InteractiveNav>
             </div>
 
@@ -85,6 +88,33 @@ export function InteractiveContainer({ ...props }: InteractiveContainerProps) {
             {selectedId === "projetos" && (
               <div className="flex flex-col justify-center items-start gap-8 w-full pl-8 h-full border-l-[0.5px] border-[#9c9c9c]/30">
                 Projetos
+              </div>
+            )}
+
+            {selectedId === "formacoes" && (
+              <div className="flex flex-col justify-center items-start gap-8 w-full pl-8 h-full border-l-[0.5px] border-[#9c9c9c]/30">
+                <InteractiveContainerTitle
+                  title={messages.interactiveSidebar.title.graduation}
+                />
+
+                <div className="flex justify-start items-center gap-4 w-full">
+                  <div>
+                    <img
+                      src="https://media.licdn.com/dms/image/v2/D4D0BAQHfIHGvvHArYg/company-logo_200_200/company-logo_200_200/0/1730749432149?e=1743638400&v=beta&t=DWrT5zyEHt6ZEamEL0kw_rV73vdAFD1GC4omTv5NhDE"
+                      alt="Foto de perfil da Universidade Católica de Brasília."
+                      className="min-w-16 max-w-16 w-full rounded-lg"
+                      loading="lazy"
+                    />
+                  </div>
+                  <header>
+                    <h1 className="font-light text-lg text-white">
+                      Análise e Desenvolvimento de Sistemas ・ 3º semestre
+                    </h1>
+                    <p className="font-normal text-sm text-white/50">
+                      Universidade Católica de Brasília
+                    </p>
+                  </header>
+                </div>
               </div>
             )}
           </Container>
