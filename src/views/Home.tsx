@@ -1,6 +1,4 @@
 import Footer from "@/components/Footer/Footer";
-import About from "@/components/Home/AboutMe/About";
-import Skills from "@/components/Home/Skills/Skills";
 import Projects from "@/components/Home/Projects/Projects";
 
 import { Header } from "@/components/Header";
@@ -43,8 +41,6 @@ export default function Home() {
       <main className="mt-6 md:mt-32">
         <Presentation data-aos="fade-up" data-aos-delay="200" />
         <InteractiveContainer className="mt-24" />
-        <About id="aboutme" />
-        <Skills id="skills" />
         <Projects id="projects" />
       </main>
 
