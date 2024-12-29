@@ -6,15 +6,13 @@ import { ThemeContext } from "@/contexts/ThemeContext";
 import { useContext } from "react";
 import { useLanguage } from "@/hooks/useLanguage/useLanguage";
 
-interface ErrorProps {}
-
-export default function Error({}: ErrorProps) {
+export default function NotFound() {
   const { messages } = useLanguage();
   const { dark } = useContext(ThemeContext);
   return (
     <React.Fragment>
       <main className="flex flex-col justify-center items-center mt-36 px-4">
-        <h1 className="text-normal text-5xl font-sora font-bold">
+        <h1 className="text-blue-500 text-5xl font-sora font-bold">
           {messages.errorPage.title}
         </h1>
         <p
@@ -28,7 +26,7 @@ export default function Error({}: ErrorProps) {
           to={`/`}
           className="mt-8 group hover:text-light-active transition-all duration-200 ease-in-out"
         >
-          <button className="border border-normal rounded-full px-8 py-4 text-normal text-center text-sm md:text-base font-sora font-semibold md:font-normal group-hover:text-white group-hover:bg-normal transition-all duration-200 ease-in-out">
+          <button className="bg-black-darker bg-opacity-30 backdrop-blur-xl border border-gray-dark border-opacity-30 rounded-full px-8 py-4 text-white text-center text-sm md:text-base font-sora font-semibold md:font-normal group-hover:text-white group-hover:bg-blue-500 group-hover:border-blue-500 transition-all duration-200 ease-in-out">
             {messages.errorPage.buttons.returnToHome}
           </button>
         </Link>
@@ -39,7 +37,7 @@ export default function Error({}: ErrorProps) {
             className={`${
               dark === true
                 ? "text-white/40 hover:text-white"
-                : "font-medium text-black-gray/80 hover:text-normal"
+                : "font-medium text-black-gray/80 hover:text-blue-500"
             } transition-all duration-200 ease-in-out`}
           >
             <li className="text-center text-sm font-sora font-light">
@@ -51,7 +49,7 @@ export default function Error({}: ErrorProps) {
             className={`${
               dark === true
                 ? "text-white/40 hover:text-white"
-                : "font-medium text-black-gray/80 hover:text-normal"
+                : "font-medium text-black-gray/80 hover:text-blue-500"
             } transition-all duration-200 ease-in-out`}
           >
             <li className="text-center text-sm font-sora font-light">
@@ -63,7 +61,7 @@ export default function Error({}: ErrorProps) {
             className={`${
               dark === true
                 ? "text-white/40 hover:text-white"
-                : "font-medium text-black-gray/80 hover:text-normal"
+                : "font-medium text-black-gray/80 hover:text-blue-500"
             } transition-all duration-200 ease-in-out`}
           >
             <li className="text-center text-sm font-sora font-light">
@@ -75,7 +73,7 @@ export default function Error({}: ErrorProps) {
             className={`${
               dark === true
                 ? "text-white/40 hover:text-white"
-                : "font-medium text-black-gray/80 hover:text-normal"
+                : "font-medium text-black-gray/80 hover:text-blue-500"
             } transition-all duration-200 ease-in-out`}
           >
             <li className="text-center text-sm font-sora font-light">

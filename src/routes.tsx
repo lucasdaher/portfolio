@@ -1,4 +1,4 @@
-import Error from "@/pages/error/Error";
+import NotFound from "@/pages/NotFound/NotFound";
 
 import { createBrowserRouter } from "react-router-dom";
 
@@ -8,6 +8,6 @@ export const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    errorElement: <Error />,
+    errorElement: <NotFound />,
   },
 ]);

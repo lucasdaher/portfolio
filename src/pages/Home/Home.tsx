@@ -11,6 +11,10 @@ import { Presentation } from "@/components/Presentation";
 import { InteractiveContainer } from "@/components/Container/components/InteractiveContainer";
 import { SelectProvider } from "@/components/Container/contexts/SelectContext";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
+
 export default function Home() {
   const { messages } = useLanguage();
   return (
@@ -37,7 +41,7 @@ export default function Home() {
       </Header>
 
       <main className="mt-6 md:mt-32">
-        <Presentation data-aos="fade-up" data-aos-delay="200" />
+        <Presentation data-aos="fade-right" data-aos-delay="200" />
         <InteractiveContainer
           className="mt-24"
           data-aos="fade-up"
