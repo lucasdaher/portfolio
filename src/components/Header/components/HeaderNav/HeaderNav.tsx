@@ -11,11 +11,12 @@ const ul = tv({
     },
     separator: {
       true: "border-r border-opacity-50",
+      false: "",
     },
   },
   defaultVariants: {
     theme: "dark",
-    separator: true,
+    separator: false,
   },
 });
 

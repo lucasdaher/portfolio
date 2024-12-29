@@ -52,10 +52,9 @@
     }
   },
   "menu": {
-    "switchModeToLight": "Light mode",
-    "switchModeToDark": "Dark mode",
-    "lastUpdates": "Last updates",
-    "language": "Language",
+    "switchModeToLight": "Change to Light",
+    "switchModeToDark": "Change to Dark",
+    "language": "Select language",
     "tips": {
       "new": "NEW",
       "soon": "COMING SOON"

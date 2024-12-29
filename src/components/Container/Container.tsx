@@ -6,27 +6,27 @@ interface ContainerProps
     VariantProps<typeof container> {}
 
 const container = tv({
-  base: "bg-black-gray bg-opacity-30 backdrop-blur-md p-10 rounded-lg border-[0.5px] border-[#9c9c9c]/30 w-full flex gap-6",
+  base: "bg-black-dark bg-opacity-20 backdrop-blur-xl p-10 rounded-lg border-[0.5px] border-gray-dark border-opacity-20 w-full flex gap-6",
   variants: {
     flexDirection: {
       row: "flex-row",
       col: "flex-col",
     },
     justify: {
-      justifyBetween: "justify-between",
-      justifyStart: "justify-start",
-      justifyEnd: "justify-end",
+      between: "justify-between",
+      start: "justify-start",
+      end: "justify-end",
     },
     align: {
-      alignCenter: "items-center",
-      alignStart: "items-start",
-      alignEnd: "items-end",
+      center: "items-center",
+      start: "items-start",
+      end: "items-end",
     },
   },
 
   defaultVariants: {
-    justify: "justifyBetween",
-    align: "alignStart",
+    justify: "between",
+    align: "start",
     flexDirection: "col",
   },
 });

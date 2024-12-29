@@ -56,7 +56,6 @@ export interface Messages {
   menu: {
     switchModeToLight: string;
     switchModeToDark: string;
-    lastUpdates: string;
     language: string;
     tips: {
       new: string;

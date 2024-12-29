@@ -11,14 +11,15 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { ThemeContext } from "@/contexts/ThemeContext";
 import { useLanguage } from "@/hooks/useLanguage/useLanguage";
-import { AlignRight, Earth, Moon, Sun } from "lucide-react";
+import { AlignJustify, Earth, Moon, Sun } from "lucide-react";
 import React, { useContext } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 
 const alignRight = tv({
+  base: "transition-all duration-200 ease-in-out",
   variants: {
     theme: {
-      dark: "text-white",
+      dark: "text-white hover:text-white/60",
       light: "text-black-gray",
     },
     size: {
@@ -32,11 +33,11 @@ const alignRight = tv({
 });
 
 const dropdownMenuContent = tv({
-  base: "backdrop-blur-[20px]",
+  base: "backdrop-blur-xl",
   variants: {
     theme: {
       light: "bg-white/60 text-black-gray border-black/10",
-      dark: "bg-header-bg text-white border-header-border-bottom",
+      dark: "bg-header-bg/50 text-white border-header-border-bottom",
     },
   },
   defaultVariants: {
@@ -55,8 +56,8 @@ export function HeaderOptionsMenu({ size }: HeaderOptionsMenuProps) {
   return (
     <React.Fragment>
       <DropdownMenu>
-        <DropdownMenuTrigger className="outline-none p-1 rounded-full hover:transform hover:scale-110 transition-all duration-200">
-          <AlignRight
+        <DropdownMenuTrigger className="outline-none">
+          <AlignJustify
             className={alignRight({
               theme: dark ? "dark" : "light",
               size,
@@ -74,20 +75,15 @@ export function HeaderOptionsMenu({ size }: HeaderOptionsMenuProps) {
               className="text-white cursor-pointer"
               onClick={handleDark}
             >
-              {dark ? (
-                <Sun className={`mr-2 h-4 w-4 text-white`} />
-              ) : (
-                <Moon className={`mr-2 h-4 w-4 text-black-gray`} />
-              )}
+              {/* Caso esteja no modo dark: mostra o sol */}
+              {dark && <Sun className={`mr-2 h-4 w-4 text-white`} />}
+              {/* Caso não esteja no modo dark: mostra a lua */}
+              {!dark && <Moon className={`mr-2 h-4 w-4 text-black-gray`} />}
+
               <span className={`${dark ? "text-white" : "text-black-gray"}`}>
                 {dark
                   ? messages.menu.switchModeToLight
                   : messages.menu.switchModeToDark}
-              </span>
-              <span
-                className={`ml-2 bg-blue-500 rounded-md font-sora font-bold text-xs px-1 animate-new text-white`}
-              >
-                {messages.menu.tips.new}
               </span>
             </DropdownMenuItem>
           </DropdownMenuGroup>
@@ -113,8 +109,8 @@ export function HeaderOptionsMenu({ size }: HeaderOptionsMenuProps) {
                   className={`${
                     dark === false
                       ? "bg-white/60 text-black-gray border-black/10"
-                      : "bg-header-bg text-white border-header-border-bottom"
-                  } backdrop-blur-[20px]`}
+                      : "bg-header-bg/50 text-white border-header-border-bottom"
+                  } backdrop-blur-xl`}
                 >
                   <DropdownMenuItem
                     className="text-white cursor-pointer"
@@ -129,7 +125,7 @@ export function HeaderOptionsMenu({ size }: HeaderOptionsMenuProps) {
                     </span>
                     {language === "ptbr" ? (
                       <span
-                        className={`w-1 h-2 ml-2 bg-normal rounded-full font-sora font-bold text-xs px-1 text-white`}
+                        className={`w-1 h-2 ml-2 bg-blue-500 rounded-full font-sora font-bold text-xs px-1 text-white`}
                       ></span>
                     ) : null}
                   </DropdownMenuItem>
@@ -146,7 +142,7 @@ export function HeaderOptionsMenu({ size }: HeaderOptionsMenuProps) {
                     </span>
                     {language === "en" ? (
                       <span
-                        className={`w-1 h-2 ml-2 bg-normal rounded-full font-sora font-bold text-xs px-1 text-white`}
+                        className={`w-1 h-2 ml-2 bg-blue-500 rounded-full font-sora font-bold text-xs px-1 text-white`}
                       ></span>
                     ) : null}
                   </DropdownMenuItem>

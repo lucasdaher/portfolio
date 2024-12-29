@@ -52,10 +52,9 @@
     }
   },
   "menu": {
-    "switchModeToLight": "Modo claro",
-    "switchModeToDark": "Modo escuro",
-    "lastUpdates": "Atualizações recentes",
-    "language": "Idioma",
+    "switchModeToLight": "Mudar para claro",
+    "switchModeToDark": "Mudar para escuro",
+    "language": "Selecionar idioma",
     "tips": {
       "new": "NOVO",
       "soon": "EM BREVE"

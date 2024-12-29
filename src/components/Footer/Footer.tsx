@@ -6,7 +6,7 @@ export type FooterProps = ComponentProps<"footer">;
 export function Footer({ ...props }: FooterProps) {
   return (
     <footer
-      className={`bg-black-gray/50 backdrop-blur-lg rounded-t-xl w-full px-12 py-16 mt-32 transition-all duration-300`}
+      className={`bg-black-darker/50 backdrop-blur-lg rounded-t-xl w-full px-12 py-16 mt-32 transition-all duration-300`}
       {...props}
     >
       <div className="flex flex-col justify-center items-center">

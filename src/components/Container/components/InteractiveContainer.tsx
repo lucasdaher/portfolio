@@ -24,11 +24,7 @@ export function InteractiveContainer({ ...props }: InteractiveContainerProps) {
         {...props}
       >
         <div className="mx-auto w-10/12 flex flex-col justify-center items-center gap-10">
-          <Container
-            justify="justifyBetween"
-            align="alignStart"
-            flexDirection="row"
-          >
+          <Container justify="between" align="start" flexDirection="row">
             <div className="flex flex-col space-y-4 items-start min-w-36">
               <InteractiveNav
                 selected={selectedId === "experiencias"}

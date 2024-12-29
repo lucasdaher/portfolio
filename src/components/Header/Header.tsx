@@ -3,11 +3,11 @@ import { ComponentProps, useContext } from "react";
 import { tv, VariantProps } from "tailwind-variants";
 
 const header = tv({
-  base: "fixed top-4 left-1/2 transform -translate-x-1/2 w-[90%] flex justify-between items-center backdrop-blur-[20px] px-8 h-14 rounded-xl border-b z-10 transition-all duration-200 ease-in-out",
+  base: "fixed top-0 left-0 w-full flex justify-between items-center backdrop-blur-xl px-12 h-16 rounded-b-xl z-10 transition-all duration-200 ease-in-out",
   variants: {
     theme: {
-      light: "bg-white/40 border-black/10",
-      dark: "bg-header-bg border-header-border-bottom",
+      light: "bg-white/40",
+      dark: "bg-black-darker/50",
     },
   },
   defaultVariants: {

@@ -38,7 +38,11 @@ export default function Home() {
 
       <main className="mt-6 md:mt-32">
         <Presentation data-aos="fade-up" data-aos-delay="200" />
-        <InteractiveContainer className="mt-24" />
+        <InteractiveContainer
+          className="mt-24"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        />
       </main>
 
       <Footer />

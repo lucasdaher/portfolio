@@ -47,7 +47,7 @@ export function Presentation() {
               >
                 <Button
                   size="default"
-                  className="bg-black-gray/30 backdrop-blur-xl border-[0.5px] border-[#9c9c9c]/30 text-white hover:text-white hover:bg-blue-500"
+                  className="bg-black-darker bg-opacity-30 backdrop-blur-xl border-[0.5px] border-gray-dark border-opacity-20 text-white hover:text-white hover:bg-black-dark hover:bg-opacity-90 hover:scale-105"
                 >
                   <ButtonText textSize="base">
                     {messages.buttons.sections.presentation.resumeBtnDownload}
