@@ -11,22 +11,14 @@ import { useLanguage } from "@/hooks/useLanguage";
 import { HeaderOptions } from "@/components/Header/components/HeaderOptions/HeaderOptions";
 import { HeaderOptionsMenu } from "@/components/Header/components/HeaderOptions/components/HeaderOptionsMenu";
 import { HeaderContainer } from "@/components/Header/components/HeaderContainer/HeaderContainer";
-import { useContext } from "react";
-import { ThemeContext } from "@/contexts/ThemeContext";
 import { Presentation } from "@/components/Presentation";
-import { Experiences } from "@/components/Experiences";
+import { InteractiveContainer } from "@/components/Container/components/InteractiveContainer";
+import { SelectProvider } from "@/components/Container/contexts/SelectContext";
 
-interface HomeProps {}
-
-export default function Home({}: HomeProps) {
+export default function Home() {
   const { messages } = useLanguage();
-  const { dark } = useContext(ThemeContext);
   return (
-    <div
-      className={`min-h-screen bg-cover bg-center bg-no-repeat ${
-        dark && "bg-[url('../assets/background/background-dark.jpg')]"
-      }${!dark && " bg-[url('../assets/background/background-light.jpg')]"}`}
-    >
+    <SelectProvider>
       <Header>
         <HeaderLogo />
         <HeaderContainer>
@@ -49,16 +41,14 @@ export default function Home({}: HomeProps) {
       </Header>
 
       <main className="mt-6 md:mt-32">
-        <Presentation />
-        <Experiences className="mt-24" />
-        {/* <Presentation data-aos="fade-up" data-aos-delay="200" /> */}
-        {/* <Demonstration id="demonstration" /> */}
+        <Presentation data-aos="fade-up" data-aos-delay="200" />
+        <InteractiveContainer className="mt-24" />
         <About id="aboutme" />
         <Skills id="skills" />
         <Projects id="projects" />
       </main>
 
       <Footer />
-    </div>
+    </SelectProvider>
   );
 }

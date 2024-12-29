@@ -85,7 +85,7 @@ export function HeaderOptionsMenu({ size }: HeaderOptionsMenuProps) {
                   : messages.menu.switchModeToDark}
               </span>
               <span
-                className={`ml-2 bg-blue-500 rounded-md font-sora font-bold text-xs px-1 animate-rotate text-white`}
+                className={`ml-2 bg-blue-500 rounded-md font-sora font-bold text-xs px-1 animate-new text-white`}
               >
                 {messages.menu.tips.new}
               </span>

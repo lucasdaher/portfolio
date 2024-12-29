@@ -19,7 +19,7 @@ export function Presentation() {
             <img
               src={profilePhoto}
               alt="Imagem de perfil do desenvolvedor front-end e ux designer Lucas Daher."
-              className="rounded-full w-4/5"
+              className="rounded-full w-5/6"
             />
           </picture>
 
@@ -33,19 +33,26 @@ export function Presentation() {
             <h1 className="text-8xl font-bold font-fraunces">
               {messages.titles.sections.presentation.title}
             </h1>
-            <p className="text-base text-white/70 font-light">
+            <p className="text-sm text-white/70 font-light">
               {messages.titles.sections.presentation.desc}
             </p>
 
             <div className="flex justify-center items-center gap-4 mt-4">
-              <Button
-                size="default"
-                className="bg-black-gray/30 backdrop-blur-xl border-[0.5px] border-[#9c9c9c]/30 text-white hover:text-white hover:bg-blue-500"
+              <a
+                href="/curriculo.pdf"
+                rel="noopener noreferrer"
+                target="_blank"
+                download="curriculo.pdf"
               >
-                <ButtonText textSize="base">
-                  {messages.buttons.sections.presentation.resumeBtnDownload}
-                </ButtonText>
-              </Button>
+                <Button
+                  size="default"
+                  className="bg-black-gray/30 backdrop-blur-xl border-[0.5px] border-[#9c9c9c]/30 text-white hover:text-white hover:bg-blue-500"
+                >
+                  <ButtonText textSize="base">
+                    {messages.buttons.sections.presentation.resumeBtnDownload}
+                  </ButtonText>
+                </Button>
+              </a>
 
               <div className="flex justify-center items-center gap-2">
                 <Link

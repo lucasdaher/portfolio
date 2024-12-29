@@ -1,4 +1,11 @@
 {
+  "interactiveSidebar": {
+    "title": {
+      "experiences": "Experiences",
+      "skills": "Skills",
+      "projects": "Projects"
+    }
+  },
   "errorPage": {
     "title": "Oops!",
     "desc": "The page you are looking for was not found.",

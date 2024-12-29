@@ -1,6 +1,13 @@
 export type Language = "en" | "ptbr";
 
 export interface Messages {
+  interactiveSidebar: {
+    title: {
+      experiences: string;
+      skills: string;
+      projects: string;
+    };
+  };
   errorPage: {
     title: string;
     desc: string;

@@ -15,6 +15,10 @@ export default {
           "0%, 100%": { background: "background-position: 0% 50%" },
           "50%": { background: "background-position: 100% 50%;" },
         },
+        new: {
+          "0%, 100%": { transform: "translateY(-12%)" },
+          "50%": { transform: "translateY(0%)" },
+        },
         rotate: {
           "0%, 100%": { transform: "rotate(32deg)" },
           "50%": { transform: "rotate(-12deg)" },
@@ -36,6 +40,7 @@ export default {
         "gradient-animation": "gradient-animation 1s ease-in-out infinite",
         ia: "ia 1s ease-in-out infinite",
         rotate: "rotate 1s ease-in-out infinite",
+        new: "new 1s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
