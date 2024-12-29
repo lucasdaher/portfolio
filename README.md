@@ -13,6 +13,14 @@ Para executar o projeto, após instalar todas as dependências, utilize o comand
 
 ## Últimas atualizações
 
+### [#29.12](https://github.com/lucasdaher/portfolio/commits/main/):
+- O portfólio foi praticamente todo refatorado, aplicando boas práticas de desenvolvimento e conceitos de arquitetura limpa para melhor organização e reutilização do código.
+- O design da página foi refeito por completo com o intuito de deixar o mais simples possível mostrando somente o necessário sobre minhas experiências, habilidades, projetos e formações.
+- Removido a opção de alterar temas:
+  - Agora a página inteira segue o design no tema escuro obrigatóriamente.
+- Corrigido alguns textos incorretos ao utilizar o idioma Inglês.
+- Correção de bugs e otimização em geral.
+
 ### [#11.08](https://github.com/lucasdaher/portfolio/commits/main/):
 - A seção **Sobre Mim** foi totalmente refeita e encurtada focando na experiência em dispositivos mobiles.
 - Correções de problemas com o sistema de idiomas.
