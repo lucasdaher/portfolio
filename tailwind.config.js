@@ -28,6 +28,14 @@ export default {
             transform: "translateX(0%)",
           },
         },
+        upanddown: {
+          "0%, 100%": {
+            transform: "translateY(-10%)",
+          },
+          "50%": {
+            transform: "translateY(10%)",
+          },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -47,6 +55,7 @@ export default {
       },
       animation: {
         ia: "ia 1s ease-in-out infinite",
+        upanddown: "upanddown 1s ease-in-out infinite",
         rotate: "rotate 1s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
