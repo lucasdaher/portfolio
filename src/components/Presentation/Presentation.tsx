@@ -1,6 +1,7 @@
 import React from "react";
 
 import profilePhoto from "../../assets/profile/lucasdaher-profile-portf.png";
+
 import { useLanguage } from "@/hooks/useLanguage";
 import { Button } from "../Button";
 import { ButtonText } from "../Button/components/ButtonText";
@@ -15,7 +16,7 @@ export function Presentation() {
       <header className="max-w-[1440px] mx-auto w-10/12">
         <div className="flex flex-row justify-center items-center">
           <picture>
-            <source />
+            <source type="svg" srcSet={profilePhoto} />
             <img
               src={profilePhoto}
               alt="Imagem de perfil do desenvolvedor front-end e ux designer Lucas Daher."
