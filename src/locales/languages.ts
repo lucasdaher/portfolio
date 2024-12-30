@@ -10,6 +10,7 @@ export interface Messages {
     };
     desc: {
       education: string;
+      projects: string;
     };
   };
   errorPage: {

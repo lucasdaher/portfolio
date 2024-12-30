@@ -7,7 +7,8 @@
       "education": "Formações"
     },
     "desc": {
-      "education": "Clique sobre a formação para ver mais detalhes sobre o certificado ou datas de conclusão."
+      "education": "Clique sobre a formação para ver mais detalhes sobre o certificado ou datas de conclusão.",
+      "projects": "Clique sobre a formação para ver mais detalhes sobre o certificado ou datas de conclusão."
     }
   },
   "errorPage": {
