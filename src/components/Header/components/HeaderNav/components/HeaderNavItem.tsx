@@ -1,32 +1,15 @@
-import { ThemeContext } from "@/contexts/ThemeContext";
-import { ComponentProps, useContext } from "react";
-import { tv, VariantProps } from "tailwind-variants";
+import { ComponentProps } from "react";
 
-const li = tv({
-  base: "flex justify-center items-center text-center text-sm font-normal h-6 w-auto hover:text-light-active hover:scale-105 transition-all duration-200 ease-in-out",
-  variants: {
-    theme: {
-      dark: "text-white",
-      light: "text-black-gray",
-    },
-  },
-  defaultVariants: {
-    theme: "dark",
-  },
-});
-
-export type HeaderNavItemProps = ComponentProps<"a"> &
-  VariantProps<typeof li> & {
-    href?: string;
-    openNewTab?: boolean;
-  };
+export type HeaderNavItemProps = ComponentProps<"a"> & {
+  href?: string;
+  openNewTab?: boolean;
+};
 
 export function HeaderNavItem({
   href = undefined,
   openNewTab = false,
   ...props
 }: HeaderNavItemProps) {
-  const { dark } = useContext(ThemeContext);
   return (
     <a
       href={href}
@@ -34,7 +17,7 @@ export function HeaderNavItem({
       rel="noopener noreferrer"
       {...props}
     >
-      <li className={li({ theme: dark ? "dark" : "light" })}>
+      <li className="flex text-white justify-center items-center text-center text-sm font-normal h-6 w-auto hover:text-light-active hover:scale-105 transition-all duration-200 ease-in-out">
         {props.children}
       </li>
     </a>
