@@ -5,6 +5,9 @@ export default {
   theme: {
     darkMode: "class",
     extend: {
+      screens: {
+        xs: "320px",
+      },
       background: {
         "marquee-left":
           "linear-gradient(to left, rgba(255, 255, 255, 0), white)",
