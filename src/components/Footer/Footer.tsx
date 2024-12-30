@@ -7,7 +7,7 @@ export type FooterProps = ComponentProps<"footer">;
 export function Footer({ ...props }: FooterProps) {
   return (
     <footer
-      className={`bg-black-darker bg-opacity-30 backdrop-blur-lg rounded-t-xl w-full px-12 py-16 mt-32 transition-all duration-200 ease-in-out`}
+      className={`bg-black-darker bg-opacity-30 backdrop-blur-lg rounded-t-xl w-full px-12 py-16 mt-14 lg:mt-32 transition-all duration-200 ease-in-out`}
       {...props}
     >
       <div className="flex flex-col justify-center items-center">
@@ -16,14 +16,14 @@ export function Footer({ ...props }: FooterProps) {
         </div>
 
         <div className="mt-2">
-          <p className="font-normal text-white/50 text-sm text-center">
+          <p className="font-normal text-white/50 text-xs lg:text-sm text-center">
             Desenvolvido com 🤍 por{" "}
             <span className="italic font-medium">Lucas Daher</span> <br />
           </p>
         </div>
 
         <button
-          className="flex justify-center items-center gap-2 mt-6 bg-black-darker bg-opacity-30 rounded-full border-[0.5px] border-opacity-30 p-2 group hover:scale-110 backdrop-blur-xl transition-all duration-200 ease-in-out"
+          className="flex justify-center items-center gap-2 mt-6 bg-black-darker bg-opacity-30 rounded-full border-[0.5px] border-gray-dark border-opacity-30 p-2 group hover:scale-110 backdrop-blur-xl transition-all duration-200 ease-in-out"
           title="Clique para voltar ao topo da página"
           type="button"
           onClick={() => {

@@ -5,7 +5,8 @@ const text = tv({
   base: "text-base font-normal",
   variants: {
     textSize: {
-      lg: "text-xl font-semibold",
+      xl: "text-lg lg:text-xl font-semibold",
+      lg: "text-base lg:text-lg font-semibold",
       base: "text-base font-normal",
     },
   },

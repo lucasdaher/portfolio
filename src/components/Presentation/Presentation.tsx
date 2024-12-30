@@ -1,6 +1,6 @@
 import React from "react";
 
-import profilePhoto from "../../assets/profile/lucasdaher-profile-portf.png";
+import profilePhoto from "@/assets/profile/lucasdaher-profile-portf.png";
 
 import { useLanguage } from "@/hooks/useLanguage/useLanguage";
 import { Button } from "../Button";
@@ -13,32 +13,36 @@ export function Presentation() {
   const { messages } = useLanguage();
   return (
     <React.Fragment>
-      <header className="max-w-[1440px] mx-auto w-10/12">
-        <div className="flex flex-row justify-center items-center">
-          <picture>
+      <header className="max-w-[1440px] mx-auto w-full lg:w-10/12 px-2 lg:px-0">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-0">
+          <picture className="flex justify-center items-center">
             <source type="svg" srcSet={profilePhoto} />
             <img
               src={profilePhoto}
               alt="Imagem de perfil do desenvolvedor front-end e ux designer Lucas Daher."
-              className="rounded-full w-5/6"
+              className="rounded-full hidden lg:inline-block lg:w-5/6"
             />
           </picture>
 
-          <div className="flex flex-col justify-center items-start gap-2">
-            <div className="flex flex-row justify-start items-center gap-2">
-              <span className="text-base animate-rotate">👋🏻</span>
-              <h2 className="text-base font-light text-white/70">
+          <div className="flex flex-col justify-center items-center lg:items-start gap-4 lg:gap-2">
+            {/* Introduction */}
+            <div className="flex flex-row justify-center lg:justify-start items-center gap-2">
+              <span className="text-sm lg:text-base animate-rotate text-center lg:text-left">
+                👋🏻
+              </span>
+              <h2 className="text-sm lg:text-base font-light text-white/70 text-center lg:text-left">
                 {messages.titles.sections.presentation.hello}
               </h2>
             </div>
-            <h1 className="text-8xl font-bold font-fraunces">
+            {/* Main Titles */}
+            <h1 className="text-5xl lg:text-8xl font-bold font-fraunces text-white text-center lg:text-left">
               {messages.titles.sections.presentation.title}
             </h1>
-            <p className="text-sm text-white/70 font-light">
+            <p className="text-sm text-white/70 font-light text-center lg:text-left">
               {messages.titles.sections.presentation.desc}
             </p>
 
-            <div className="flex justify-center items-center gap-4 mt-4">
+            <div className="flex flex-col lg:flex-row justify-center items-center gap-4 mt-4">
               <a
                 href="/curriculo.pdf"
                 rel="noopener noreferrer"

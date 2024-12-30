@@ -70,7 +70,7 @@ export function HeaderOptionsMenu({ size }: HeaderOptionsMenuProps) {
             theme: dark ? "dark" : "light",
           })}
         >
-          <DropdownMenuGroup className="hover:bg-gray/20 transition-all duration-200 ease-in-out rounded-md">
+          <DropdownMenuGroup className="hover:bg-gray-dark/20 transition-all duration-200 ease-in-out rounded-md">
             <DropdownMenuItem
               className="text-white cursor-pointer"
               onClick={handleDark}
@@ -88,17 +88,17 @@ export function HeaderOptionsMenu({ size }: HeaderOptionsMenuProps) {
             </DropdownMenuItem>
           </DropdownMenuGroup>
 
-          <DropdownMenuGroup className="hover:bg-gray/20 transition-all duration-200 ease-in-out rounded-md">
+          <DropdownMenuGroup className="hover:bg-gray-dark/20 transition-all duration-200 ease-in-out rounded-md">
             <DropdownMenuSub>
               <DropdownMenuSubTrigger>
                 {dark === true ? (
                   <Earth className={`mr-2 h-4 w-4 text-white`} />
                 ) : (
-                  <Earth className={`mr-2 h-4 w-4 text-black-gray`} />
+                  <Earth className={`mr-2 h-4 w-4 text-black-darker`} />
                 )}
                 <span
                   className={`${
-                    dark === true ? "text-white" : "text-black-gray"
+                    dark === true ? "text-white" : "text-black-darker"
                   }`}
                 >
                   {messages.menu.language}
