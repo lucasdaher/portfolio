@@ -14,17 +14,17 @@ export function Presentation() {
   return (
     <React.Fragment>
       <header className="max-w-[1440px] mx-auto w-full lg:w-10/12 px-2 lg:px-0">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-0">
-          <picture className="flex justify-center items-center">
+        <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+          <picture className="flex justify-center items-center w-1/2 xl:w-1/4">
             <source type="svg" srcSet={profilePhoto} />
             <img
               src={profilePhoto}
               alt="Imagem de perfil do desenvolvedor front-end e ux designer Lucas Daher."
-              className="rounded-full hidden lg:inline-block lg:w-5/6"
+              className="rounded-full hidden lg:inline-block lg:w-full"
             />
           </picture>
 
-          <div className="flex flex-col justify-center items-center lg:items-start gap-4 lg:gap-2">
+          <div className="flex flex-col justify-center items-center lg:items-start gap-4 lg:gap-2 w-full xl:w-1/2">
             {/* Introduction */}
             <div className="flex flex-row justify-center lg:justify-start items-center gap-2">
               <span className="text-sm lg:text-base animate-rotate text-center lg:text-left">
@@ -38,7 +38,7 @@ export function Presentation() {
             <h1 className="text-5xl lg:text-8xl font-bold font-fraunces text-white text-center lg:text-left">
               {messages.titles.sections.presentation.title}
             </h1>
-            <p className="text-sm text-white/70 font-light text-center lg:text-left">
+            <p className="text-sm text-white/70 font-light text-center lg:text-left leading-6 w-full">
               {messages.titles.sections.presentation.desc}
             </p>
 

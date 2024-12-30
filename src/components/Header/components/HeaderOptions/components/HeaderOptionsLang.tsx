@@ -5,7 +5,7 @@ import React from "react";
 import { tv } from "tailwind-variants";
 
 const button = tv({
-  base: "rounded-full bg-black-darker backdrop-blur-xl px-1 py-0 lg:px-2 lg:py-1 h-auto border-[0.5px] border-opacity-30 border-gray-dark transition-all duration-200 ease-in-out",
+  base: "rounded-full bg-black-darker backdrop-blur-xl px-2 py-1 h-auto border-[0.5px] border-opacity-30 border-gray-dark transition-all duration-200 ease-in-out",
   variants: {
     selected: {
       true: "bg-white hover:bg-white cursor-not-allowed",
