@@ -11,7 +11,7 @@ import { SelectProvider } from "@/components/Container/contexts/SelectContext";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { AlertCircle, AlertTriangle } from "lucide-react";
+import { AlertCircle } from "lucide-react";
 AOS.init();
 
 export default function Home() {
