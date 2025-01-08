@@ -1,3 +1,5 @@
+import neutralrp from "@/assets/projects/neutralrp.png";
+
 export const experienciesData = [
   {
     id: 0,
@@ -44,8 +46,7 @@ export const experienciesData = [
     role: "UI Game Designer no",
     company: "NeutralRP",
     time: "Julho de 2023 - Dezembro de 2023",
-    imgUrl:
-      "https://media.discordapp.net/attachments/1154353483739308063/1176961840006307930/discordlogo.png?ex=676efaa1&is=676da921&hm=c5019915222908304c0aa91db49ee7a0df35e164cd7237a96afc4632ba6f2509&=&format=webp&quality=lossless&width=1194&height=1194",
+    imgUrl: neutralrp,
     altImg: "Logo da empresa NeutralRP",
     redirectLink: "https://www.linkedin.com/in/lucasdaherdev/",
   },

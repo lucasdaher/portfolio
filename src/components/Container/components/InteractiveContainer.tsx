@@ -10,6 +10,7 @@ import experiences from "@/data/Experiences/experiences";
 
 import { useLanguage } from "@/hooks/useLanguage/useLanguage";
 import { useSelect } from "../hooks/useSelect";
+import { Projects } from "@/components/Projects";
 
 interface InteractiveContainerProps extends ComponentProps<"div"> {}
 
@@ -24,7 +25,7 @@ export function InteractiveContainer({ ...props }: InteractiveContainerProps) {
     >
       <div className="mx-auto w-11/12 lg:w-10/12 flex flex-col justify-center items-center gap-10">
         <Container>
-          <div className="flex flex-col p-4 xs:p-0 xs:flex-row lg:flex-col justify-between items-center xs:items-start lg:gap-4 w-full lg:justify-center sm:items-center lg:items-start lg:min-w-36">
+          <div className="flex flex-col p-4 min-w-2xl w-full lg:w-full lg:max-w-xs xs:p-0 xs:flex-row lg:flex-col justify-between items-center xs:items-start lg:gap-4 lg:justify-center sm:items-center lg:items-start">
             <InteractiveNav
               selected={selectedId === "experiencias"}
               selectedName="experiencias"
@@ -97,10 +98,9 @@ export function InteractiveContainer({ ...props }: InteractiveContainerProps) {
                 desc={messages.interactiveSidebar.desc.projects}
               />
 
-              <h1 className="text-white/40 font-light text-base italic">
-                Os projetos serão adicionados até 31/12/2024, estou
-                atualizando...
-              </h1>
+              <div className="flex flex-col justify-center items-start gap-12">
+                <Projects />
+              </div>
             </Experiences>
           )}
 

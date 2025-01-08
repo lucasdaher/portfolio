@@ -6,7 +6,7 @@ interface ContainerProps
     VariantProps<typeof container> {}
 
 const container = tv({
-  base: "max-w-[1440px] mx-auto w-full bg-black-dark bg-opacity-20 backdrop-blur-xl p-6 lg:p-10 rounded-lg border-[0.5px] border-gray-dark border-opacity-20 flex flex-col lg:flex-row lg:justify-between lg:items-start justify-center items-center gap-4 lg:gap-0",
+  base: "max-w-[1440px] mx-auto w-full bg-black-dark bg-opacity-20 backdrop-blur-xl p-6 lg:p-10 rounded-lg border-[0.5px] border-gray-dark border-opacity-20 flex flex-col lg:flex-row justify-between lg:justify-start lg:items-start items-center gap-4 lg:gap-0",
   variants: {
     flexDirection: {
       row: "flex-row",

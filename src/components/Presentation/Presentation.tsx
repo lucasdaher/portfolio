@@ -14,7 +14,7 @@ export function Presentation() {
   return (
     <React.Fragment>
       <header className="max-w-[1440px] mx-auto w-full lg:w-10/12 px-2 lg:px-0">
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-6">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-20">
           <picture className="flex justify-center items-center w-1/2 xl:w-1/4">
             <source type="svg" srcSet={profilePhoto} />
             <img
@@ -38,7 +38,7 @@ export function Presentation() {
             <h1 className="text-5xl lg:text-8xl font-bold font-fraunces text-white text-center lg:text-left">
               {messages.titles.sections.presentation.title}
             </h1>
-            <p className="text-sm text-white/70 font-light text-center lg:text-left leading-6 w-full">
+            <p className="text-sm text-white/70 font-light text-center lg:text-left leading-6 w-full max-w-xl md:max-w-2xl lg:max-w-3xl">
               {messages.titles.sections.presentation.desc}
             </p>
 
