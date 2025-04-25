@@ -115,7 +115,7 @@ export function InteractiveContainer({ ...props }: InteractiveContainerProps) {
               <div className="flex justify-start items-center gap-4 w-full p-0 lg:p-4">
                 <div>
                   <img
-                    src="https://media.licdn.com/dms/image/v2/D4D0BAQHfIHGvvHArYg/company-logo_200_200/company-logo_200_200/0/1730749432149?e=1743638400&v=beta&t=DWrT5zyEHt6ZEamEL0kw_rV73vdAFD1GC4omTv5NhDE"
+                    src="https://media.licdn.com/dms/image/v2/D4D0BAQHfIHGvvHArYg/company-logo_100_100/company-logo_100_100/0/1730749432149?e=1750896000&v=beta&t=igqQYhd5NmclkECL7l5Z3jDkZvxuIrftOx7umdY1tG8"
                     alt="Foto de perfil da Universidade Católica de Brasília."
                     className="min-w-16 max-w-16 w-full rounded-lg"
                     loading="lazy"
@@ -134,7 +134,7 @@ export function InteractiveContainer({ ...props }: InteractiveContainerProps) {
               <div className="flex justify-start items-center gap-4 w-full p-0 lg:p-4">
                 <div>
                   <img
-                    src="https://media.licdn.com/dms/image/v2/D4D0BAQE4QCIvaSydTA/company-logo_200_200/company-logo_200_200/0/1733142290647/escoladnc_logo?e=1743638400&v=beta&t=CJS-guQ4lVRjqKG9um8CLRBtBAxUXopUUvM01f4ueUI"
+                    src="https://media.licdn.com/dms/image/v2/D4D0BAQE4QCIvaSydTA/company-logo_100_100/company-logo_100_100/0/1733142290647/escoladnc_logo?e=1750896000&v=beta&t=8KsG2oPC6zFuWZkODI5R_0p2VzANVBm4CgMvLhP3qmk"
                     alt="Foto de perfil da Escola DNC."
                     className="min-w-16 max-w-16 w-full rounded-lg"
                     loading="lazy"
